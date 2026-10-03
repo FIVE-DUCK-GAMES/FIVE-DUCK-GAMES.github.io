@@ -1,0 +1,47 @@
+name: TangIdle policy pages
+on:
+  pull_request:
+    paths: ['tangidle/**', '.github/workflows/tangidle-policy.yml']
+  push:
+    branches: [main]
+    paths: ['tangidle/**', '.github/workflows/tangidle-policy.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check policy page metadata and local links
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlsplit, unquote
+          class Page(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.tags = []
+                  self.links = []
+                  self.korean = False
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  self.tags.append(tag)
+                  if tag == 'html':
+                      self.korean = attrs.get('lang') == 'ko'
+                  if tag == 'a' and attrs.get('href'):
+                      self.links.append(attrs['href'])
+          root = Path('.').resolve()
+          for path in Path('tangidle').glob('*.html'):
+              source = path.read_text(encoding='utf-8')
+              page = Page()
+              page.feed(source)
+              assert page.korean and all(t in page.tags for t in ('html', 'head', 'title', 'body', 'h1')), path
+              for link in page.links:
+                  url = urlsplit(link)
+                  assert url.scheme in ('', 'https', 'mailto'), (path, link)
+                  if not url.scheme and not url.netloc and url.path:
+                      target = (root / unquote(url.path).lstrip('/') if url.path.startswith('/') else path.parent / unquote(url.path)).resolve()
+                      assert target.is_relative_to(root) and target.exists(), (path, link)
+              print('PASS', path)
+          PY
