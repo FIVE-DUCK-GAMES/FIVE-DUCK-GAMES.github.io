@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tang Clan Account and Data Deletion</title>
+<style>
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; line-height: 1.6; color: #222; background: #fff; }
+h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; margin-top: 2em; }
+nav.lang { font-size: 1rem; margin-bottom: 1em; padding: 8px 12px; border: 1px solid #ccc; } nav.lang a[aria-current] { font-weight: bold; color: #222; text-decoration: none; }
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="Language">언어 / Language / 言語 / 語言: <a href="../delete-data.html" lang="ko">한국어</a> · <a href="delete-data.html" lang="en" aria-current="page">English</a> · <a href="../ja/delete-data.html" lang="ja">日本語</a> · <a href="../zh-TW/delete-data.html" lang="zh-Hant-TW">繁體中文</a></nav>
+<p><em>This is an English translation of the Korean original. If the two differ, the Korean original prevails, except where the law of your country of residence requires otherwise.</em></p>
+<aside aria-label="Notice of changes">
+<h2>Revision of the deletion guide for the iOS launch and international service — effective October 13, 2026</h2>
+<p>Announced on October 6, 2026 and effective from October 13, 2026. We added the deletion scope for iPhone (App Store) purchase and ad information, the 30-day retention of server backups, how to withdraw advertising partner consent, and guides in other languages. Until the effective date, the <a href="../archive/2026-10-05/delete-data.html" hreflang="ko">current deletion guide (revised October 5, 2026)</a> applies; it is available in Korean only. <a href="#backup">See backup retention</a></p>
+</aside>
+<h1>Tang Clan Account and Data Deletion</h1>
+<p>Developer: FIVE DUCK GAMES · Applies to both the Android (Google Play) and iOS (App Store) versions. The Korean title of the game is 「사천당가 키우기」.</p>
+
+<h2>Delete in the Game</h2>
+<ol>
+<li>Open the Game and go to the Account tab.</li>
+<li>Tap "Delete account" and confirm by following the instructions.</li>
+<li>When deletion is complete, the login information on this device and that account's on-device progress are also deleted, and you return to the start screen.</li>
+</ol>
+
+<h2>If you cannot use the app</h2>
+<p>Send "Tang Clan account deletion request" to <a href="mailto:fiveduckgames@gmail.com?subject=Tang%20Clan%20account%20deletion%20request">fiveduckgames@gmail.com</a>. We process it within 7 days of receipt and reply with the result.</p>
+<p>Please include your account ID in the email. Tapping "Copy account ID" on the in-game Account tab copies it. The account ID alone does not let anyone else sign in to your account. Guest accounts are created with only a random ID, without a name or email, so if you did not copy the account ID before deleting the app, the Company may also be unable to identify the account and find its server records. On both Android and iOS, reinstalling the app does not reuse the previous login information, so deleting in the Game while the app is still installed is the most reliable way.</p>
+
+<h2>Data that is deleted</h2>
+<ul>
+<li>Account identifier and login information</li>
+<li>Cloud save copies (including the previous copy), server training and challenge records</li>
+<li>Sparring display name and ranking records, Public Enemy contribution records, name reports you made</li>
+</ul>
+
+<h2 id="backup">Server backups</h2>
+<p>For disaster recovery, the Company backs up the server database and deletes each backup 30 days after it is made. When you delete your account, it is removed from the production database right away, but it may remain for up to 30 days in backups made before the deletion. Backups are not used for anything other than disaster recovery, and if we ever restore from one, we delete again the records of accounts for which deletion was requested before putting the data back into service.</p>
+
+<h2>Data that remains</h2>
+<ul>
+<li>Server access records (IP address, request time and path, client type, IP-based country, region and city): on the Supabase free plan, service logs that the operator can view are kept for 1 day by default. The Company does not export them separately. The provider's own security and service operation records are governed by the Supabase Privacy Policy.</li>
+<li>The defense records of opponents you attacked in Sparring keep your display name at the time of the attack. Only the latest 20 records are kept per opponent, so they are deleted as newer records push them out.</li>
+<li>Progress saved only on the device with "Start offline" is not on the server, so it is deleted from the device when you delete the app. Restoring a device backup (such as iCloud) may bring back on-device progress, but the login information of a server account is not included in backups.</li>
+<li>Age information, consent records, purchase entitlement records and outfit and face selections are stored on this device separately from the game account, so they may remain after you delete the account. They are deleted when you delete the app or clear its data.</li>
+<li>Google Play and App Store transaction records and the Company's statutory transaction records are covered in the purchase and ad information section below.</li>
+</ul>
+
+<section id="sentry-notice">
+<h2>Optional diagnostics and deletion</h2>
+<p>Since October 11, 2026, if a user aged 14 or older separately consents, major error, save and reward failure diagnostics are sent to Sentry in the United States (<a href="privacy.html#sentry-notice">Privacy Policy Section 10</a>). Tapping "Turn off" in Account tab &gt; Support &gt; Major error reports withdraws consent and stops new transmissions, and you can keep playing.</p>
+<p>Error events already sent are deleted according to the 30-day retention of Sentry's free Developer plan. The Company does not put the account ID in events, so deleting the game account alone cannot find and delete that user's existing events. The provider's own security and service operation records are governed by the <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a>. Send inquiries to <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>.</p>
+</section>
+
+<section id="purchases-ads">
+<h2>Purchase and ad information and deletion</h2>
+<p>Your game account and your Google Play or App Store purchases are managed separately. Deleting the account does not delete transaction records or automatically refund purchases. Even if the purchase entitlement records on the device disappear because you deleted the app, tapping "Restore purchases" in the shop with the same Google account or the same Apple account re-checks valid purchases. Request cancellations and refunds by the methods in <a href="terms.html#refunds">Article 5-3 of the Terms of Service</a> (Google Play: <a href="https://support.google.com/googleplay/answer/2479637?hl=en">Google Play refund guide</a>; App Store: <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>). Do not post passwords, card numbers or full receipts in public places.</p>
+<p>Under the Korean Act on Consumer Protection in Electronic Commerce, the Company keeps records of contracts, withdrawals, payments and supply of goods for 5 years, and records of consumer complaints and dispute handling for 3 years. These records are deleted when that period ends, separately from account deletion requests. Apple keeps App Store transaction records, and you can make requests through Apple's Data and Privacy page (<a href="https://privacy.apple.com/">privacy.apple.com</a>).</p>
+<p>If you consented to advertising partner disclosure, information collected by the Google advertising SDK is processed by Google, so deleting your game account alone does not delete it. Turning off the consent in the "Legal &amp; Privacy" card on the Account tab immediately stops new ad requests and preloading and discards any ad already loaded, and the advertising SDK is not initialized from the next launch. An ad that is already playing plays to the end, and its reward is given. On Android, you can reset or delete the advertising ID in the Ads menu of the settings. The iOS version does not access the Identifier for Advertisers (IDFA). Information kept by Google can be managed through <a href="https://myadcenter.google.com/">Google My Ad Center</a> and the methods in the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. Google's retention periods differ from the 1-day retention of the Company's server logs.</p>
+<p>Information Unity IAP sent to Unity during purchases does not include the game account ID, so it cannot be found and deleted by deleting the game account. Unity is the Company's processor for payment processing, so if you need it deleted, email your order number (Google Play order number or Apple order ID) to <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. After verifying the request, the Company instructs Unity to delete what can be found with that number. For information Unity processes for its own purposes (fraud prevention, accounting, audit, legal compliance), you can also contact Unity directly (<a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>). Order data stored for the entrusted work is kept until deletion is requested, and Unity service logs for 90 days. Details are in <a href="privacy.html#transfer-unity">Privacy Policy Section 3</a>.</p>
+<p>We do not collect daily activity metrics for online accounts.</p>
+</section>
+
+</body>
+</html>

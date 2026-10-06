@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四川唐門 帳號與資料刪除</title>
+<style>
+body { font-family: system-ui, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; line-height: 1.8; color: #222; background: #fff; }
+h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; margin-top: 2em; }
+nav.lang { font-size: 1rem; margin-bottom: 1em; padding: 8px 12px; border: 1px solid #ccc; } nav.lang a[aria-current] { font-weight: bold; color: #222; text-decoration: none; }
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="選擇語言（Language）">語言 / Language / 言語：<a href="../delete-data.html" lang="ko">한국어</a> · <a href="../en/delete-data.html" lang="en">English</a> · <a href="../ja/delete-data.html" lang="ja">日本語</a> · <a href="delete-data.html" lang="zh-Hant-TW" aria-current="page">繁體中文</a></nav>
+<p><em>本文件為韓文原文的繁體中文譯本。兩者內容不一致時，以韓文原文為準；但您居住國家的法律另有規定者，從其規定。</em></p>
+<aside aria-label="修訂公告">
+<h2>配合 iOS 版上架與海外服務的刪除說明修訂 — 2026年10月13日施行</h2>
+<p>本次修訂於2026年10月6日公告，自2026年10月13日起施行。新增 iPhone（App Store）購買與廣告資訊的刪除範圍、伺服器備份保存30日、撤回廣告合作夥伴同意的方法，以及其他語言的說明。施行日前適用<a href="../archive/2026-10-05/delete-data.html" hreflang="ko">現行刪除說明（2026年10月5日修訂，僅提供韓文）</a>。<a href="#backup">查看備份保存</a></p>
+</aside>
+<h1>四川唐門 帳號與資料刪除</h1>
+<p>開發商：FIVE DUCK GAMES · 同時適用於 Android（Google Play）版與 iOS（App Store）版。</p>
+
+<h2>在遊戲內刪除</h2>
+<ol>
+<li>開啟遊戲，前往「帳號」分頁。</li>
+<li>點選「刪除帳號」，依說明確認。</li>
+<li>刪除完成後，本裝置的登入資訊與該帳號在裝置內的進度紀錄也會一併清除，並回到開始畫面。</li>
+</ol>
+
+<h2>無法使用應用程式時</h2>
+<p>請以主旨「四川唐門 帳號刪除申請」寄送電子郵件至 <a href="mailto:fiveduckgames@gmail.com?subject=%E5%9B%9B%E5%B7%9D%E5%94%90%E9%96%80%20%E5%B8%B3%E8%99%9F%E5%88%AA%E9%99%A4%E7%94%B3%E8%AB%8B">fiveduckgames@gmail.com</a>。本公司會在收到申請之日起7日內處理並回覆結果。</p>
+<p>請在郵件中附上帳號 ID。在遊戲內「帳號」分頁點選「複製帳號ID」，即可複製帳號 ID。他人無法只憑帳號 ID 登入您的帳號。訪客帳號不需姓名或電子郵件，只以隨機 ID 建立，因此若在刪除應用程式前沒有先複製帳號 ID，本公司也無法特定該帳號，可能找不到伺服器紀錄。Android 與 iOS 在重新安裝應用程式後都不會使用先前的登入資訊，因此趁應用程式還在時於遊戲內刪除，是最確實的方法。</p>
+
+<h2>會刪除的資料</h2>
+<ul>
+<li>帳號識別碼與登入資訊</li>
+<li>雲端存檔副本（包含前一份副本）、伺服器修煉與挑戰紀錄</li>
+<li>比武顯示名稱與排名紀錄、武林公敵貢獻紀錄、您提出的名稱檢舉紀錄</li>
+</ul>
+
+<h2 id="backup">伺服器備份</h2>
+<p>本公司為了故障復原會備份伺服器資料庫，備份自建立日起經過30日即刪除。刪除帳號後，資料會立即從營運資料庫中清除，但先前建立的備份中最多可能留存30日。備份不會用於故障復原以外的用途；如需復原，會先再次刪除已收到刪除申請之帳號的紀錄，再反映至營運環境。</p>
+
+<h2>會留存的資料</h2>
+<ul>
+<li>伺服器連線紀錄（IP 位址、請求時間與路徑、用戶端類型、以 IP 為基礎的國家、地區與城市）：在 Supabase 免費方案中，營運者查詢的服務日誌預設保存期間為1日。本公司不會另行匯出保存。服務供應商本身的安全與服務營運紀錄，依 Supabase 隱私權政策辦理。</li>
+<li>您在比武中攻擊過的對手的防守紀錄，會留存您攻擊當時的顯示名稱。每位對手只保存最近20筆，被新紀錄擠出後即刪除。</li>
+<li>以「離線開始」僅儲存在裝置上的進度不在伺服器上，刪除應用程式時會一併從裝置中刪除。還原裝置備份（iCloud 等）時，裝置內的進度可能會回復，但伺服器帳號的登入資訊不包含在備份中。</li>
+<li>年齡確認資訊、同意紀錄、購買權利紀錄，以及服裝與臉部外觀的選擇，與遊戲帳號分開儲存在本裝置中，因此即使刪除帳號仍可能留存。刪除應用程式或清除應用程式資料時會一併刪除。</li>
+<li>Google Play 與 App Store 的交易紀錄，以及本公司依法保存的交易紀錄，依下方購買與廣告資訊一節辦理。</li>
+</ul>
+
+<section id="sentry-notice">
+<h2>選擇性診斷資訊與刪除</h2>
+<p>自2026年10月11日起，滿14歲以上的使用者另行同意時，本公司會將主要錯誤、存檔與獎勵失敗的診斷資訊傳送至美國的 Sentry（<a href="privacy.html#sentry-notice">隱私權政策第10節</a>）。在「帳號」分頁 ＞ 支援 ＞ 主要錯誤回報點選「關閉傳送」撤回後，即可停止新的傳送，並可繼續使用遊戲。</p>
+<p>已傳送的錯誤事件，依 Sentry 免費 Developer 方案的30日保存期間刪除。本公司不會在事件中放入帳號 ID，因此僅刪除遊戲帳號，無法找出並刪除該使用者既有的事件。服務供應商本身的安全與服務營運紀錄，依 <a href="https://sentry.io/privacy/">Sentry 隱私權政策</a>辦理。如有疑問，請寄至 <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>。</p>
+</section>
+
+<section id="purchases-ads">
+<h2>購買與廣告資訊的刪除</h2>
+<p>遊戲帳號與 Google Play、App Store 的購買是分開管理的。刪除帳號不會清除交易紀錄，也不會自動退還購買金額。即使刪除應用程式後裝置上的購買權利紀錄消失，只要以同一 Google 帳戶或同一 Apple 帳號在商店點選「復原購買」，即可重新確認有效的購買。取消購買與退款，請依<a href="terms.html#refunds">服務條款第5條之3</a>的方式申請（Google Play 請參閱 <a href="https://support.google.com/googleplay/answer/2479637?hl=zh-Hant">Google Play 退款說明</a>，App Store 請至 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>）。請勿將密碼、信用卡號碼或完整的收據原文張貼在公開場所。</p>
+<p>本公司依大韓民國「電子商務等消費者保護法」，將契約與撤回要約、價金支付與商品供應相關紀錄保存5年，消費者申訴與爭議處理紀錄保存3年。這些紀錄與帳號刪除申請無關，於相關期間屆滿後刪除。App Store 交易紀錄由 Apple 保存，可透過 Apple 帳號的資料與隱私權管理（<a href="https://privacy.apple.com/">privacy.apple.com</a>）申請。</p>
+<p>如您曾同意提供予廣告合作夥伴，Google 廣告 SDK 蒐集的資訊由 Google 處理，因此僅刪除遊戲帳號並不會刪除這些資訊。在「帳號」分頁的「法律聲明與隱私」卡片中關閉同意後，會立即停止新的廣告請求與預先載入並捨棄已載入的廣告，自下次啟動起不再初始化廣告 SDK。正在播放的廣告會播放到結束，並發放其獎勵。在 Android 可於設定的廣告選單重設或刪除廣告 ID。iOS 版不會存取廣告識別碼（IDFA）。Google 保存的資訊，可依 <a href="https://myadcenter.google.com/">Google 我的廣告中心</a>與 <a href="https://policies.google.com/privacy?hl=zh-TW">Google 隱私權政策</a>所述方式管理。Google 的保存期間與本公司伺服器日誌的1日基準不同。</p>
+<p>購買過程中 Unity IAP 傳送給 Unity 的資訊不包含遊戲帳號 ID，因此無法透過刪除遊戲帳號找出並刪除。由於 Unity 在付款處理上是本公司的受託者，如需刪除，請附上訂單編號（Google Play 訂單編號或 Apple 訂單編號）寄至 <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a> 申請。本公司確認申請後，會在能以該編號找到的範圍內，指示 Unity 刪除。Unity 為自身目的（防範詐欺、會計與稽核、遵守法令）處理的資訊，也可以直接向 Unity（<a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>）申請。為委託業務儲存的訂單資料保存至申請刪除為止，Unity 服務日誌則保存90日。詳細項目記載於<a href="privacy.html#transfer-unity">隱私權政策第3節</a>。</p>
+<p>本公司不蒐集線上帳號的每日活動指標。</p>
+</section>
+
+</body>
+</html>
