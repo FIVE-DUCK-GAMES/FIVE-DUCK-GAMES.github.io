@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PiggyPop Privacy Policy">
+  <title>PiggyPop Privacy Policy</title>
+  <link rel="alternate" hreflang="ko" href="https://five-duck-games.github.io/piggypop/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://five-duck-games.github.io/piggypop/privacy.en.html">
+  <link rel="alternate" hreflang="ja" href="https://five-duck-games.github.io/piggypop/privacy.ja.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://five-duck-games.github.io/piggypop/privacy.zh-CN.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://five-duck-games.github.io/piggypop/privacy.zh-TW.html">
+  <style>
+    body { max-width: 900px; margin: 40px auto; padding: 0 20px; color: #242424; background: #fff; font: 16px/1.7 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.3; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0 2em; }
+    th, td { padding: 10px; border: 1px solid #bbb; text-align: left; vertical-align: top; }
+    th { background: #f4f4f4; } a { color: #165d9c; }
+    .language { margin: 0 0 2em; padding-bottom: 1em; border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <nav class="language" aria-label="Language"><a href="privacy.html" hreflang="ko" lang="ko">한국어</a> · <strong>English</strong> · <a href="privacy.ja.html" hreflang="ja" lang="ja">日本語</a> · <a href="privacy.zh-CN.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> · <a href="privacy.zh-TW.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> · <a href="terms.en.html">Terms of Service</a></nav>
+  <main>
+    <h1>PiggyPop Privacy Policy</h1>
+    <p><strong>Effective date: October 19, 2026</strong></p>
+    <p>FIVE DUCK GAMES (the “Operator”) processes the information below to provide the mobile game PiggyPop (the “Game”). For privacy questions, contact <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>.</p>
+
+    <h2 id="data">1. Information we process and why</h2>
+    <table>
+      <thead><tr><th>Feature</th><th>Information processed</th><th>Purpose and when it happens</th></tr></thead>
+      <tbody>
+        <tr><td>Online weekly ranking and nickname (Supabase)</td><td>Anonymous account ID, nickname, weekly challenge score, week and rules version/hash, game content version and score time. Your IP address and other connection information may reach Supabase while it handles requests.</td><td>To run the ranking, show nicknames and limit abusive submissions with a submission rate limit. The anonymous account is created the first time you use the ranking (when the Game first sends a weekly challenge record to the server or when you open Online Ranking). Opening the app or choosing a nickname does not create one. Nicknames and scores are visible to other players; account IDs are not shown. Inappropriate nicknames are not stored.</td></tr>
+        <tr><td>Service settings check (Supabase)</td><td>The Game does not include account, nickname or game records in this request. Your IP address and other connection information may be processed in transit.</td><td>When the app starts and on the home screen, the Game reads whether sales and ads are running, in-game notices and the minimum supported app version. This request does not create an anonymous account.</td></tr>
+        <tr><td>Ads and consent (Google AdMob, UMP)</td><td>Device identifiers such as the advertising ID, IP address (which may be used to estimate approximate location), device and app information, ad requests, impressions and interactions, diagnostics, and your advertising privacy choices</td><td>Google processes this to serve ads, grant ad rewards, measure ads, prevent abuse and manage consent. Each time the app starts, UMP asks Google whether consent is required on this device, which sends your IP address and device and app information to Google. This check happens even before the shop opens. Showing the consent form, initializing the ad SDK and requesting ads happen only after the shop opens through game progress. With the current settings, the Game requests non-personalized ads for devices in the Republic of Korea.</td></tr>
+        <tr><td>Purchases (Google Play billing)</td><td>Product ID, order and transaction IDs, purchase time and purchase proof</td><td>Google Play processes payments. The Game records transaction details in its device save data to grant and restore purchases and show purchase history. The Operator does not receive card or other payment method details and does not send purchase history to its servers.</td></tr>
+        <tr><td>Date check</td><td>IP address and other connection information included in a request to <code>www.google.com/generate_204</code></td><td>Confirms the date used for check-in, daily rewards and challenges. The request contains no game progress.</td></tr>
+        <tr><td>Support (email)</td><td>Your email address, message, and any nickname, order ID or withdrawal confirmation code you send</td><td>To answer you and handle refund, withdrawal and deletion requests.</td></tr>
+        <tr><td>Local notifications</td><td>Nothing is sent to a server</td><td>In versions that offer local notifications, notifications are scheduled on the device. On Android 13 and later the Game asks for notification permission separately, and you can turn notifications off at any time in Android or game settings.</td></tr>
+        <tr><td>Local play observation log (test tool)</td><td>Play events and times such as screen visits, run start and settlement, and workshop actions. No nickname, account ID or persistent device identifier is included.</td><td>Off by default and stored on the device only if you turn it on in the hidden observation tool. It is never sent automatically. It leaves the device only when you choose an app with “Export records”; what happens next depends on the app and recipient you choose.</td></tr>
+      </tbody>
+    </table>
+    <p>Game progress, settings, purchase records, the online ranking session file (anonymous account ID and session refresh information) and the last service settings are kept in the app’s private device storage. Depending on your Android backup settings, this app data may be restored from your Google account backup. Firebase Analytics, Firebase Crashlytics, Unity Gaming Services analytics and cloud saves are not used, and in-game analytics events are not sent to any external analytics service.</p>
+
+    <h2 id="third-parties">2. Third-party services, processors and international transfers</h2>
+    <table>
+      <thead><tr><th>Recipient (country)</th><th>Items</th><th>Purpose</th><th>When and how</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>Supabase, Inc. (USA). Database in Seoul, Republic of Korea (ap-northeast-2)</td><td>Anonymous account ID, nickname, weekly scores and related records, connection information</td><td>Online ranking and service settings</td><td>Sent over HTTPS when you use the ranking or the Game reads service settings</td><td>See section 3. Service logs follow Supabase’s policy</td></tr>
+        <tr><td>Google LLC (USA)</td><td>Device identifiers such as the advertising ID, IP address, device and app information, ad interactions, diagnostics, consent choices</td><td>Serving and measuring ads, preventing abuse, managing consent</td><td>Sent over HTTPS when the app starts (consent status check) and, after the shop opens, when ads are requested or the consent form opens</td><td>Google’s policy</td></tr>
+        <tr><td>Google (Google Play)</td><td>Payment and order information</td><td>Processing payments and refunds</td><td>Handled directly by Google Play when you buy</td><td>Google’s policy</td></tr>
+      </tbody>
+    </table>
+    <p>Data may be accessed from outside Korea while Supabase operates and supports its service. If you do not use the online ranking, no ranking information is transferred to Supabase, and an existing account can be removed as described under <a href="#delete">Account deletion</a>; the online ranking is then unavailable. See <a href="https://supabase.com/privacy">Supabase’s Privacy Policy</a>, <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+
+    <h2 id="retention">3. Retention and deletion</h2>
+    <ul>
+      <li>The online ranking account and nickname are kept until you delete them. Scores are removed when the server cleans up records more than eight weeks after their week ended. Cleanup runs during score submissions, so removal at the exact eight-week mark is not guaranteed.</li>
+      <li>The Operator does not keep its own record of service settings requests.</li>
+      <li>Support emails are kept for up to three years after the request is resolved, to handle disputes, and then deleted.</li>
+      <li>Information stored on your device is deleted when you uninstall the Game or clear its app data in Android settings.</li>
+      <li>Server records are deleted from the database. Google and Supabase set the retention of their own service logs and backups; the Operator does not.</li>
+    </ul>
+
+    <h2 id="delete">4. Account deletion</h2>
+    <p>PiggyPop’s online account is an anonymous account used only for the ranking. You can delete it as follows.</p>
+    <ol>
+      <li><strong>In the Game</strong>: open Settings and tap <strong>Delete Online Ranking Data</strong>. The anonymous account and the nickname and ranking scores on the server are deleted together. Game progress on your device stays. After deletion, the Game does not create a new account or send records until you open Online Ranking again.</li>
+      <li><strong>If you uninstalled the Game or cannot open it</strong>: email <a href="mailto:cs@fiveduckgames.com?subject=PiggyPop%20account%20deletion">cs@fiveduckgames.com</a> with the subject “PiggyPop account deletion”. Include your ranking nickname and, if you know them, the weeks and scores you submitted. Account IDs are not shown in the Game and nicknames can repeat, so we may ask for more details. We delete the account without undue delay after confirming it and reply with the result.</li>
+    </ol>
+    <p>Deletion removes the account ID, nickname and ranking scores; the Operator keeps no copy. Service provider logs follow section 3. Game data on your device can be deleted by uninstalling the Game or clearing its app data in Android settings.</p>
+
+    <h2 id="rights">5. Your rights and choices</h2>
+    <ul>
+      <li>You can ask to access, correct, delete or restrict the processing of your information at <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>. You can change your nickname yourself in the game settings.</li>
+      <li>Where consent is required, you can change advertising choices in the UMP form and in <strong>Ad Privacy Settings</strong> in the game settings. You can reset or delete the advertising ID in Android settings.</li>
+      <li>EEA and UK users: the Operator processes information to provide the ranking you ask for (contract), for personalized ads and device access where required (consent), and for security, abuse prevention, service settings and date checks (legitimate interests). You have the rights to data portability, to object and to withdraw consent, and you may complain to your local data protection authority.</li>
+      <li>Users in certain US states: the Operator does not sell personal information for money. To opt out of processing for targeted advertising, use <strong>Ad Privacy Settings</strong>, shown in the game settings in your region.</li>
+    </ul>
+
+    <h2 id="children">6. Children</h2>
+    <p>The Game is not designed for children under 13. If we learn that information of a child below the age set by local law (for example, under 14 in the Republic of Korea) was stored in the ranking without a parent’s or guardian’s consent, we delete it without undue delay. Parents and guardians can request deletion as described in section 4.</p>
+
+    <h2 id="security">7. Security</h2>
+    <p>All communication with servers is encrypted with HTTPS. The Game cannot access server tables directly and calls only defined functions, and no server administration key is included in the app. Only the Operator has server administration access.</p>
+
+    <h2 id="changes">8. Changes</h2>
+    <p>If the information or purposes described here change, we will update this page and its effective date and, where needed, post an in-game notice. If a translation differs in meaning from the Korean original, the Korean original prevails to the extent permitted by law.</p>
+
+    <h2 id="contact">9. Operator and Chief Privacy Officer</h2>
+    <p>Operator: FIVE DUCK GAMES<br>Chief Privacy Officer: Representative of FIVE DUCK GAMES<br>Contact: <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a></p>
+  </main>
+</body>
+</html>
