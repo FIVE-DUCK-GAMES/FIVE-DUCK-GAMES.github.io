@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PiggyPop 개인정보처리방침 / Privacy Policy">
+  <title>PiggyPop 개인정보처리방침 / Privacy Policy</title>
+  <style>
+    body { max-width: 900px; margin: 40px auto; padding: 0 20px; color: #242424; font: 16px/1.7 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.3; } h1 { margin-top: 2.5em; } h1:first-of-type { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0 2em; }
+    th, td { padding: 10px; border: 1px solid #bbb; text-align: left; vertical-align: top; }
+    th { background: #f4f4f4; } a { color: #165d9c; }
+    .language { margin: 1em 0 2em; }
+  </style>
+</head>
+<body>
+  <p class="language"><a href="#ko">한국어</a> · <a href="#en">English</a> · <a href="https://five-duck-games.github.io/">FIVE DUCK GAMES</a></p>
+  <section id="ko" lang="ko">
+    <h1>PiggyPop 개인정보처리방침</h1>
+    <p><strong>시행일: 2026년 10월 19일</strong></p>
+    <p>파이브 덕 게임즈(FIVE DUCK GAMES, 이하 “회사”)는 모바일 게임 PiggyPop(이하 “게임”)을 제공하면서 아래 정보를 처리합니다. 회사 공개 정보는 <a href="https://five-duck-games.github.io/">회사 웹사이트</a>에서 확인할 수 있고, 개인정보 관련 문의는 <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>으로 보내 주세요.</p>
+    <h2>1. 처리하는 정보와 목적</h2>
+    <table>
+      <thead><tr><th>기능</th><th>처리하는 정보</th><th>목적과 저장 위치</th></tr></thead>
+      <tbody>
+        <tr><td>온라인 주간 랭킹과 닉네임(Supabase)</td><td>익명 계정 ID, 닉네임, 주간 도전 점수, 주차·규칙 버전 및 해시, 게임 콘텐츠 버전, 기록 시각. 요청 처리 중 IP 주소 등 연결 정보가 Supabase에 전달될 수 있습니다.</td><td>계정을 만들고 닉네임·주간 최고 점수를 저장해 랭킹을 제공하고 부정 제출을 제한합니다. Supabase 프로젝트 데이터베이스 지역은 서울(ap-northeast-2)입니다. 계정 ID는 랭킹 화면에 공개하지 않습니다. 닉네임과 점수는 다른 이용자에게 표시됩니다.</td></tr>
+        <tr><td>광고와 동의(AdMob, UMP)</td><td>광고 ID 등 기기 식별자, IP 주소, 기기·앱 정보, 광고 요청·노출·상호작용, 광고 개인정보 선택</td><td>Google이 광고 제공, 보상 지급, 광고 성과 측정 및 부정 사용 방지를 위해 처리합니다. 광고와 동의 양식은 게임의 광고 제공 조건을 충족한 뒤 초기화됩니다.</td></tr>
+        <tr><td>결제(Google Play Billing)</td><td>상품 ID, 주문 ID·거래 ID, 구매 시각, 구매 증명 정보</td><td>Google Play가 결제를 처리합니다. 게임은 구매 지급·복원과 구매 내역 표시를 위해 거래 정보를 처리해 기기의 게임 저장 데이터에 기록합니다. 회사는 결제 카드 정보를 받지 않으며, 구매 내역을 게임 서버로 보내지 않습니다.</td></tr>
+        <tr><td>네트워크 시계 확인</td><td><code>google.com/generate_204</code> 요청에 포함되는 IP 주소 등 연결 정보</td><td>출석·일일 보상·주간 도전에 사용할 날짜를 확인합니다. 게임 진행 정보는 요청에 포함하지 않습니다.</td></tr>
+      </tbody>
+    </table>
+    <p>게임 진행, 설정, 구매 원장과 온라인 랭킹 세션 파일은 기기의 앱 전용 저장 공간에 보관됩니다. 세션 파일에는 Supabase 익명 계정 ID와 세션 갱신 정보가 들어갑니다. Firebase Analytics, Firebase Crashlytics, Unity Gaming Services 분석 또는 클라우드 세이브는 현재 활성화하지 않았습니다. 분석 사건은 외부 분석 서비스로 전송되지 않습니다.</p>
+    <p>Google SDK는 서비스 제공 과정에서 기기·네트워크 정보를 처리할 수 있습니다. <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 사이트의 데이터 처리 안내</a>를 확인해 주세요. Supabase는 <a href="https://supabase.com/privacy">Supabase 개인정보 안내</a>에 따라 서비스를 제공합니다.</p>
+    <h2>2. 보유 기간과 삭제</h2>
+    <ul>
+      <li>온라인 랭킹 계정과 닉네임은 이용자가 삭제할 때까지 유지합니다. 랭킹 점수는 해당 주가 끝난 뒤 8주가 지난 기록을 서버가 정리할 때 삭제됩니다. 정리는 점수 제출 요청 중 수행되므로 8주가 되는 즉시 처리된다고 보장하지 않습니다.</li>
+      <li>구매 내역·게임 진행·설정은 기기 저장 데이터에 유지됩니다. 앱을 삭제하거나 Android 설정에서 앱 데이터를 지우면 기기 데이터가 삭제됩니다. 운영체제의 백업 설정에 따라 앱 데이터가 복원될 수 있습니다.</li>
+      <li>온라인 계정과 랭킹 기록은 게임 설정의 <strong>온라인 랭킹 기록 삭제</strong>에서 지울 수 있습니다. 앱을 이미 삭제했거나 게임을 열 수 없으면 <a href="mailto:cs@fiveduckgames.com?subject=PiggyPop%20account%20deletion">이메일로 삭제를 요청</a>해 주세요. 랭킹 닉네임을 적어 주시면 계정을 확인하는 데 도움이 됩니다.</li>
+      <li>Google 및 Supabase의 서비스 운영 로그와 백업 보유 기간은 각 사업자의 정책에 따르며 회사가 기간을 설정하지 않습니다.</li>
+    </ul>
+    <h2>3. 제3자 서비스와 처리</h2>
+    <p>회사는 광고·동의 양식과 네트워크 시계 확인에 Google 서비스를, 익명 인증과 온라인 랭킹에 Supabase 서비스를 사용합니다. 온라인 랭킹 데이터베이스는 Supabase의 서울 지역에 있습니다. 서비스 제공자는 서비스 운영과 보안을 위해 각자의 인프라에서 연결 정보를 처리할 수 있습니다. 상세 처리·보유 조건은 각 사업자 개인정보 안내를 따릅니다.</p>
+    <h2>4. 이용자의 선택과 권리</h2>
+    <ul>
+      <li>동의가 필요한 지역에서는 UMP의 선택 화면과 게임 설정의 광고 개인정보 옵션을 이용할 수 있습니다. 광고 ID는 Android 기기 설정에서 재설정하거나 삭제할 수 있습니다.</li>
+      <li>닉네임과 온라인 점수는 게임 안의 온라인 랭킹 기록 삭제 메뉴에서 삭제할 수 있습니다. 외부 삭제 요청은 이메일로 접수합니다.</li>
+      <li>기기 저장 데이터는 앱 삭제 또는 앱 데이터 삭제로 지울 수 있습니다.</li>
+      <li>개인정보 열람·정정·삭제 요청은 <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>으로 보내 주세요.</li>
+    </ul>
+    <h2>5. 방침 변경</h2>
+    <p>게임이 처리하는 정보나 이용 목적이 바뀌면 이 페이지를 갱신합니다.</p>
+    <h2>6. 사업자 및 문의</h2>
+    <p>운영자: 파이브 덕 게임즈(FIVE DUCK GAMES)<br>문의: <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a><br>공개 사업자 정보: <a href="https://five-duck-games.github.io/">회사 웹사이트</a></p>
+  </section>
+  <hr>
+  <section id="en" lang="en">
+    <h1>PiggyPop Privacy Policy</h1>
+    <p><strong>Effective date: October 19, 2026</strong></p>
+    <p>FIVE DUCK GAMES (the “Company”) processes the information below to provide the mobile game PiggyPop (the “Game”). Public business information is available on the <a href="https://five-duck-games.github.io/">Company website</a>. For privacy questions, contact <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>.</p>
+    <h2>1. Information and purposes</h2>
+    <table>
+      <thead><tr><th>Feature</th><th>Information processed</th><th>Purpose and storage</th></tr></thead>
+      <tbody>
+        <tr><td>Online weekly rankings and nickname (Supabase)</td><td>Anonymous account ID, nickname, weekly challenge score, week and rules version/hash, game content version and score time. IP address and other connection information may be sent to Supabase while it handles requests.</td><td>Creates an account and stores nicknames and weekly best scores for rankings and submission limits. The Supabase project database region is Seoul (ap-northeast-2). Account IDs are not shown on the ranking screen. Nicknames and scores are visible to other players.</td></tr>
+        <tr><td>Ads and consent (AdMob, UMP)</td><td>Device identifiers such as the advertising ID, IP address, device and app information, ad requests, impressions and interactions, and advertising privacy choices</td><td>Google processes this information to serve ads, grant ad rewards, measure ad performance and prevent abuse. Ads and consent forms initialize after the Game meets its ad availability conditions.</td></tr>
+        <tr><td>Purchases (Google Play Billing)</td><td>Product ID, order and transaction IDs, purchase time and purchase proof</td><td>Google Play processes payments. The Game processes transaction details to grant and restore purchases and show purchase history, and stores them in device game data. The Company does not receive payment card details and does not send purchase history to the Game’s server.</td></tr>
+        <tr><td>Network time check</td><td>IP address and other connection information included with a request to <code>google.com/generate_204</code></td><td>Confirms dates used for attendance, daily rewards and weekly challenges. Game progress is not included in the request.</td></tr>
+      </tbody>
+    </table>
+    <p>Game progress, settings, purchase records and the online ranking session file are stored in the app’s private device storage. The session file contains the Supabase anonymous account ID and session refresh information. Firebase Analytics, Firebase Crashlytics, Unity Gaming Services analytics and cloud saves are not active in the current Game. Analytics events are not sent to an external analytics service.</p>
+    <p>Google SDKs may process device or network information to provide their services. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>. Supabase provides its service under its <a href="https://supabase.com/privacy">Privacy Policy</a>.</p>
+    <h2>2. Retention and deletion</h2>
+    <ul>
+      <li>The online ranking account and nickname remain until you delete the account. Scores older than eight weeks after their week ends are removed when the server performs cleanup during a score submission. Removal is not guaranteed to occur exactly when the eight weeks end.</li>
+      <li>Purchase history, progress and settings remain in device app storage. Uninstalling the Game or clearing its app data in Android settings deletes that device data. The operating system may restore app data depending on backup settings.</li>
+      <li>Delete the online account and ranking records with <strong>Delete online ranking records</strong> in the Game’s settings. If you have uninstalled the Game or cannot open it, <a href="mailto:cs@fiveduckgames.com?subject=PiggyPop%20account%20deletion">email us to request deletion</a>. Include your ranking nickname so we can locate the account.</li>
+      <li>Google and Supabase set retention periods for their service logs and backups; the Company does not set those periods.</li>
+    </ul>
+    <h2>3. Third-party services and processing</h2>
+    <p>The Company uses Google services for ads, consent forms and network time checks, and Supabase for anonymous authentication and online rankings. The online ranking database is in Supabase’s Seoul region. Service providers may process connection information in their infrastructure to operate and secure their services. Their privacy notices describe their processing and retention terms.</p>
+    <h2>4. Your choices and rights</h2>
+    <ul>
+      <li>Where consent is required, use the choices shown by UMP and the advertising privacy options in the Game’s settings. You can reset or delete the advertising ID in Android settings.</li>
+      <li>Delete your nickname and online scores using the in-game online ranking deletion option. You may also request deletion by email.</li>
+      <li>Delete data stored on your device by uninstalling the Game or clearing its app data.</li>
+      <li>For access, correction or deletion requests, contact <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>.</li>
+    </ul>
+    <h2>5. Changes</h2>
+    <p>We will update this page if the information or purposes described here change.</p>
+    <h2>6. Company and contact</h2>
+    <p>Operator: FIVE DUCK GAMES<br>Contact: <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a><br>Public business information: <a href="https://five-duck-games.github.io/">Company website</a></p>
+  </section>
+</body>
+</html>
