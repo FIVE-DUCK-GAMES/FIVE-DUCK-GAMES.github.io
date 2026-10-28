@@ -24,7 +24,7 @@
   <nav class="language" aria-label="Language"><a href="privacy.html" hreflang="ko" lang="ko">한국어</a> · <a href="privacy.en.html" hreflang="en" lang="en">English</a> · <a href="privacy.ja.html" hreflang="ja" lang="ja">日本語</a> · <a href="privacy.zh-CN.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> · <strong>繁體中文</strong> · <a href="privacy.fr.html" hreflang="fr" lang="fr">Français</a> · <a href="terms.zh-TW.html">使用條款</a></nav>
   <main>
     <h1>PiggyPop 隱私權政策</h1>
-    <p><strong>生效日期：2026年10月21日</strong></p>
+    <p><strong>生效日期：2026年10月28日</strong></p>
     <p>FIVE DUCK GAMES（以下簡稱「營運者」）在提供行動遊戲 PiggyPop（以下簡稱「本遊戲」）時，會處理下列資訊。如有個人資料相關問題，請寄信至 <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>。</p>
 
     <h2 id="data">1. 處理的資訊與目的</h2>
@@ -33,35 +33,36 @@
       <tbody>
         <tr><td>線上每週排行榜與暱稱（Supabase）</td><td>匿名帳號 ID、暱稱、每週挑戰分數、週次與規則版本及雜湊值、遊戲內容版本、紀錄時間。處理要求時，IP 位址等連線資訊可能會傳送給 Supabase。</td><td>用於提供排行榜、顯示暱稱，並透過提交次數限制防止作弊提交。匿名帳號會在你第一次使用排行榜時建立（第一次把每週挑戰紀錄傳送到伺服器，或開啟線上排行榜時）。只啟動 App 或設定暱稱不會建立帳號。暱稱和分數會顯示給其他玩家，帳號 ID 不會顯示。不當的暱稱不會被儲存。</td></tr>
         <tr><td>營運設定確認（Supabase）</td><td>本遊戲不會在此要求中包含帳號、暱稱或遊戲紀錄。傳輸過程中可能會處理 IP 位址等連線資訊。</td><td>在 App 啟動時和主畫面上，讀取販售與廣告的營運狀態、遊戲內公告以及支援的最低 App 版本。此要求不會建立匿名帳號。</td></tr>
-        <tr><td>廣告與同意（Google AdMob、UMP）</td><td>廣告 ID 等裝置識別碼、IP 位址（可能用於推估大致位置）、裝置與 App 資訊、廣告要求·顯示·互動、診斷資訊、廣告隱私權選擇</td><td>由 Google 處理，用於放送廣告、發放廣告獎勵、評估廣告成效、防止濫用和管理同意。每次啟動 App 時，UMP 都會向 Google 確認這台裝置是否需要取得同意，此時 IP 位址以及裝置與 App 資訊會傳送給 Google。即使商店尚未開放，也會進行這項確認。顯示同意表單、初始化廣告 SDK 和要求廣告，要在遊戲進度開放商店之後才會進行。依照目前設定，對位於大韓民國的裝置要求非個人化廣告。</td></tr>
-        <tr><td>購買（Google Play 結帳、Unity IAP）</td><td>商品 ID、訂單 ID·交易 ID、購買時間、購買憑證</td><td>付款由 Google Play 處理。本遊戲會把交易資訊記錄在裝置上的存檔中，用於發放和還原所購商品並顯示購買紀錄。營運者不會收到信用卡等付款方式資訊，也不會把購買紀錄傳送到營運者的伺服器。但本遊戲內建的付款 SDK Unity IAP 會在購買開始時，以及付款待處理、失敗或完成時，把購買資訊和裝置資訊傳送給 Unity Technologies（見第 2 條）。</td></tr>
+        <tr><td>廣告與同意（Google AdMob、UMP）</td><td>廣告 ID 等裝置識別碼（Android 廣告 ID；在 iOS 上，只有你允許追蹤時才是 IDFA；以及其他依 App 或開發者劃分的裝置識別碼）、IP 位址（可能用於推估大致位置）、裝置與 App 資訊、廣告要求·顯示·互動、診斷資訊（包括 App 效能和當機資訊）、廣告隱私權選擇</td><td>由 Google 處理，用於放送廣告、發放廣告獎勵、評估與分析廣告成效、防止濫用和管理同意。每次啟動 App 時，UMP 都會向 Google 確認這台裝置是否需要取得同意，此時 IP 位址以及裝置與 App 資訊會傳送給 Google。即使商店尚未開放，也會進行這項確認。顯示同意表單、初始化廣告 SDK 和要求廣告，要在遊戲進度開放商店之後才會進行。依照目前設定，對位於大韓民國的裝置要求非個人化廣告。在 iOS 上，如果你尚未決定是否允許追蹤，商店開放後準備第一則廣告時，UMP 會先顯示說明畫面，再顯示 iOS 的追蹤要求（App 追蹤透明度）。只有在你允許追蹤時，廣告 SDK 才會在廣告要求中使用 IDFA，Google 可能會將其與從其他公司的 App 和網站取得的資訊連結，用於放送和評估廣告。如果不允許，就不會使用 IDFA。</td></tr>
+        <tr><td>購買（Google Play 結帳、Apple App Store、Unity IAP）</td><td>商品 ID、訂單 ID·交易 ID、購買時間、購買憑證（Google Play 購買資訊，或 Apple 交易資訊與收據）</td><td>付款在 Android 上由 Google Play 處理，在 iOS 上由 Apple 透過 App Store 處理。本遊戲會把交易資訊記錄在裝置上的存檔中，用於發放和還原所購商品並顯示購買紀錄。營運者不會收到信用卡等付款方式資訊，也不會把購買紀錄傳送到營運者的伺服器。但本遊戲內建的付款 SDK Unity IAP 會在購買開始時，以及付款待處理、失敗或完成時，把購買資訊和裝置資訊傳送給 Unity Technologies（見第 2 條）。</td></tr>
         <tr><td>日期確認</td><td>向 <code>www.google.com/generate_204</code> 發出的要求中包含的 IP 位址等連線資訊</td><td>確認簽到、每日獎勵和挑戰所用的日期。要求中不包含遊戲進度。</td></tr>
         <tr><td>客服諮詢（電子郵件）</td><td>電子郵件地址、諮詢內容，以及你寄來的暱稱、訂單 ID、撤回申請確認碼</td><td>用於回覆諮詢，處理退款、撤回和刪除要求。</td></tr>
         <tr><td>本機通知</td><td>不會傳送資訊到伺服器</td><td>在提供本機通知的版本中，通知會在裝置內排程。在 Android 13 以上版本會另外要求通知權限，你可以隨時在裝置設定或遊戲設定中關閉。</td></tr>
         <tr><td>本機遊玩觀察紀錄（測試工具）</td><td>畫面進入、對局開始與結算、工坊操作等遊玩事件及時間。不包含暱稱、帳號 ID 或持續識別裝置的 ID。</td><td>預設為關閉，只有你在隱藏的觀察工具中親自開啟時才會儲存在裝置內。不會自動傳送。只有你透過「匯出紀錄」親自選擇分享的 App 時才會離開裝置，之後的處理取決於你選擇的 App 和接收者。</td></tr>
       </tbody>
     </table>
-    <p>遊戲進度、設定、購買紀錄、線上排行榜工作階段檔案（匿名帳號 ID 與工作階段更新資訊）以及最近一次的營運設定，儲存在裝置上的 App 專用儲存空間。依照 Android 的備份設定，這些 App 資料可能會從你的 Google 帳戶備份中還原。本遊戲不使用 Firebase Analytics、Firebase Crashlytics、Unity Gaming Services 的 Analytics 和雲端存檔。營運者不會把遊戲紀錄傳送到外部分析服務。購買資訊如上方購買一列所述，由 Unity IAP 傳送給 Unity，Unity 會將其用於付款 SDK 服務的營運與分析。</p>
+    <p>遊戲進度、設定、購買紀錄、線上排行榜工作階段檔案（匿名帳號 ID 與工作階段更新資訊）以及最近一次的營運設定，儲存在裝置上的 App 專用儲存空間。依照備份設定，這些 App 資料在 Android 上可能會從你的 Google 帳戶備份中還原，在 iOS 上可能會從 iCloud 或電腦備份中還原。本遊戲不使用 Firebase Analytics、Firebase Crashlytics、Unity Gaming Services 的 Analytics 和雲端存檔。營運者不會把遊戲紀錄傳送到外部分析服務。購買資訊如上方購買一列所述，由 Unity IAP 傳送給 Unity，Unity 會將其用於付款 SDK 服務的營運與分析。</p>
 
     <h2 id="third-parties">2. 第三方服務、委託處理與跨境傳輸</h2>
     <table>
       <thead><tr><th>接收者（國家）</th><th>項目</th><th>目的</th><th>時機與方式</th><th>保存期間</th></tr></thead>
       <tbody>
         <tr><td>Supabase, Inc.（美國）。資料庫位於大韓民國首爾區域（ap-northeast-2）</td><td>匿名帳號 ID、暱稱、每週分數及相關紀錄、連線資訊</td><td>提供線上排行榜和營運設定</td><td>使用排行榜或讀取營運設定時透過 HTTPS 傳輸</td><td>見第 3 條。服務記錄檔依照 Supabase 的政策</td></tr>
-        <tr><td>Google LLC（美國）</td><td>廣告 ID 等裝置識別碼、IP 位址、裝置與 App 資訊、廣告互動、診斷資訊、同意選擇</td><td>放送與評估廣告、防止濫用、管理同意</td><td>啟動 App 時（確認同意狀態），以及商店開放後要求廣告或開啟同意表單時，透過 HTTPS 傳輸</td><td>依照 Google 的政策</td></tr>
-        <tr><td>Google（Google Play）</td><td>付款與訂單資訊</td><td>處理付款與退款</td><td>購買時由 Google Play 直接處理</td><td>依照 Google 的政策</td></tr>
-        <tr><td>Unity Technologies（美國）</td><td>商品 ID、價格與幣別、交易 ID（Google 購買權杖）、Google 購買資訊原文與簽章、付款失敗原因、裝置型號、作業系統版本、語言設定、儲存空間大小、裝置開機時間、App 安裝時間、App 版本、IP 位址</td><td>處理應用程式內購買（Unity IAP），以及 Unity 對付款 SDK 服務的營運與分析</td><td>僅在你開始購買後，由 Unity IAP 在購買開始時以及付款待處理、失敗或完成時透過 HTTPS 傳輸。不購買就不會傳送，購買時的傳送無法在遊戲中關閉</td><td>依照 Unity 的政策</td></tr>
+        <tr><td>Google LLC（美國）</td><td>廣告 ID（在 iOS 上，只有你允許追蹤時才是 IDFA）及其他依 App 或開發者劃分的裝置識別碼、IP 位址、裝置與 App 資訊、廣告互動、診斷資訊、同意選擇</td><td>放送與評估廣告、防止濫用、管理同意</td><td>啟動 App 時（確認同意狀態），以及商店開放後要求廣告或開啟同意表單時，透過 HTTPS 傳輸</td><td>依照 Google 的政策</td></tr>
+        <tr><td>Google（Google Play，Android）</td><td>付款與訂單資訊</td><td>處理付款與退款</td><td>在 Android 上購買時由 Google Play 直接處理</td><td>依照 Google 的政策</td></tr>
+        <tr><td>Apple Inc.（美國，App Store，iOS）</td><td>付款與訂單資訊</td><td>處理付款與退款</td><td>在 iOS 上購買時由 Apple 透過 App Store 直接處理</td><td>依照 Apple 的政策</td></tr>
+        <tr><td>Unity Technologies（美國）</td><td>商品 ID、價格與幣別、交易 ID（在 Android 上為 Google 購買權杖）、Android 上的 Google 購買資訊原文與簽章、iOS 上的 Apple 原始交易 ID·已簽署的交易資訊·App 收據、付款失敗原因、裝置型號、作業系統版本、語言設定、儲存空間大小、裝置開機時間、App 安裝時間、App 版本、iOS 的廠商識別碼（IDFV）、IP 位址</td><td>處理應用程式內購買（Unity IAP），以及 Unity 對付款 SDK 服務的營運與分析</td><td>僅在你開始購買後，由 Unity IAP 在購買開始時以及付款待處理、失敗或完成時透過 HTTPS 傳輸。不購買就不會傳送，購買時的傳送無法在遊戲中關閉</td><td>依照 Unity 的政策</td></tr>
       </tbody>
     </table>
-    <p>在 Supabase 營運和支援服務的過程中，資料可能會從境外被存取。如果你不使用線上排行榜，排行榜資訊不會傳輸給 Supabase；已建立的帳號可以依照下文的<a href="#delete">刪除帳號</a>刪除，之後將無法使用線上排行榜。Unity IAP 不會傳送廣告 ID 和線上排行榜帳號 ID。傳送給 Unity 的購買資訊營運者不會收到，因此無法透過第 4 條的方法刪除；相關要求請依照 Unity 隱私權政策的說明提出。詳情請參閱 <a href="https://supabase.com/privacy">Supabase 隱私權政策</a>、<a href="https://policies.google.com/privacy?hl=zh-TW">Google 隱私權政策</a>、<a href="https://policies.google.com/technologies/partner-sites?hl=zh-TW">Google 如何使用採用其服務的網站或應用程式所收集的資訊</a>和 <a href="https://unity.com/legal/privacy-policy">Unity 隱私權政策</a>。</p>
+    <p>在 Supabase 營運和支援服務的過程中，資料可能會從境外被存取。如果你不使用線上排行榜，排行榜資訊不會傳輸給 Supabase；已建立的帳號可以依照下文的<a href="#delete">刪除帳號</a>刪除，之後將無法使用線上排行榜。Unity IAP 不會傳送廣告 ID（Android 廣告 ID、iOS 的 IDFA）和線上排行榜帳號 ID。傳送給 Unity 的購買資訊營運者不會收到，因此無法透過第 4 條的方法刪除；相關要求請依照 Unity 隱私權政策的說明提出。詳情請參閱 <a href="https://supabase.com/privacy">Supabase 隱私權政策</a>、<a href="https://policies.google.com/privacy?hl=zh-TW">Google 隱私權政策</a>、<a href="https://policies.google.com/technologies/partner-sites?hl=zh-TW">Google 如何使用採用其服務的網站或應用程式所收集的資訊</a>、<a href="https://unity.com/legal/privacy-policy">Unity 隱私權政策</a>和 <a href="https://www.apple.com/legal/privacy/">Apple 隱私權政策</a>。</p>
 
     <h2 id="retention">3. 保存期間與刪除</h2>
     <ul>
       <li>線上排行榜帳號和暱稱會保存到你刪除為止。排行榜分數會在伺服器清理時刪除，清理對象是所屬週次結束後超過 8 週的紀錄。清理是在提交分數的要求中進行，因此不保證在滿 8 週的那一刻立即刪除。</li>
       <li>營運者不會另外記錄營運設定要求。</li>
       <li>諮詢郵件在處理完畢後，為因應爭議最多保存 3 年，然後刪除。</li>
-      <li>儲存在裝置上的資訊，會在你解除安裝 App 或在 Android 設定中清除 App 資料時刪除。</li>
-      <li>伺服器紀錄會從資料庫中刪除。Google、Supabase 和 Unity 收到的資訊及其服務記錄檔與備份的保存期間依照各自的政策，並非由營運者決定。</li>
+      <li>儲存在裝置上的資訊，會在你解除安裝 App 或在 Android 設定中清除 App 資料時刪除。在 iOS 上，刪除 App 就會刪除這些資訊。</li>
+      <li>伺服器紀錄會從資料庫中刪除。Google、Apple、Supabase 和 Unity 收到的資訊及其服務記錄檔與備份的保存期間依照各自的政策，並非由營運者決定。</li>
     </ul>
 
     <h2 id="delete">4. 刪除帳號</h2>
@@ -70,14 +71,14 @@
       <li><strong>在遊戲內</strong>：開啟設定 → 點選<strong>刪除線上排行榜紀錄</strong>。匿名帳號以及伺服器上的暱稱和排行榜分數會一併刪除，裝置上的遊戲進度維持不變。刪除後，在你再次開啟線上排行榜之前，本遊戲不會建立新帳號，也不會傳送紀錄。</li>
       <li><strong>已解除安裝 App 或無法開啟時</strong>：請以「PiggyPop account deletion」為主旨寄信至 <a href="mailto:cs@fiveduckgames.com?subject=PiggyPop%20account%20deletion">cs@fiveduckgames.com</a>，寫明你的排行榜暱稱，如果記得，也請寫明提交紀錄的週次和分數。帳號 ID 不會顯示在畫面上，而且暱稱可能重複，因此我們可能會請你提供更多資訊。確認後我們會儘速刪除，並回信告知結果。</li>
     </ol>
-    <p>刪除後，帳號 ID、暱稱和排行榜分數會全部清除，營運者不會另外保留任何項目。服務提供者的記錄檔依照第 3 條。裝置上的遊戲資料可以透過解除安裝 App 或在 Android 設定中清除 App 資料來刪除。</p>
+    <p>刪除後，帳號 ID、暱稱和排行榜分數會全部清除，營運者不會另外保留任何項目。服務提供者的記錄檔依照第 3 條。裝置上的遊戲資料可以透過解除安裝 App 或在 Android 設定中清除 App 資料來刪除。在 iOS 上，刪除 App 就會刪除這些資料。</p>
 
     <h2 id="rights">5. 你的權利與選擇</h2>
     <ul>
       <li>你可以寄信至 <a href="mailto:cs@fiveduckgames.com">cs@fiveduckgames.com</a>，請求查詢、更正、刪除個人資料或停止處理。暱稱可以在遊戲設定中自行修改。</li>
-      <li>在需要同意的地區，你可以在 UMP 選擇畫面，以及遊戲設定中的「廣告隱私設定」裡變更廣告相關選擇。廣告 ID 可以在 Android 設定中重設或刪除。</li>
+      <li>在需要同意的地區，你可以在 UMP 選擇畫面，以及遊戲設定中的「廣告隱私設定」裡變更廣告相關選擇。廣告 ID 可以在 Android 設定中重設或刪除。在 iOS 上，你可以在追蹤要求中選擇不允許，之後也可以在 iOS 的設定 → 隱私權與安全性 → 追蹤中變更是否允許 PiggyPop 追蹤。</li>
       <li>歐洲經濟區和英國使用者：營運者依據以下基礎處理資訊：提供你所要求的排行榜功能（契約履行）、個人化廣告及存取裝置資訊（同意）、安全·防止濫用·營運設定·日期確認（正當利益）。你享有資料可攜權、反對權和撤回同意的權利，並可以向所在國家的資料保護主管機關申訴。</li>
-      <li>美國部分州的使用者：營運者不會為了收取金錢而出售個人資料。如需退出用於指定目標廣告的處理，請使用在你所在地區的遊戲設定中顯示的「廣告隱私設定」。</li>
+      <li>美國部分州的使用者：營運者不會為了收取金錢而出售個人資料。如需退出用於指定目標廣告的處理，請使用在你所在地區的遊戲設定中顯示的「廣告隱私設定」。在 iOS 上，也可以在上述追蹤設定中關閉允許。</li>
     </ul>
 
     <h2 id="children">6. 兒童</h2>
