@@ -1,0 +1,13 @@
+{
+  "ads_enabled": true,
+  "interstitial_free_games": 3,
+  "interstitial_interval_s": 180,
+  "interstitial_puzzle_every": 6,
+  "interstitial_lesson_every": 3,
+  "noads_offer_steps": "3,8,15",
+  "noads_offer_every": 10,
+  "noads_offer_per_session": 1,
+  "noads_offer_per_day": 1,
+  "noads_offer_cooldown_h": 24,
+  "noads_offer_backoff_after": 5
+}
