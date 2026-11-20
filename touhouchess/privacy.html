@@ -1,43 +1,615 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy · TOUHOU CHESS</title><style>body{max-width:800px;margin:auto;padding:32px 20px 64px;font:16px/1.8 system-ui,sans-serif;color:#24282c}h1{line-height:1.3}h2{margin-top:2em}a{color:#075bb5}nav{margin-bottom:24px}li{margin:.5em 0}.note{background:#f2f5f7;padding:16px}</style><body><nav><a href="../index.html">FIVE DUCK GAMES</a> · <a href="index.html">TOUHOU CHESS</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></nav><h1>TOUHOU CHESS Privacy Policy</h1>
-<p class="note">FIVE DUCK GAMES provides TOUHOU CHESS (Android package and iOS bundle ID com.fiveduckgames.touhouchess). Contact: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. Last updated: November 19, 2026.</p>
-<p>TOUHOU CHESS is an unofficial fan game of Touhou Project. You can play it without creating an account, and your progress is saved on your device. Online matches use Epic Online Services. The mobile version shows ads from Google AdMob, sells one optional in-app purchase (Remove Ads) through Google Play or the App Store, and uses Google Firebase to measure how the game is played, collect crash reports and adjust ad frequency. We do not run our own game servers and do not sell your personal information.</p>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy · TOUHOU CHESS</title><style>body{max-width:800px;margin:auto;padding:32px 20px 64px;font:16px/1.8 system-ui,sans-serif;color:#24282c}h1{line-height:1.3}h2{margin-top:2em}a{color:#075bb5}nav{margin-bottom:24px}li{margin:.5em 0}.note{background:#f2f5f7;padding:16px}.langs a{margin-right:.9em;white-space:nowrap}hr{border:0;border-top:1px solid #d5dce2;margin:3em 0}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.92em;line-height:1.6}td,th{border:1px solid #d5dce2;padding:6px 8px;vertical-align:top;text-align:left}code{font-size:.9em}</style><body><nav><a href="../index.html">FIVE DUCK GAMES</a> · <a href="index.html">TOUHOU CHESS</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-data.html">Delete data</a></nav>
+<p class="langs"><a href="#en">English</a><a href="#ko" lang="ko">한국어</a><a href="#ja" lang="ja">日本語</a><a href="#zh-Hans" lang="zh-Hans">简体中文</a><a href="#ru" lang="ru">Русский</a><a href="#nb" lang="nb">Norsk</a></p>
+
+<section id="en" lang="en"><h1>TOUHOU CHESS Privacy Policy</h1>
+<p class="note">FIVE DUCK GAMES provides TOUHOU CHESS on Steam (PC) and on Google Play and the App Store (Android package and iOS bundle ID com.fiveduckgames.touhouchess). Contact: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. Last updated: November 20, 2026.</p>
+<p>TOUHOU CHESS is an unofficial fan game of Touhou Project. You can play it without an account, and your progress is saved on your device. Online play is optional. It uses Epic Online Services (EOS) and a game server that we run ourselves for matchmaking, Ranked play and leaderboards. On phones, the game shows ads from Google AdMob, sells one optional in-app purchase (Remove Ads) through Google Play or the App Store, and uses Google Firebase for analytics, crash reports and remote settings. We never ask for your real name, email address or phone number, and we do not sell your personal information.</p>
 
 <h2>1. Game data on your device</h2>
-<p>Your story and puzzle progress, puzzle rating, records against each guest, spell cards and decks, online match record, settings (language, sound, display), the number of full-screen ads you have seen and when the last one appeared, and whether you own Remove Ads are stored in the app’s storage on your device. They are removed when you clear the app’s data or uninstall it. If device backup is enabled, the operating system may back up app data to your Google or iCloud account under the platform’s settings and policies; we cannot access these backups.</p>
+<p>Your story and puzzle progress, puzzle rating, records against each guest, spell cards and decks, recent games kept for review, online settings and records (your nickname, whether your flag is hidden, hidden matchmaking ratings, online wins and losses), other settings (language, sound, display), the number of full-screen ads you have seen and when the last one appeared, and whether you own Remove Ads are stored in the app’s storage on your device. They are removed when you clear the app’s data or uninstall the game. If device backup is enabled, the operating system may back up app data to your Google or iCloud account under the platform’s settings and policies; we cannot access these backups. While you are signed in to online play, a copy of your progress is also kept with your online account (section 4).</p>
 
-<h2>2. Online matches (Epic Online Services)</h2>
-<p>Online matches are optional. When you open the online screen, the game signs in to Epic Online Services (EOS), provided by Epic Games, with an anonymous device credential that EOS creates on your device. You do not need an Epic account. EOS gives the game a product user ID for this device.</p>
-<ul><li><b>Lobbies:</b> to find an opponent or open a friend room, the game creates or searches EOS lobbies that hold the game version, the rules and time control you chose, and the room code.</li>
-<li><b>During a match:</b> the two players exchange their display name (section 3), the character they play as, their app version and the moves of the game over an EOS peer-to-peer connection. EOS may relay this connection through its servers. A direct connection lets your opponent’s device see your IP address, and EOS sees your IP address in either case.</li>
-<li>We do not receive or store match data on servers of our own. Your online record is kept only on your device (section 1). EOS processes data under the <a href="https://www.epicgames.com/site/privacypolicy">Epic Games Privacy Policy</a>.</li></ul>
+<h2>2. Your online account (Epic Online Services)</h2>
+<ul><li><b>Device sign-in:</b> when you first open the online screen, the game signs in to EOS, provided by Epic Games, with an anonymous device credential (Device ID) that EOS creates on your device. When the credential is created, the game sends your device’s model name to EOS. You do not need an Epic account. EOS gives the game an account ID (product user ID), which our game server uses as your user ID.</li>
+<li><b>Linking an account (optional, required for Ranked):</b> on Steam, your Steam account is linked automatically. On phones you can link Google (on Android through the system’s Google sign-in, on iOS through Google’s sign-in page) or Sign in with Apple (iOS). On PC you can also link Google in your browser to combine your PC and phone progress. The game asks Google only for the basic sign-in scope (<code>openid</code>) and asks Apple for no name or email, so we do not receive your name, email address or profile picture. EOS keeps the link between your EOS account and the ID of the linked account so that you can use the same account on other devices. Our game server receives that ID inside the sign-in token issued by EOS but stores only the type of the linked account (Steam, Google or Apple).</li>
+<li><b>New devices:</b> if you sign in with a linked account on a new device or after reinstalling, the new device’s credential is attached to your existing account.</li>
+<li><b>Lobbies and match connections:</b> games are played between the two devices through EOS lobbies and peer-to-peer connections. A lobby holds the game version, rules and time control, the room code of a friend match, the queue and your hidden matchmaking rating for Quick match, and the match ID of games arranged by our server; other players’ games can read it while searching for opponents. During a game, the two devices exchange your nickname and #tag, character, country (unless hidden), app version, hidden matchmaking rating, spell deck, the moves of the game and quick-chat messages (fixed phrases). A direct connection lets your opponent’s device see your IP address. EOS sees your IP address in any case and may relay the connection through its servers.</li></ul>
 
-<h2>3. Display name: Google Play Games and Game Center</h2>
-<p>On Android the game signs in to Google Play Games, and on iOS to Apple Game Center, when the platform allows it. The platform shares your player ID and your gamer name (Play Games) or nickname (Game Center) with the game. The game uses that name only as your display name in online matches, where your opponent sees it. If you are not signed in, a default name is used. You can change your gamer name or nickname, or sign out, in Google Play Games or Game Center settings. These services are operated by Google and Apple under their own privacy policies.</p>
+<h2>3. Our game server</h2>
+<p>Our game server runs on a computer we operate in the Republic of Korea and is reached through Cloudflare at touhouchess-api.fiveduckgames.com. It handles Quick match and Ranked matchmaking, practice AI opponents, result checks, ratings, leaderboards, name checks, reports, sanctions and account deletion. Friend matches with a room code do not go through it. It stores:</p>
+<ul><li><b>Account:</b> your EOS account ID, the type of linked account, and when your account was created, last changed and last used online.</li>
+<li><b>Profile:</b> your nickname (the one you use now and the one shown on leaderboards, with the time it changed), your #tag (a four-digit number calculated from your account ID that never changes), your country and whether you hid your flag, and the character you play as.</li>
+<li><b>Country:</b> taken from the country Steam determines from your IP address on PC, the App Store country on iOS, or the SIM or mobile network country on Android; never from your device language or GPS. If none is available, no flag is shown. If you hide your flag, the country stays on the server but is shown to no one, and you are left out of country leaderboards.</li>
+<li><b>Ratings:</b> your Ranked rating, rating deviation, number of games, wins, losses and draws, placement and tier, and a hidden rating for each Quick match queue that is used only to find opponents of similar strength.</li>
+<li><b>Match records</b> of games arranged by the server: both players’ account IDs and characters, the queue, the random seed, every move and spell card played, the result and how the game ended, the remaining clock times each player reported, and timestamps; for games against the practice AI, the AI’s profile.</li>
+<li><b>Information your game sends when you queue:</b> how many spell-card games you have played, whether you answered that you are new to chess (used once to set your starting hidden rating), and your app version and online protocol (used for matching and not stored).</li>
+<li><b>Fair-play records:</b> leaving or disconnecting from Ranked games (used for the waiting time before your next match), result reports that could not be verified or did not match the game, results that could not be decided, and practice AI games that failed verification.</li>
+<li><b>Reports and sanctions:</b> reports you file (the player, the match, the reason and an optional note of up to 500 characters) and reports filed about you, with their status and outcome; sanctions such as forced nickname changes, suspensions and bans, with the reason and end time; and a log of the moderation actions our staff take.</li>
+<li><b>Request logs:</b> one line per request with the method, the endpoint (without the request contents), the response status, the processing time and your account ID. They are deleted after 14 days.</li>
+<li><b>IP address:</b> the server uses the IP address of a request only in memory, to limit how many requests one address can make per minute. It does not write IP addresses to its logs or database. Cloudflare, which carries the connection, processes IP addresses under its own policy.</li></ul>
+<p>We use this information to match you with opponents, check results by replaying the moves, calculate ratings, show leaderboards, apply the name rules and fair-play rules of the <a href="terms.html">Terms of Service</a>, handle reports and appeals, protect the service from abuse and fix problems. Some checks are automatic: names with banned words are hidden from leaderboards and must be changed, and results are decided by replaying the moves. If you think an automatic decision was wrong, contact us and a person will review it. The database is copied every 15 seconds to a private Cloudflare R2 storage bucket so it can be restored after a failure.</p>
 
-<h2>4. In-app purchase</h2>
-<p>Remove Ads is a one-time purchase made through Google Play billing or the Apple App Store; the game talks to the store through the Unity In-App Purchasing library. The store collects your payment details directly, and we never receive them. The purchase information the store delivers to your device (product ID, order or transaction ID, purchase token or receipt, purchase time and state) is checked on your device to turn ads off and to restore the purchase, and the fact that you own Remove Ads is kept with your game data. We do not send it to servers of our own. Payments, refunds and transaction records follow the store’s policies. The Unity In-App Purchasing library may send technical diagnostics about the purchase flow to Unity under Unity’s privacy policy.</p>
+<h2>4. Save sync</h2>
+<p>While the game is signed in to your EOS account, it uploads your save file to EOS Player Data Storage under that account and merges it with the copies from your other devices on the same account: collected items are combined, counts are added up per device, and current state such as decks and puzzle rating follows the most recent device. Device settings (sound, display, language), ad counters and Remove Ads are not synced. The file is stored by Epic Games for the game; our game server does not receive it. On Steam, your existing save is added the first time you sign in, and Steam Cloud keeps its own copy (section 6).</p>
 
-<h2>5. Advertising</h2>
+<h2>5. What other players can see</h2>
+<ul><li><b>Opponents</b> see your nickname and #tag, character, country flag (unless hidden), quick-chat messages and moves, and in Ranked your rating. Their game also receives your account ID, app version and hidden matchmaking rating, which are not displayed.</li>
+<li><b>Leaderboards</b> are visible to all players and show nickname#tag, country flag (unless hidden), character, rating, tier, number of Ranked games and rank. Only players who have finished their placement games and played Ranked in the last 30 days appear; suspended players and hidden names do not.</li>
+<li><b>Practice AI:</b> if no opponent is found in time, you may be matched with a practice AI. It uses a made-up name, tag and flag and is not a real player.</li>
+<li><b>Steam friends</b> can see your Steam rich presence, for example which guest you are playing.</li></ul>
+
+<h2>6. Steam (PC)</h2>
+<p>The Steam version uses Valve’s Steamworks: your Steam ID and Steam name (suggested as your nickname the first time), the country Steam determines from your IP address, achievements, rich presence for your friends list, Steam Cloud copies of your save file, and a Steam sign-in ticket that the game uses to sign in to EOS with your Steam account. Purchases of the game are handled by Steam. Valve processes this data under the Steam Privacy Policy. The Steam version shows no ads and does not use Firebase.</p>
+
+<h2>7. In-app purchase (phones)</h2>
+<p>Remove Ads is a one-time purchase made through Google Play billing or the Apple App Store; the game talks to the store through the Unity In-App Purchasing library. The store collects your payment details directly, and we never receive them. The purchase information the store delivers to your device (product ID, order or transaction ID, purchase token or receipt, purchase time and state) is checked on your device to turn ads off and to restore the purchase, and the fact that you own Remove Ads is kept with your game data. We do not send it to our servers, and it is not synced between devices. Payments, refunds and transaction records follow the store’s policies. The Unity In-App Purchasing library may send technical diagnostics about the purchase flow to Unity under Unity’s privacy policy.</p>
+
+<h2>8. Advertising (phones)</h2>
 <p>The mobile version uses Google AdMob (Google Mobile Ads SDK) to show full-screen ads between games, for example after you leave a finished match or finish a story chapter. Ads never appear during a game. Buying Remove Ads turns them off. Where consent is required by law (for example in the EEA, the UK and Switzerland), your advertising choices are collected with Google’s User Messaging Platform before ads are requested, and you can change them later in settings. On iOS, the game asks for permission to track (App Tracking Transparency) before the first ad request; if you decline, the advertising identifier is not used.</p>
 <p>The ads SDK may process your device’s advertising ID, IP address and the approximate location derived from it, device, operating system and app information, ad impressions and clicks, and error and performance diagnostics, for ad delivery, frequency capping, measurement, fraud prevention and, where permitted, personalized ads. See Google’s policies for details, retention and processing locations. To limit personalized ads, reset or delete your advertising ID in your device settings.</p>
 
-<h2>6. Analytics, crash reports and remote settings (Google Firebase, mobile only)</h2>
-<ul><li><b>Google Analytics for Firebase</b> collects an app instance ID, your advertising ID where available and permitted, device model, operating system, language, approximate country and region derived from your IP address, app version, and session and engagement information. We also record game events such as full-screen ads shown, Remove Ads offers shown, tapped or closed, purchase results with price and currency, the number of finished games, days since install and sign-in results. We use this to set ad frequency and fix problems. It does not include your name, email address or gamer name. In the regions listed in section 5, analytics and ad measurement follow the choices you made in the consent message.</li>
+<h2>9. Analytics, crash reports and remote settings (Google Firebase, phones only)</h2>
+<ul><li><b>Google Analytics for Firebase</b> collects an app instance ID, your advertising ID where available and permitted, device model, operating system, language, approximate country and region derived from your IP address, app version, and session and engagement information. We also record game events such as your answer to the first-launch question and tutorial progress, your answer to the iOS tracking prompt, Quick match searches (the queue and your hidden matchmaking rating) and practice AI matches, full-screen ads shown, Remove Ads offers shown, tapped or closed, purchase results with price and currency, the number of finished games and days since install. We use this to improve the game, set ad frequency and fix problems. It does not include your name, email address, nickname or online account ID. In the regions listed in section 8, analytics and ad measurement follow the choices you made in the consent message.</li>
 <li><b>Firebase Crashlytics</b> collects crash and error reports, including stack traces, device model, operating system, app version, device state at the time of the crash and a Crashlytics installation ID, so we can fix bugs.</li>
 <li><b>Firebase Remote Config</b> uses a Firebase installation ID to download game settings such as how often full-screen ads may appear.</li></ul>
-<p>Firebase processes this data on Google’s servers, which may be outside your country. Analytics data is kept according to the data retention setting of our Google Analytics property and then deleted; crash reports are kept for 90 days. The Steam version does not use Firebase.</p>
+<p>Firebase processes this data on Google’s servers, which may be outside your country. The Steam version does not use Firebase.</p>
 
-<h2>7. Websites and support</h2>
-<p>GitHub Pages hosts these policy pages; requests may expose your IP address and request metadata to the host. Support emails contain your email address, message and any attachments you choose to send; we keep them as long as needed to resolve your request and delete them on request. Do not send passwords or full payment details. Diagnostics and analytics in the Unity game engine are turned off.</p>
+<h2>10. Websites and support</h2>
+<p>GitHub Pages hosts these policy pages; requests may expose your IP address and request metadata to the host. Emails to us (support, reports, appeals and deletion requests) contain your email address, message and any attachments you choose to send; we keep them as long as needed to resolve your request, unless the law requires us to keep them longer, and delete them on request. Do not send passwords or full payment details. Diagnostics and analytics in the Unity game engine are turned off.</p>
 
-<h2>8. Legal bases, retention and transfers</h2>
-<p>Processing relies, as applicable, on providing the game and the online matches you asked for, our legitimate interests in operating, improving and funding a free game (including advertising), legal obligations, and your consent where required. Game data on your device stays until you clear app data; data held by Epic Games, Google (including Firebase), Apple and Unity is kept under their policies. Processing may take place outside your country (for example in the United States), with transfer safeguards described by each provider, including EU standard contractual clauses where applicable.</p>
+<h2>11. Legal bases</h2>
+<p>Where the law (for example the GDPR) requires a legal basis, we rely on:</p>
+<ul><li><b>our contract with you</b> (the <a href="terms.html">Terms of Service</a>) to provide the game and the online features you use: your online account and account linking, matchmaking, results and ratings, leaderboards, save sync and account deletion;</li>
+<li><b>our legitimate interests</b> in fair, safe and reliable online play (name checks, result verification, fair-play records, reports and sanctions, request logs, rate limiting and backups), in showing which country players come from, which you can turn off by hiding your flag, and in operating, improving and funding a free game on phones, including advertising and analytics where consent is not required;</li>
+<li><b>your consent</b> where required, for example for personalized ads and tracking (User Messaging Platform, App Tracking Transparency), which you can withdraw at any time in the game’s settings or your device settings;</li>
+<li><b>legal obligations</b>, for example records that consumer or tax law requires us to keep.</li></ul>
 
-<h2>9. Your rights and children</h2>
-<p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to the processing of your personal information, to data portability, to withdraw consent and to complain to your data protection authority. Withdrawing consent does not affect processing that happened before. You can reset your advertising ID, change ad choices in settings, sign out of Google Play Games or Game Center, clear the app’s data, or contact us. We do not hold data that identifies you by name, so we may ask for information such as your display name to find records we can act on. See also <a href="delete-data.html">how to delete your data</a>.</p>
-<p>TOUHOU CHESS is not directed to children under 13, and we do not knowingly collect personal information from them. Guardians who believe a child has provided personal information may contact us.</p>
+<h2>12. Retention and deletion</h2>
+<ul><li><b>On your device:</b> until you clear the app’s data or uninstall the game.</li>
+<li><b>At Epic Games</b> (device credential, account links and cloud save): until you delete your online account in the game. Epic may keep some records under its own policy.</li>
+<li><b>On our game server:</b> as long as your online account exists. We do not delete inactive accounts automatically.</li>
+<li><b>When you delete your account,</b> your profile, ratings, fair-play and sanction records, the reports you filed and your own result reports are deleted immediately. Match records are kept so that other players’ ratings stay correct, but your account ID in them is replaced with a random anonymous ID. Reports other players filed about you are kept in the same way, and the moderation log records only that an account was deleted.</li>
+<li><b>Request logs</b> are deleted after 14 days. <b>Backups</b> are replaced on a rolling basis, so deleted data disappears from them within about 8 days. Deleted electronic records cannot be restored.</li>
+<li><b>Other providers:</b> data held by Epic Games, Cloudflare, Google (including Firebase), Apple, Valve and Unity is kept under their policies. Firebase crash reports are kept for 90 days, and analytics data for the retention period set in our Google Analytics property.</li></ul>
+<p>See <a href="delete-data.html">Delete your data</a> for how to delete your account.</p>
 
-<h2>10. Changes</h2>
-<p>We will update this page and the stores’ privacy information before we change what the game collects. Material changes will be announced on this page with a new date.</p>
+<h2>13. Service providers and international transfers</h2>
+<p>We do not sell or rent personal information, and other players see only what section 5 describes. We use the services below to run the game. Some process data on our behalf; others (such as Epic Games for its accounts, Google, Apple and Valve) also act as independent controllers under their own policies.</p>
+<div class="scroll"><table><tr><th>Provider (location)</th><th>Data</th><th>Purpose</th></tr>
+<tr><td>Our game server (Republic of Korea)</td><td>Section 3</td><td>Matchmaking, Ranked, leaderboards, moderation</td></tr>
+<tr><td>Epic Games, Inc. — Epic Online Services (United States)</td><td>Device credential and device model, EOS account ID, IDs of linked accounts, lobby data, match traffic and IP address, save file</td><td>Sign-in and account linking, lobbies and match connections, save sync</td></tr>
+<tr><td>Cloudflare, Inc. (United States; worldwide network)</td><td>IP address and the encrypted traffic between your game and our server; database backups</td><td>Secure connection and attack protection, backups</td></tr>
+<tr><td>Google LLC (United States)</td><td>Google sign-in (through EOS); data in sections 7–9</td><td>Sign-in, ads, analytics, crash reports, remote settings, Google Play purchases</td></tr>
+<tr><td>Apple Inc. (United States)</td><td>Sign in with Apple (through EOS), App Store purchases, tracking permission</td><td>Sign-in, purchases</td></tr>
+<tr><td>Valve Corporation (United States)</td><td>Data in section 6</td><td>Steam features and sign-in on PC</td></tr>
+<tr><td>Unity Technologies (United States)</td><td>Purchase-flow diagnostics</td><td>In-app purchase</td></tr>
+<tr><td>GitHub, Inc. (United States)</td><td>IP address and request data when you visit these pages</td><td>Hosting these pages</td></tr></table></div>
+<p>Data is sent over the internet when you use the feature concerned and may be processed outside your country. Our game server is in the Republic of Korea, which the European Commission and the United Kingdom recognise as providing adequate data protection; other transfers rely on the safeguards each provider describes, such as EU standard contractual clauses. Online play is optional: if you do not want data sent for it, do not use online features (the rest of the game keeps working).</p>
 
-<h2>Contact and provider policies</h2><p><a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p><ul><li><a href="https://www.epicgames.com/site/privacypolicy">Epic Games (Epic Online Services)</a></li><li><a href="https://policies.google.com/privacy">Google / Google Play / Google Play Games</a></li><li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services (AdMob)</a></li><li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li><li><a href="https://www.apple.com/legal/privacy/">Apple / App Store / Game Center</a></li><li><a href="https://unity.com/legal/privacy-policy">Unity</a></li><li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></li></ul></body></html>
+<h2>14. Security</h2>
+<p>Connections to our game server are encrypted (HTTPS through Cloudflare), and EOS encrypts its connections. The server accepts only sign-in tokens signed by Epic, runs under a dedicated account without administrator rights, and keeps its backups in a private storage bucket. Moderation pages are available only to our staff through Cloudflare Access, and staff actions are logged. No system is perfectly secure, so we store only what online play needs.</p>
+
+<h2>15. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to the processing of your personal information, to data portability, to withdraw consent and to complain to your data protection authority. Withdrawing consent does not affect processing that happened before. In the game you can change your nickname, hide your flag, change your ad choices and delete your online account; you can also reset your advertising ID, clear the app’s data or contact us. For a copy of your data or any other request, email us with your nickname and #tag (for example Name#1234) and your platform. We do not hold your name or email address, so we may ask you to confirm that the account is yours. We reply within 10 days.</p>
+
+<h2>16. Children</h2>
+<p>TOUHOU CHESS is not directed to children under 13, and we do not knowingly collect personal information from them. Online features are meant for players aged 13 or over (14 or over in Korea). Guardians who believe a child has provided personal information may contact us, and we will delete it.</p>
+
+<h2>17. Changes</h2>
+<p>We will update this page and the stores’ privacy information before we change what the game collects. Material changes will be announced on this page and in the game, with a new date.</p>
+
+<h2>Contact and provider policies</h2>
+<p>Person responsible for privacy: FIVE DUCK GAMES, <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
+<ul><li><a href="https://www.epicgames.com/site/privacypolicy">Epic Games (Epic Online Services)</a></li><li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a></li><li><a href="https://policies.google.com/privacy">Google / Google Play / Google sign-in</a></li><li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services (AdMob)</a></li><li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li><li><a href="https://www.apple.com/legal/privacy/">Apple / App Store / Sign in with Apple</a></li><li><a href="https://store.steampowered.com/privacy_agreement/">Valve (Steam)</a></li><li><a href="https://unity.com/legal/privacy-policy">Unity</a></li><li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></li></ul>
+</section>
+<hr>
+
+<section id="ko" lang="ko"><h1>TOUHOU CHESS(동방 체스) 개인정보처리방침</h1>
+<p class="note">FIVE DUCK GAMES(이하 “개발자”)는 TOUHOU CHESS(동방 체스)를 Steam(PC)과 Google Play·App Store(Android 패키지·iOS 번들 ID com.fiveduckgames.touhouchess)에서 제공합니다. 문의: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. 최종 수정일: 2026년 11월 20일.</p>
+<p>TOUHOU CHESS는 동방 Project의 2차 창작 팬 게임입니다. 계정 없이 즐길 수 있고 진행 상황은 기기에 저장됩니다. 온라인 대전은 선택 기능이며, 매칭·랭크전·순위표를 위해 Epic Online Services(EOS)와 개발자가 직접 운영하는 게임 서버를 씁니다. 휴대폰 판은 Google AdMob 광고를 보여 주고, Google Play 또는 App Store에서 선택 구매 상품 하나(광고 제거)를 팔며, 이용 분석·비정상 종료 보고·원격 설정에 Google Firebase를 씁니다. 개발자는 실명, 이메일 주소, 전화번호를 묻지 않으며 개인정보를 판매하지 않습니다.</p>
+
+<h2>1. 기기에 저장되는 정보</h2>
+<p>이야기·퍼즐 진행, 퍼즐 레이팅, 손님별 전적, 스펠 카드와 덱, 복기용 최근 대국, 온라인 설정과 기록(닉네임, 국기 숨김 여부, 숨은 매칭 레이팅, 온라인 승패), 그 밖의 설정(언어, 소리, 화면), 지금까지 본 전면 광고 수와 마지막 광고 시각, 광고 제거 구매 여부는 기기의 앱 저장 공간에 저장됩니다. 앱 데이터를 지우거나 게임을 삭제하면 함께 지워집니다. 기기 백업이 켜져 있으면 운영체제가 플랫폼의 설정과 정책에 따라 앱 데이터를 Google 계정이나 iCloud에 백업할 수 있으며, 개발자는 이 백업에 접근할 수 없습니다. 온라인에 로그인해 있는 동안에는 진행 상황의 사본이 온라인 계정에도 보관됩니다(4항).</p>
+
+<h2>2. 온라인 계정(Epic Online Services)</h2>
+<ul><li><b>기기 로그인:</b> 온라인 화면을 처음 열면 게임이 Epic Games가 제공하는 EOS에 익명 기기 인증 정보(Device ID)로 로그인합니다. 이 인증 정보는 EOS가 기기에 만들며, 만들 때 게임이 기기 모델명을 EOS에 보냅니다. Epic 계정은 필요 없습니다. EOS는 게임에 계정 ID(제품 사용자 ID)를 주고, 게임 서버는 이 ID를 이용자 ID로 씁니다.</li>
+<li><b>계정 연결(선택, 랭크전에 필요):</b> Steam에서는 Steam 계정이 자동으로 연결됩니다. 휴대폰에서는 Google(Android는 기기의 Google 로그인, iOS는 Google 로그인 페이지) 또는 Apple로 로그인(iOS)을 연결할 수 있습니다. PC에서도 PC와 휴대폰의 진행을 합치려면 브라우저로 Google을 연결할 수 있습니다. 게임은 Google에 기본 로그인 범위(<code>openid</code>)만 요청하고 Apple에는 이름이나 이메일을 요청하지 않으므로, 개발자는 이름, 이메일 주소, 프로필 사진을 받지 않습니다. EOS는 다른 기기에서도 같은 계정을 쓸 수 있도록 EOS 계정과 연결한 계정의 ID를 함께 보관합니다. 게임 서버는 EOS가 발급한 로그인 토큰 안에서 그 ID를 받지만, 연결한 계정의 종류(Steam, Google, Apple)만 저장합니다.</li>
+<li><b>새 기기:</b> 새 기기에서 또는 다시 설치한 뒤 연결한 계정으로 로그인하면 새 기기의 인증 정보가 기존 계정에 붙습니다.</li>
+<li><b>로비와 대국 연결:</b> 대국은 EOS 로비와 P2P 연결로 두 기기 사이에서 진행됩니다. 로비에는 게임 버전, 규칙과 시간, 친구 대전의 방 코드, 빠른 대전의 큐와 숨은 매칭 레이팅, 게임 서버가 짝지은 대국의 대국 ID가 담기며, 상대를 찾는 다른 이용자의 게임이 이를 읽을 수 있습니다. 대국 중에는 두 기기가 닉네임과 #태그, 캐릭터, 국가(숨기지 않은 경우), 앱 버전, 숨은 매칭 레이팅, 스펠 카드 덱, 대국의 수, 한마디(정해진 문장)를 주고받습니다. 직접 연결되면 상대 기기가 이용자의 IP 주소를 알 수 있습니다. EOS는 어느 경우에나 IP 주소를 보며 연결을 자체 서버로 중계할 수 있습니다.</li></ul>
+
+<h2>3. 게임 서버</h2>
+<p>게임 서버는 개발자가 대한민국에서 운영하는 컴퓨터에서 돌아가며 Cloudflare를 거쳐 touhouchess-api.fiveduckgames.com으로 연결됩니다. 빠른 대전·랭크전 매칭, 연습 상대(AI) 배정, 결과 확인, 레이팅, 순위표, 이름 검사, 신고, 제재, 계정 삭제를 맡습니다. 방 코드로 하는 친구 대전은 게임 서버를 거치지 않습니다. 게임 서버가 저장하는 정보는 다음과 같습니다.</p>
+<ul><li><b>계정:</b> EOS 계정 ID, 연결한 계정의 종류, 계정을 만든 시각·마지막으로 바뀐 시각·마지막으로 온라인을 쓴 시각</li>
+<li><b>프로필:</b> 닉네임(지금 쓰는 이름과 순위표에 보이는 이름, 바꾼 시각), #태그(계정 ID로 계산한 네 자리 숫자로 바뀌지 않음), 국가와 국기 숨김 여부, 고른 캐릭터</li>
+<li><b>국가:</b> PC는 Steam이 IP 주소로 판단한 국가, iOS는 App Store 국가, Android는 SIM 또는 이동통신망의 국가에서 가져오며, 기기 언어나 GPS는 쓰지 않습니다. 알 수 없으면 국기를 보이지 않습니다. 국기를 숨기면 국가는 서버에 남지만 누구에게도 보이지 않고, 국가별 순위표에서 빠집니다.</li>
+<li><b>레이팅:</b> 랭크전 레이팅, 레이팅 편차, 판 수, 승·패·무, 배치와 구간, 그리고 비슷한 실력의 상대를 찾는 데만 쓰는 빠른 대전 큐별 숨은 레이팅</li>
+<li><b>대국 기록</b>(게임 서버가 짝지은 대국): 두 이용자의 계정 ID와 캐릭터, 큐, 무작위 시드, 둔 수와 쓴 스펠 카드 전부, 결과와 끝난 방식, 각자 보고한 남은 시간, 시각. 연습 상대와의 대국은 AI의 프로필</li>
+<li><b>매칭할 때 게임이 보내는 정보:</b> 둔 스펠 카드 대국 수, 체스가 처음이라고 답했는지 여부(숨은 레이팅 시작값을 정할 때 한 번만 씀), 앱 버전과 온라인 프로토콜(매칭에만 쓰고 저장하지 않음)</li>
+<li><b>공정 플레이 기록:</b> 랭크전 이탈·연결 끊김(다음 매칭까지의 대기 시간에 씀), 확인할 수 없거나 대국과 맞지 않는 결과 보고, 판정할 수 없는 결과, 검증에 실패한 연습 상대 대국</li>
+<li><b>신고와 제재:</b> 이용자가 한 신고(대상, 대국, 사유, 500자 이내의 선택 메모)와 이용자에 대한 신고, 그 처리 상태와 결과, 닉네임 강제 변경·이용 정지 같은 제재와 그 사유·종료 시각, 운영자가 한 관리 작업 기록</li>
+<li><b>요청 기록:</b> 요청마다 한 줄(메서드, 요청 내용을 뺀 주소, 응답 상태, 처리 시간, 계정 ID). 14일 뒤 삭제합니다.</li>
+<li><b>IP 주소:</b> 게임 서버는 요청의 IP 주소를 한 주소가 1분에 보낼 수 있는 요청 수를 제한하는 데에만 메모리에서 쓰며, 기록이나 데이터베이스에 남기지 않습니다. 연결을 전달하는 Cloudflare는 자체 정책에 따라 IP 주소를 처리합니다.</li></ul>
+<p>이 정보는 상대 짝짓기, 수를 다시 두어 보는 결과 확인, 레이팅 계산, 순위표 표시, <a href="terms.html">이용약관</a>의 이름 규칙과 공정 플레이 규칙 적용, 신고와 이의 제기 처리, 서비스 남용 방지, 문제 해결에 씁니다. 일부 확인은 자동으로 이루어집니다. 금칙어가 든 닉네임은 순위표에서 가려지고 바꿔야 하며, 결과는 수를 다시 두어 판정합니다. 자동 판정이 잘못되었다고 생각하면 문의해 주십시오. 사람이 다시 검토합니다. 데이터베이스는 장애가 나도 복구할 수 있도록 15초마다 비공개 Cloudflare R2 저장소에 복제됩니다.</p>
+
+<h2>4. 세이브 동기화</h2>
+<p>게임이 EOS 계정에 로그인해 있는 동안 세이브 파일을 그 계정의 EOS Player Data Storage에 올리고, 같은 계정을 쓰는 다른 기기의 사본과 합칩니다. 모은 것은 합치고, 횟수는 기기별로 센 뒤 더하며, 덱이나 퍼즐 레이팅 같은 현재 상태는 가장 최근 기기를 따릅니다. 기기 설정(소리, 화면, 언어), 광고 횟수, 광고 제거는 동기화하지 않습니다. 파일은 Epic Games가 게임을 위해 보관하며, 게임 서버는 이 파일을 받지 않습니다. Steam에서는 처음 로그인할 때 기존 세이브가 합쳐지고, Steam 클라우드도 따로 사본을 보관합니다(6항).</p>
+
+<h2>5. 다른 이용자에게 보이는 정보</h2>
+<ul><li><b>대국 상대</b>에게는 닉네임과 #태그, 캐릭터, 국기(숨기지 않은 경우), 한마디, 둔 수가 보이고, 랭크전에서는 레이팅도 보입니다. 상대의 게임은 화면에 보이지 않는 계정 ID, 앱 버전, 숨은 매칭 레이팅도 받습니다.</li>
+<li><b>순위표</b>는 모든 이용자가 볼 수 있으며 닉네임#태그, 국기(숨기지 않은 경우), 캐릭터, 레이팅, 구간, 랭크전 판 수, 순위를 보여 줍니다. 배치 대국을 마치고 최근 30일 안에 랭크전을 둔 이용자만 오르며, 이용 정지 중인 이용자와 가려진 닉네임은 오르지 않습니다.</li>
+<li><b>연습 상대:</b> 제때 상대를 찾지 못하면 연습 상대(AI)와 연결될 수 있습니다. 연습 상대는 지어낸 이름·태그·국기를 쓰며 실제 이용자가 아닙니다.</li>
+<li><b>Steam 친구</b>는 Steam 상태 표시(예: 지금 대국 중인 손님)를 볼 수 있습니다.</li></ul>
+
+<h2>6. Steam(PC)</h2>
+<p>Steam 판은 Valve의 Steamworks를 씁니다. Steam ID와 Steam 이름(처음에 닉네임으로 제안), Steam이 IP 주소로 판단한 국가, 도전 과제, 친구 목록의 상태 표시, Steam 클라우드의 세이브 파일 사본, 그리고 게임이 Steam 계정으로 EOS에 로그인할 때 쓰는 Steam 로그인 티켓이 이에 해당합니다. 게임 구매는 Steam이 처리합니다. Valve는 Steam 개인정보 처리방침에 따라 이 정보를 처리합니다. Steam 판에는 광고가 없고 Firebase를 쓰지 않습니다.</p>
+
+<h2>7. 인앱 구매(휴대폰)</h2>
+<p>광고 제거는 Google Play 결제 또는 Apple App Store로 하는 1회 구매이며, 게임은 Unity In-App Purchasing 라이브러리로 스토어와 통신합니다. 결제 정보는 스토어가 직접 받으며 개발자는 받지 않습니다. 스토어가 기기로 보내는 구매 정보(상품 ID, 주문 또는 거래 ID, 구매 토큰 또는 영수증, 구매 시각과 상태)는 광고를 끄고 구매를 복원하기 위해 기기에서 확인하며, 광고 제거를 가졌다는 사실은 게임 데이터와 함께 저장됩니다. 이 정보는 개발자의 서버로 보내지 않고 기기 사이에서 동기화하지도 않습니다. 결제, 환불, 거래 기록은 스토어 정책을 따릅니다. Unity In-App Purchasing 라이브러리는 구매 과정의 기술 진단 정보를 Unity 개인정보 처리방침에 따라 Unity에 보낼 수 있습니다.</p>
+
+<h2>8. 광고(휴대폰)</h2>
+<p>휴대폰 판은 Google AdMob(Google Mobile Ads SDK)으로 대국과 대국 사이에 전면 광고를 보여 줍니다. 예를 들어 끝난 대국을 나갈 때나 이야기 한 화를 마쳤을 때입니다. 대국 중에는 광고가 나오지 않으며, 광고 제거를 사면 광고가 꺼집니다. 법이 동의를 요구하는 지역(예: EEA, 영국, 스위스)에서는 광고를 요청하기 전에 Google의 사용자 메시지 플랫폼(UMP)으로 광고 선택을 받으며, 나중에 설정에서 바꿀 수 있습니다. iOS에서는 첫 광고 요청 전에 추적 허용(App Tracking Transparency)을 묻고, 거부하면 광고 식별자를 쓰지 않습니다.</p>
+<p>광고 SDK는 광고 제공, 노출 빈도 제한, 측정, 부정 방지, 그리고 허용되는 경우 맞춤형 광고를 위해 기기의 광고 ID, IP 주소와 그로부터 추정한 대략적인 위치, 기기·운영체제·앱 정보, 광고 노출과 클릭, 오류·성능 진단 정보를 처리할 수 있습니다. 자세한 내용, 보관 기간, 처리 장소는 Google 정책을 참고하십시오. 맞춤형 광고를 제한하려면 기기 설정에서 광고 ID를 재설정하거나 삭제하십시오.</p>
+
+<h2>9. 이용 분석·비정상 종료 보고·원격 설정(Google Firebase, 휴대폰만)</h2>
+<ul><li><b>Google Analytics for Firebase</b>는 앱 인스턴스 ID, 이용 가능하고 허용된 경우 광고 ID, 기기 모델, 운영체제, 언어, IP 주소로 추정한 대략적인 국가와 지역, 앱 버전, 세션과 참여 정보를 수집합니다. 개발자는 첫 실행 질문의 답과 입문 과정 진행, iOS 추적 허용 창의 답, 빠른 대전 찾기(큐와 숨은 매칭 레이팅)와 연습 상대 대국, 전면 광고 노출, 광고 제거 제안의 노출·누름·닫음, 가격과 통화를 포함한 구매 결과, 끝낸 대국 수, 설치 뒤 지난 일수 같은 게임 이벤트도 기록합니다. 이 정보는 게임 개선, 광고 빈도 조정, 문제 해결에 씁니다. 이름, 이메일 주소, 닉네임, 온라인 계정 ID는 포함하지 않습니다. 8항의 지역에서는 분석과 광고 측정이 동의 메시지에서 고른 선택을 따릅니다.</li>
+<li><b>Firebase Crashlytics</b>는 버그를 고치기 위해 스택 추적, 기기 모델, 운영체제, 앱 버전, 비정상 종료 시점의 기기 상태, Crashlytics 설치 ID를 포함한 비정상 종료·오류 보고를 수집합니다.</li>
+<li><b>Firebase 원격 구성</b>은 Firebase 설치 ID로 전면 광고 빈도 같은 게임 설정을 내려받습니다.</li></ul>
+<p>Firebase는 이 정보를 Google 서버에서 처리하며, 서버는 이용자의 국가 밖에 있을 수 있습니다. Steam 판은 Firebase를 쓰지 않습니다.</p>
+
+<h2>10. 웹사이트와 문의</h2>
+<p>이 정책 페이지는 GitHub Pages가 호스팅하며, 접속하면 IP 주소와 요청 정보가 호스팅 업체에 전달될 수 있습니다. 개발자에게 보내는 메일(문의, 신고, 이의 제기, 삭제 요청)에는 이메일 주소, 내용, 직접 첨부한 파일이 담깁니다. 개발자는 요청을 해결하는 데 필요한 기간 동안 보관하고(법령이 더 긴 보관을 요구하면 그 기간), 요청하면 삭제합니다. 비밀번호나 결제 정보 전체는 보내지 마십시오. Unity 게임 엔진의 진단·분석 기능은 꺼 두었습니다.</p>
+
+<h2>11. 처리 근거</h2>
+<p>법(예: GDPR)이 처리 근거를 요구하는 경우 개발자는 다음에 근거해 정보를 처리합니다.</p>
+<ul><li><b>이용자와의 계약</b>(<a href="terms.html">이용약관</a>): 게임과 이용자가 쓰는 온라인 기능(온라인 계정과 계정 연결, 매칭, 결과와 레이팅, 순위표, 세이브 동기화, 계정 삭제)의 제공</li>
+<li><b>개발자의 정당한 이익:</b> 공정하고 안전하며 안정적인 온라인 대전(이름 검사, 결과 검증, 공정 플레이 기록, 신고와 제재, 요청 기록, 요청 수 제한, 백업), 이용자의 국가 표시(국기를 숨겨 끌 수 있음), 휴대폰 무료 게임의 운영·개선·수익(동의가 필요하지 않은 경우의 광고와 분석 포함)</li>
+<li><b>이용자의 동의</b>(필요한 경우): 맞춤형 광고와 추적(UMP, App Tracking Transparency) 등. 게임 설정이나 기기 설정에서 언제든 철회할 수 있습니다.</li>
+<li><b>법적 의무:</b> 소비자 보호법이나 세법이 보관을 요구하는 기록 등</li></ul>
+
+<h2>12. 보유 기간과 파기</h2>
+<ul><li><b>기기:</b> 앱 데이터를 지우거나 게임을 삭제할 때까지</li>
+<li><b>Epic Games</b>(기기 인증 정보, 계정 연결, 클라우드 세이브): 게임에서 온라인 계정을 삭제할 때까지. Epic은 자체 정책에 따라 일부 기록을 보관할 수 있습니다.</li>
+<li><b>게임 서버:</b> 온라인 계정이 있는 동안. 오래 쓰지 않은 계정을 자동으로 삭제하지는 않습니다.</li>
+<li><b>계정을 삭제하면</b> 프로필, 레이팅, 공정 플레이·제재 기록, 이용자가 한 신고, 이용자의 결과 보고를 즉시 삭제합니다. 대국 기록은 다른 이용자의 레이팅이 맞게 유지되도록 남기되, 그 안의 계정 ID를 무작위 익명 ID로 바꿉니다. 다른 이용자가 이용자를 신고한 기록도 같은 방식으로 남으며, 관리 기록에는 계정이 삭제되었다는 사실만 남습니다.</li>
+<li><b>요청 기록</b>은 14일 뒤 삭제합니다. <b>백업</b>은 순차적으로 교체되어 삭제한 정보가 약 8일 안에 백업에서도 사라집니다. 전자 기록은 복구할 수 없는 방법으로 삭제합니다.</li>
+<li><b>다른 제공자:</b> Epic Games, Cloudflare, Google(Firebase 포함), Apple, Valve, Unity가 처리하는 정보는 각 제공자의 정책에 따라 보관됩니다. Firebase 비정상 종료 보고는 90일, 분석 데이터는 개발자의 Google 애널리틱스 속성에 설정된 기간 동안 보관됩니다.</li></ul>
+<p>계정 삭제 방법은 <a href="delete-data.html">데이터 삭제</a>를 참고하십시오.</p>
+
+<h2>13. 처리 위탁·제3자 제공과 국외 이전</h2>
+<p>개발자는 개인정보를 판매하거나 빌려주지 않으며, 다른 이용자에게는 5항의 정보만 보입니다. 게임을 운영하기 위해 아래 서비스를 씁니다. 일부는 개발자를 대신해 정보를 처리하고, 일부(자체 계정에 대한 Epic Games, Google, Apple, Valve 등)는 자체 정책에 따라 독립적인 처리자로서도 정보를 처리합니다.</p>
+<div class="scroll"><table><tr><th>받는 자(국가)</th><th>항목</th><th>목적</th></tr>
+<tr><td>개발자의 게임 서버(대한민국)</td><td>3항의 정보</td><td>매칭, 랭크전, 순위표, 운영 관리</td></tr>
+<tr><td>Epic Games, Inc. — Epic Online Services(미국)</td><td>기기 인증 정보와 기기 모델, EOS 계정 ID, 연결한 계정의 ID, 로비 정보, 대국 통신과 IP 주소, 세이브 파일</td><td>로그인과 계정 연결, 로비와 대국 연결, 세이브 동기화</td></tr>
+<tr><td>Cloudflare, Inc.(미국, 전 세계 네트워크)</td><td>IP 주소와 게임·게임 서버 사이의 암호화된 통신, 데이터베이스 백업</td><td>보안 연결과 공격 방어, 백업</td></tr>
+<tr><td>Google LLC(미국)</td><td>Google 로그인(EOS를 거침), 7~9항의 정보</td><td>로그인, 광고, 분석, 비정상 종료 보고, 원격 설정, Google Play 결제</td></tr>
+<tr><td>Apple Inc.(미국)</td><td>Apple로 로그인(EOS를 거침), App Store 구매, 추적 허용 여부</td><td>로그인, 결제</td></tr>
+<tr><td>Valve Corporation(미국)</td><td>6항의 정보</td><td>PC의 Steam 기능과 로그인</td></tr>
+<tr><td>Unity Technologies(미국)</td><td>구매 과정 진단 정보</td><td>인앱 구매</td></tr>
+<tr><td>GitHub, Inc.(미국)</td><td>이 페이지에 접속할 때의 IP 주소와 요청 정보</td><td>이 페이지 호스팅</td></tr></table></div>
+<p>정보는 해당 기능을 쓸 때 인터넷으로 전송되며 이용자의 국가 밖에서 처리될 수 있습니다. 보유 기간은 12항과 같습니다. 게임 서버는 대한민국에 있으며, 대한민국은 유럽연합 집행위원회와 영국이 적정한 보호 수준을 인정한 국가입니다. 그 밖의 이전에는 각 제공자가 밝힌 보호 조치(예: EU 표준계약조항)가 적용됩니다. 온라인 대전은 선택 기능이므로 이를 위한 전송을 원하지 않으면 온라인 기능을 쓰지 않으면 됩니다(나머지 게임은 그대로 쓸 수 있습니다).</p>
+
+<h2>14. 안전성 확보 조치</h2>
+<p>게임 서버와의 통신은 암호화되며(Cloudflare를 거친 HTTPS), EOS도 통신을 암호화합니다. 게임 서버는 Epic이 서명한 로그인 토큰만 받고, 관리자 권한이 없는 전용 계정으로 실행되며, 백업은 비공개 저장소에 둡니다. 운영 관리 페이지는 Cloudflare Access로 운영자만 쓸 수 있고, 운영자의 작업은 기록됩니다. 완벽하게 안전한 시스템은 없으므로 온라인 대전에 필요한 정보만 저장합니다.</p>
+
+<h2>15. 이용자의 권리</h2>
+<p>사는 곳의 법에 따라 개인정보의 열람, 정정, 삭제, 처리 정지·제한, 처리 반대, 이동을 요구하거나 동의를 철회할 수 있고, 개인정보 감독기관에 민원을 낼 수 있습니다. 동의를 철회해도 그전의 처리에는 영향이 없습니다. 게임 안에서 닉네임 바꾸기, 국기 숨기기, 광고 선택 바꾸기, 온라인 계정 삭제를 할 수 있고, 광고 ID 재설정, 앱 데이터 지우기, 문의도 할 수 있습니다. 내 정보 사본이나 그 밖의 요청은 닉네임과 #태그(예: 이름#1234), 플랫폼을 적어 메일로 보내 주십시오. 개발자는 이름이나 이메일 주소를 갖고 있지 않으므로 본인의 계정인지 확인을 부탁드릴 수 있습니다. 요청을 받은 날부터 10일 안에 답합니다. 만 14세 미만 아동의 법정대리인은 아동을 대신해 요청할 수 있습니다.</p>
+
+<h2>16. 아동</h2>
+<p>TOUHOU CHESS는 만 13세 미만 아동을 대상으로 하지 않으며, 그 아동의 개인정보를 알면서 수집하지 않습니다. 온라인 기능은 만 13세 이상(대한민국은 만 14세 이상) 이용자를 위한 것입니다. 아동이 개인정보를 제공했다고 생각하는 보호자가 연락하면 해당 정보를 삭제합니다.</p>
+
+<h2>17. 방침의 변경</h2>
+<p>게임이 수집하는 정보를 바꾸기 전에 이 페이지와 스토어의 개인정보 항목을 먼저 고칩니다. 중요한 변경은 이 페이지와 게임 안에서 새 날짜와 함께 알립니다.</p>
+
+<h2>개인정보 보호책임자와 문의처</h2>
+<ul><li>책임자: FIVE DUCK GAMES</li><li>이메일: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></li></ul>
+<p>개인정보 침해 신고·상담은 아래 기관에도 할 수 있습니다.</p>
+<ul><li>개인정보침해신고센터: privacy.kisa.or.kr / 국번 없이 118</li><li>개인정보분쟁조정위원회: www.kopico.go.kr / 1833-6972</li><li>대검찰청 사이버수사과: www.spo.go.kr / 국번 없이 1301</li><li>경찰청 사이버수사국: ecrm.police.go.kr / 국번 없이 182</li></ul>
+<p>제공자 정책: <a href="https://www.epicgames.com/site/privacypolicy">Epic Games</a> · <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://policies.google.com/technologies/partner-sites">Google의 앱 정보 사용(AdMob)</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://store.steampowered.com/privacy_agreement/">Valve(Steam)</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></p>
+</section>
+<hr>
+
+<section id="ja" lang="ja"><h1>TOUHOU CHESS（東方チェス）プライバシーポリシー</h1>
+<p class="note">FIVE DUCK GAMES（以下「開発者」）は、TOUHOU CHESS（東方チェス）を Steam（PC）と Google Play・App Store（Android パッケージ・iOS バンドル ID com.fiveduckgames.touhouchess）で提供しています。お問い合わせ: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>。最終更新日: 2026年11月20日。</p>
+<p>TOUHOU CHESS は東方Projectの非公式二次創作ゲームです。アカウントなしで遊ぶことができ、進行状況は端末に保存されます。オンライン対戦は任意の機能で、マッチング・ランク戦・ランキングのために Epic Online Services（EOS）と開発者が自ら運営するゲームサーバーを使います。スマートフォン版は Google AdMob の広告を表示し、Google Play または App Store で任意の購入アイテム（広告削除）を1つ販売し、利用状況の分析・クラッシュレポート・リモート設定に Google Firebase を使います。開発者は本名、メールアドレス、電話番号を求めることはなく、個人情報を販売しません。</p>
+
+<h2>1. 端末に保存される情報</h2>
+<p>ストーリーとパズルの進行、パズルレーティング、お客ごとの戦績、スペルカードとデッキ、振り返り用の最近の対局、オンラインの設定と記録（ニックネーム、国旗を隠すかどうか、隠れマッチングレーティング、オンラインの勝敗）、その他の設定（言語、サウンド、画面）、これまでに見た全画面広告の数と最後の広告の時刻、広告削除の購入有無は、端末のアプリ領域に保存されます。アプリのデータを消去するか、ゲームを削除すると消えます。端末のバックアップが有効な場合、OS がプラットフォームの設定とポリシーに従ってアプリのデータを Google アカウントや iCloud にバックアップすることがあり、開発者はそのバックアップにアクセスできません。オンラインにログインしている間は、進行状況のコピーがオンラインアカウントにも保存されます（第4項）。</p>
+
+<h2>2. オンラインアカウント（Epic Online Services）</h2>
+<ul><li><b>端末でのログイン:</b> 初めてオンライン画面を開くと、ゲームは Epic Games が提供する EOS に、EOS が端末に作成する匿名の端末認証情報（Device ID）でログインします。作成時に、ゲームは端末のモデル名を EOS に送ります。Epic アカウントは不要です。EOS はゲームにアカウント ID（プロダクトユーザー ID）を発行し、ゲームサーバーはこれを利用者 ID として使います。</li>
+<li><b>アカウント連携（任意、ランク戦に必要）:</b> Steam では Steam アカウントが自動的に連携されます。スマートフォンでは Google（Android は端末の Google ログイン、iOS は Google のログインページ）または Apple でサインイン（iOS）を連携できます。PC でも、PC とスマートフォンの進行をまとめるためにブラウザで Google を連携できます。ゲームは Google に基本のログイン範囲（<code>openid</code>）のみを要求し、Apple には名前やメールアドレスを要求しないため、開発者が名前、メールアドレス、プロフィール写真を受け取ることはありません。EOS は、ほかの端末でも同じアカウントを使えるよう、EOS アカウントと連携したアカウントの ID を結び付けて保管します。ゲームサーバーは EOS が発行するログイントークンの中でその ID を受け取りますが、保存するのは連携したアカウントの種類（Steam、Google、Apple）だけです。</li>
+<li><b>新しい端末:</b> 新しい端末や再インストール後に連携済みのアカウントでログインすると、新しい端末の認証情報が既存のアカウントに追加されます。</li>
+<li><b>ロビーと対局の接続:</b> 対局は EOS のロビーと P2P 接続により、2台の端末の間で行われます。ロビーにはゲームのバージョン、ルールと持ち時間、フレンド対戦のルームコード、クイック対戦のキューと隠れマッチングレーティング、ゲームサーバーが組んだ対局の対局 ID が含まれ、対戦相手を探しているほかの利用者のゲームがこれを読み取れます。対局中、2台の端末はニックネームと #タグ、キャラクター、国（隠していない場合）、アプリのバージョン、隠れマッチングレーティング、スペルカードのデッキ、対局の指し手、ひとこと（定型文）をやり取りします。直接接続の場合、相手の端末からあなたの IP アドレスが分かります。EOS はいずれの場合も IP アドレスを把握し、接続を自社サーバーで中継することがあります。</li></ul>
+
+<h2>3. ゲームサーバー</h2>
+<p>ゲームサーバーは開発者が大韓民国で運用するコンピューターで動作し、Cloudflare を経由して touhouchess-api.fiveduckgames.com で接続されます。クイック対戦とランク戦のマッチング、練習相手（AI）の割り当て、結果の確認、レーティング、ランキング、名前の確認、通報、制裁、アカウント削除を担当します。ルームコードによるフレンド対戦はゲームサーバーを経由しません。ゲームサーバーが保存する情報は次のとおりです。</p>
+<ul><li><b>アカウント:</b> EOS アカウント ID、連携したアカウントの種類、アカウントの作成日時・最終変更日時・最後にオンラインを利用した日時</li>
+<li><b>プロフィール:</b> ニックネーム（現在の名前とランキングに表示される名前、変更日時）、#タグ（アカウント ID から計算する4桁の数字で、変わりません）、国と国旗を隠すかどうか、選んだキャラクター</li>
+<li><b>国:</b> PC は Steam が IP アドレスから判断した国、iOS は App Store の国、Android は SIM またはモバイルネットワークの国から取得し、端末の言語や GPS は使いません。分からない場合は国旗を表示しません。国旗を隠すと、国はサーバーに残りますが誰にも表示されず、国別ランキングから外れます。</li>
+<li><b>レーティング:</b> ランク戦のレーティング、レーティング偏差、対局数、勝・敗・引き分け、配置とランク帯、そして実力の近い相手を探すためだけに使うクイック対戦のキューごとの隠れレーティング</li>
+<li><b>対局記録</b>（ゲームサーバーが組んだ対局）: 両者のアカウント ID とキャラクター、キュー、乱数シード、すべての指し手と使ったスペルカード、結果と終局の理由、各自が報告した残り時間、日時。練習相手との対局では AI のプロフィール</li>
+<li><b>マッチング時にゲームが送る情報:</b> スペルカード対局の数、チェスが初めてと答えたかどうか（隠れレーティングの初期値を決めるときに一度だけ使用）、アプリのバージョンとオンラインプロトコル（マッチングにのみ使い、保存しません）</li>
+<li><b>フェアプレーの記録:</b> ランク戦の離脱・切断（次のマッチングまでの待ち時間に使用）、確認できない、または対局と一致しない結果報告、判定できない結果、検証に失敗した練習相手との対局</li>
+<li><b>通報と制裁:</b> あなたが行った通報（対象、対局、理由、500文字以内の任意のメモ）とあなたへの通報、その処理状況と結果、ニックネームの強制変更・利用停止などの制裁とその理由・終了日時、運営者が行った管理作業の記録</li>
+<li><b>リクエストログ:</b> リクエストごとに1行（メソッド、リクエスト内容を除いたエンドポイント、応答ステータス、処理時間、アカウント ID）。14日後に削除します。</li>
+<li><b>IP アドレス:</b> ゲームサーバーは、1つのアドレスから1分間に送れるリクエスト数を制限するためだけに、リクエストの IP アドレスをメモリ上で使い、ログやデータベースには書き込みません。接続を中継する Cloudflare は、自社のポリシーに従って IP アドレスを処理します。</li></ul>
+<p>これらの情報は、対戦相手とのマッチング、指し手を再生して行う結果の確認、レーティングの計算、ランキングの表示、<a href="terms.html">利用規約</a>の名前ルールとフェアプレールールの適用、通報と異議申し立ての処理、サービスの悪用防止、問題の解決に使います。一部の確認は自動で行われます。禁止語を含むニックネームはランキングで非表示になり、変更が必要です。結果は指し手を再生して判定します。自動の判定が誤っていると思われる場合はお問い合わせください。担当者が改めて確認します。データベースは障害時に復旧できるよう、15秒ごとに非公開の Cloudflare R2 ストレージに複製されます。</p>
+
+<h2>4. セーブデータの同期</h2>
+<p>ゲームが EOS アカウントにログインしている間、セーブファイルをそのアカウントの EOS Player Data Storage にアップロードし、同じアカウントを使うほかの端末のコピーと統合します。集めたものは合算し、回数は端末ごとに数えて足し合わせ、デッキやパズルレーティングなどの現在の状態は最も新しい端末に合わせます。端末の設定（サウンド、画面、言語）、広告の回数、広告削除は同期しません。ファイルは Epic Games がゲームのために保管し、ゲームサーバーは受け取りません。Steam では、初めてログインしたときに既存のセーブが統合され、Steam クラウドも独自にコピーを保管します（第6項）。</p>
+
+<h2>5. ほかの利用者に表示される情報</h2>
+<ul><li><b>対戦相手</b>には、ニックネームと #タグ、キャラクター、国旗（隠していない場合）、ひとこと、指し手が表示され、ランク戦ではレーティングも表示されます。相手のゲームは、画面には表示されないアカウント ID、アプリのバージョン、隠れマッチングレーティングも受け取ります。</li>
+<li><b>ランキング</b>はすべての利用者が閲覧でき、ニックネーム#タグ、国旗（隠していない場合）、キャラクター、レーティング、ランク帯、ランク戦の対局数、順位を表示します。配置対局を終え、直近30日以内にランク戦を指した利用者だけが掲載され、利用停止中の利用者と非表示のニックネームは掲載されません。</li>
+<li><b>練習相手:</b> 時間内に相手が見つからない場合、練習相手（AI）とマッチングされることがあります。練習相手は架空の名前・タグ・国旗を使い、実在の利用者ではありません。</li>
+<li><b>Steam のフレンド</b>は、Steam のステータス表示（例: 対局中のお客）を見ることができます。</li></ul>
+
+<h2>6. Steam（PC）</h2>
+<p>Steam 版は Valve の Steamworks を使います。Steam ID と Steam の名前（初回にニックネームとして提案）、Steam が IP アドレスから判断した国、実績、フレンドリストのステータス表示、Steam クラウドのセーブファイルのコピー、そしてゲームが Steam アカウントで EOS にログインするための Steam ログインチケットが該当します。ゲームの購入は Steam が処理します。Valve は Steam のプライバシーポリシーに従ってこれらの情報を処理します。Steam 版には広告がなく、Firebase も使いません。</p>
+
+<h2>7. アプリ内課金（スマートフォン）</h2>
+<p>広告削除は Google Play の決済または Apple App Store で行う1回限りの購入で、ゲームは Unity In-App Purchasing ライブラリを通じてストアと通信します。支払い情報はストアが直接受け取り、開発者が受け取ることはありません。ストアが端末に送る購入情報（商品 ID、注文または取引 ID、購入トークンまたはレシート、購入日時と状態）は、広告をオフにし購入を復元するために端末上で確認し、広告削除を所有している事実はゲームデータと一緒に保存します。この情報を開発者のサーバーに送ることはなく、端末間で同期もしません。支払い、返金、取引記録はストアのポリシーに従います。Unity In-App Purchasing ライブラリは、購入処理に関する技術的な診断情報を Unity のプライバシーポリシーに従って Unity に送ることがあります。</p>
+
+<h2>8. 広告（スマートフォン）</h2>
+<p>スマートフォン版は Google AdMob（Google Mobile Ads SDK）を使い、対局と対局の合間に全画面広告を表示します。たとえば、終わった対局を離れるときや、ストーリーを1話終えたときです。対局中に広告が表示されることはなく、広告削除を購入すると広告は表示されなくなります。法律で同意が必要な地域（EEA、英国、スイスなど）では、広告をリクエストする前に Google のユーザー メッセージング プラットフォーム（UMP）で広告に関する選択を伺い、後から設定で変更できます。iOS では最初の広告リクエストの前にトラッキングの許可（App Tracking Transparency）を求め、拒否された場合は広告識別子を使いません。</p>
+<p>広告 SDK は、広告の配信、表示回数の制限、効果測定、不正防止、および許可されている場合のパーソナライズド広告のために、端末の広告 ID、IP アドレスとそこから推定されるおおよその位置、端末・OS・アプリの情報、広告の表示とクリック、エラーやパフォーマンスの診断情報を処理することがあります。詳細、保存期間、処理場所は Google のポリシーをご覧ください。パーソナライズド広告を制限するには、端末の設定で広告 ID をリセットまたは削除してください。</p>
+
+<h2>9. 分析・クラッシュレポート・リモート設定（Google Firebase、スマートフォンのみ）</h2>
+<ul><li><b>Google Analytics for Firebase</b> は、アプリインスタンス ID、利用可能かつ許可されている場合は広告 ID、端末のモデル、OS、言語、IP アドレスから推定したおおよその国と地域、アプリのバージョン、セッションとエンゲージメントの情報を収集します。開発者は、初回起動時の質問への回答とチュートリアルの進行、iOS のトラッキング許可への回答、クイック対戦の検索（キューと隠れマッチングレーティング）と練習相手との対局、全画面広告の表示、広告削除の案内の表示・タップ・閉じる操作、価格と通貨を含む購入結果、終えた対局の数、インストールからの日数といったゲームのイベントも記録します。これらはゲームの改善、広告頻度の調整、問題の解決に使います。名前、メールアドレス、ニックネーム、オンラインアカウント ID は含みません。第8項の地域では、分析と広告の効果測定は同意メッセージでの選択に従います。</li>
+<li><b>Firebase Crashlytics</b> は、不具合を修正するために、スタックトレース、端末のモデル、OS、アプリのバージョン、クラッシュ時の端末の状態、Crashlytics のインストール ID を含むクラッシュ・エラーレポートを収集します。</li>
+<li><b>Firebase Remote Config</b> は、Firebase のインストール ID を使って、全画面広告の頻度などのゲーム設定をダウンロードします。</li></ul>
+<p>Firebase はこれらの情報を Google のサーバーで処理し、そのサーバーはあなたの国の外にある場合があります。Steam 版は Firebase を使いません。</p>
+
+<h2>10. ウェブサイトとお問い合わせ</h2>
+<p>このポリシーのページは GitHub Pages がホスティングしており、アクセスすると IP アドレスとリクエスト情報がホスティング事業者に伝わることがあります。開発者へのメール（お問い合わせ、通報、異議申し立て、削除の依頼）には、メールアドレス、本文、ご自身で添付したファイルが含まれます。依頼の解決に必要な期間（法令でより長い保存が求められる場合はその期間）保管し、ご依頼があれば削除します。パスワードや支払い情報の全体は送らないでください。Unity ゲームエンジンの診断・分析機能はオフにしています。</p>
+
+<h2>11. 処理の法的根拠</h2>
+<p>法律（GDPR など）が法的根拠を求める場合、開発者は次の根拠に基づいて情報を処理します。</p>
+<ul><li><b>あなたとの契約</b>（<a href="terms.html">利用規約</a>）: ゲームと、あなたが使うオンライン機能（オンラインアカウントとアカウント連携、マッチング、結果とレーティング、ランキング、セーブデータの同期、アカウント削除）の提供</li>
+<li><b>開発者の正当な利益:</b> 公正で安全かつ安定したオンライン対戦（名前の確認、結果の検証、フェアプレーの記録、通報と制裁、リクエストログ、リクエスト数の制限、バックアップ）、利用者の国の表示（国旗を隠すことでオフにできます）、スマートフォン向け無料ゲームの運営・改善・収益化（同意が不要な場合の広告と分析を含む）</li>
+<li><b>あなたの同意</b>（必要な場合）: パーソナライズド広告とトラッキング（UMP、App Tracking Transparency）など。ゲームの設定や端末の設定でいつでも撤回できます。</li>
+<li><b>法的義務:</b> 消費者保護法や税法が保存を求める記録など</li></ul>
+
+<h2>12. 保存期間と削除</h2>
+<ul><li><b>端末:</b> アプリのデータを消去するか、ゲームを削除するまで</li>
+<li><b>Epic Games</b>（端末認証情報、アカウント連携、クラウドセーブ）: ゲーム内でオンラインアカウントを削除するまで。Epic は自社のポリシーに従って一部の記録を保存することがあります。</li>
+<li><b>ゲームサーバー:</b> オンラインアカウントが存在する間。長期間使われていないアカウントを自動で削除することはありません。</li>
+<li><b>アカウントを削除すると、</b>プロフィール、レーティング、フェアプレー・制裁の記録、あなたが行った通報、あなた自身の結果報告を直ちに削除します。対局記録はほかの利用者のレーティングが正しく保たれるよう残しますが、その中のアカウント ID は無作為な匿名 ID に置き換えます。ほかの利用者があなたを通報した記録も同じ方法で残り、管理記録にはアカウントが削除された事実だけが残ります。</li>
+<li><b>リクエストログ</b>は14日後に削除します。<b>バックアップ</b>は順次置き換えられるため、削除した情報は約8日以内にバックアップからも消えます。電子的な記録は復元できない方法で削除します。</li>
+<li><b>ほかの提供者:</b> Epic Games、Cloudflare、Google（Firebase を含む）、Apple、Valve、Unity が扱う情報は、各社のポリシーに従って保存されます。Firebase のクラッシュレポートは90日間、分析データは開発者の Google アナリティクス プロパティで設定した期間保存されます。</li></ul>
+<p>アカウントの削除方法は<a href="delete-data.html">データの削除</a>をご覧ください。</p>
+
+<h2>13. 委託先・第三者提供と国外移転</h2>
+<p>開発者は個人情報を販売または貸与せず、ほかの利用者に表示されるのは第5項の情報だけです。ゲームの運営には次のサービスを使います。一部は開発者に代わって情報を処理し、一部（自社アカウントに関する Epic Games、Google、Apple、Valve など）は自社のポリシーに従い独立した管理者としても情報を処理します。</p>
+<div class="scroll"><table><tr><th>提供先（国）</th><th>項目</th><th>目的</th></tr>
+<tr><td>開発者のゲームサーバー（大韓民国）</td><td>第3項の情報</td><td>マッチング、ランク戦、ランキング、運営管理</td></tr>
+<tr><td>Epic Games, Inc. — Epic Online Services（米国）</td><td>端末認証情報と端末のモデル、EOS アカウント ID、連携したアカウントの ID、ロビーの情報、対局の通信と IP アドレス、セーブファイル</td><td>ログインとアカウント連携、ロビーと対局の接続、セーブデータの同期</td></tr>
+<tr><td>Cloudflare, Inc.（米国、世界規模のネットワーク）</td><td>IP アドレスとゲーム・ゲームサーバー間の暗号化された通信、データベースのバックアップ</td><td>安全な接続と攻撃からの防御、バックアップ</td></tr>
+<tr><td>Google LLC（米国）</td><td>Google ログイン（EOS を経由）、第7〜9項の情報</td><td>ログイン、広告、分析、クラッシュレポート、リモート設定、Google Play の決済</td></tr>
+<tr><td>Apple Inc.（米国）</td><td>Apple でサインイン（EOS を経由）、App Store での購入、トラッキング許可の有無</td><td>ログイン、決済</td></tr>
+<tr><td>Valve Corporation（米国）</td><td>第6項の情報</td><td>PC での Steam の機能とログイン</td></tr>
+<tr><td>Unity Technologies（米国）</td><td>購入処理の診断情報</td><td>アプリ内課金</td></tr>
+<tr><td>GitHub, Inc.（米国）</td><td>このページにアクセスしたときの IP アドレスとリクエスト情報</td><td>このページのホスティング</td></tr></table></div>
+<p>情報は該当する機能を使うときにインターネット経由で送信され、あなたの国の外で処理されることがあります。保存期間は第12項のとおりです。ゲームサーバーがある大韓民国は、欧州委員会と英国が十分な保護水準を認めた国です。そのほかの移転には、各提供者が示す保護措置（EU 標準契約条項など）が適用されます。オンライン対戦は任意の機能なので、そのための送信を望まない場合はオンライン機能を使わないでください（ほかの部分はそのまま遊べます）。</p>
+
+<h2>14. 安全管理措置</h2>
+<p>ゲームサーバーとの通信は暗号化され（Cloudflare を経由した HTTPS）、EOS も通信を暗号化しています。ゲームサーバーは Epic が署名したログイントークンのみを受け付け、管理者権限のない専用アカウントで動作し、バックアップは非公開のストレージに置きます。運営管理ページは Cloudflare Access により運営者だけが使え、運営者の操作は記録されます。完全に安全なシステムは存在しないため、オンライン対戦に必要な情報だけを保存します。</p>
+
+<h2>15. あなたの権利</h2>
+<p>お住まいの地域の法律により、個人情報の開示、訂正、削除、利用停止・処理の制限、処理への異議、データポータビリティを求めたり、同意を撤回したり、個人情報保護の監督機関に苦情を申し立てたりできる場合があります。同意を撤回しても、それ以前の処理には影響しません。ゲーム内では、ニックネームの変更、国旗を隠す設定、広告に関する選択の変更、オンラインアカウントの削除ができ、広告 ID のリセット、アプリのデータ消去、お問い合わせもできます。ご自身の情報のコピーやその他のご依頼は、ニックネームと #タグ（例: 名前#1234）、プラットフォームを書いてメールでお送りください。開発者は名前やメールアドレスを保有していないため、ご本人のアカウントであることの確認をお願いする場合があります。10日以内にお返事します。</p>
+
+<h2>16. 子ども</h2>
+<p>TOUHOU CHESS は13歳未満の子どもを対象としておらず、その個人情報を知りながら収集することはありません。オンライン機能は13歳以上（韓国では14歳以上）の利用者を対象としています。子どもが個人情報を提供したと思われる保護者の方からご連絡があれば、その情報を削除します。</p>
+
+<h2>17. 変更</h2>
+<p>ゲームが収集する情報を変更する前に、このページとストアのプライバシー情報を更新します。重要な変更は、このページとゲーム内で新しい日付とともにお知らせします。</p>
+
+<h2>お問い合わせ先と各社のポリシー</h2>
+<p>個人情報の取扱いの責任者: FIVE DUCK GAMES、<a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
+<p><a href="https://www.epicgames.com/site/privacypolicy">Epic Games</a> · <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://policies.google.com/technologies/partner-sites">Google によるアプリ情報の利用（AdMob）</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://store.steampowered.com/privacy_agreement/">Valve（Steam）</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></p>
+</section>
+<hr>
+
+<section id="zh-Hans" lang="zh-Hans"><h1>TOUHOU CHESS（东方国际象棋）隐私政策</h1>
+<p class="note">FIVE DUCK GAMES（以下简称“开发者”）在 Steam（PC）以及 Google Play 和 App Store（Android 包名与 iOS 软件包 ID 为 com.fiveduckgames.touhouchess）上提供 TOUHOU CHESS（东方国际象棋）。联系方式：<a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>。最后更新：2026年11月20日。</p>
+<p>TOUHOU CHESS 是东方Project的非官方二次创作游戏。无需账号即可游玩，进度保存在你的设备上。联机对战为可选功能，匹配、排位赛和排行榜使用 Epic Online Services（EOS）以及开发者自行运营的游戏服务器。手机版通过 Google AdMob 展示广告，通过 Google Play 或 App Store 出售一项可选的应用内购买（移除广告），并使用 Google Firebase 进行使用情况分析、崩溃报告和远程配置。开发者从不要求你提供真实姓名、电子邮件地址或电话号码，也不出售你的个人信息。</p>
+
+<h2>1. 保存在设备上的数据</h2>
+<p>故事和谜题进度、谜题等级分、与每位客人的战绩、符卡与卡组、供复盘的最近对局、联机设置与记录（昵称、是否隐藏国旗、隐藏匹配分、联机胜负）、其他设置（语言、声音、画面）、已观看的全屏广告数量和最后一次广告的时间，以及是否已购买移除广告，都保存在设备的应用存储中。清除应用数据或卸载游戏后，这些数据会被删除。如果开启了设备备份，操作系统可能会按照平台的设置和政策将应用数据备份到你的 Google 账号或 iCloud，开发者无法访问这些备份。登录联机期间，进度的副本也会保存在你的联机账号中（第4条）。</p>
+
+<h2>2. 联机账号（Epic Online Services）</h2>
+<ul><li><b>设备登录：</b>首次打开联机界面时，游戏会使用 EOS 在你的设备上创建的匿名设备凭据（Device ID）登录 Epic Games 提供的 EOS。创建凭据时，游戏会将设备型号名称发送给 EOS。你不需要 Epic 账号。EOS 会为游戏分配一个账号 ID（产品用户 ID），游戏服务器将其用作你的用户 ID。</li>
+<li><b>关联账号（可选，排位赛必需）：</b>在 Steam 上，你的 Steam 账号会自动关联。在手机上，你可以关联 Google（Android 使用系统的 Google 登录，iOS 使用 Google 登录页面）或通过 Apple 登录（iOS）。在 PC 上，你也可以通过浏览器关联 Google，以合并 PC 和手机的进度。游戏只向 Google 请求基本登录范围（<code>openid</code>），也不向 Apple 请求姓名或电子邮件地址，因此开发者不会获得你的姓名、电子邮件地址或头像。EOS 会保存你的 EOS 账号与所关联账号 ID 之间的关联，以便你在其他设备上使用同一账号。游戏服务器会在 EOS 签发的登录令牌中收到该 ID，但只保存所关联账号的类型（Steam、Google 或 Apple）。</li>
+<li><b>新设备：</b>在新设备上或重新安装后使用已关联的账号登录时，新设备的凭据会被添加到你现有的账号中。</li>
+<li><b>大厅与对局连接：</b>对局通过 EOS 大厅和点对点连接在两台设备之间进行。大厅包含游戏版本、规则和时间、好友对战的房间码、快速对战的队列和你的隐藏匹配分，以及由游戏服务器安排的对局 ID；正在寻找对手的其他玩家的游戏可以读取这些信息。对局期间，两台设备会交换你的昵称和 #标签、角色、国家（未隐藏时）、应用版本、隐藏匹配分、符卡卡组、对局着法以及“一句话”（固定短语）。如果直接连接，对手的设备可以看到你的 IP 地址。无论哪种情况，EOS 都能看到你的 IP 地址，并可能通过其服务器中继连接。</li></ul>
+
+<h2>3. 我们的游戏服务器</h2>
+<p>游戏服务器运行在开发者于大韩民国运营的计算机上，通过 Cloudflare 以 touhouchess-api.fiveduckgames.com 访问。它负责快速对战与排位赛的匹配、分配练习对手（AI）、结果核对、等级分、排行榜、名称检查、举报、处罚和账号删除。使用房间码的好友对战不经过游戏服务器。游戏服务器保存以下信息：</p>
+<ul><li><b>账号：</b>EOS 账号 ID、所关联账号的类型，以及账号的创建时间、最后修改时间和最后一次使用联机的时间</li>
+<li><b>个人资料：</b>昵称（当前使用的名称和排行榜显示的名称，以及修改时间）、#标签（根据账号 ID 计算出的四位数字，不会改变）、国家及是否隐藏国旗、所选角色</li>
+<li><b>国家：</b>PC 取自 Steam 根据 IP 地址判断的国家，iOS 取自 App Store 所在国家，Android 取自 SIM 卡或移动网络的国家；不使用设备语言或 GPS。无法确定时不显示国旗。隐藏国旗后，国家仍保存在服务器上，但不会向任何人显示，你也不会出现在国家排行榜中。</li>
+<li><b>等级分：</b>排位赛等级分、等级分偏差、对局数、胜/负/和、定级与段位，以及仅用于寻找实力相近对手的、各快速对战队列的隐藏等级分</li>
+<li><b>对局记录</b>（由服务器安排的对局）：双方的账号 ID 和角色、队列、随机种子、所有着法和使用的符卡、结果和结束方式、双方各自报告的剩余时间以及时间戳；与练习对手的对局还包括 AI 的资料</li>
+<li><b>排队时游戏发送的信息：</b>已进行的符卡对局数、是否回答自己是国际象棋新手（仅在确定隐藏等级分初始值时使用一次）、应用版本和联机协议（仅用于匹配，不保存）</li>
+<li><b>公平竞技记录：</b>排位赛中途离开或断线（用于计算下次匹配前的等待时间）、无法核实或与对局不符的结果报告、无法判定的结果，以及核验失败的练习对手对局</li>
+<li><b>举报与处罚：</b>你提交的举报（对象、对局、原因及500字以内的可选备注）和针对你的举报及其处理状态和结果；强制修改昵称、停用等处罚及其原因和结束时间；以及运营人员执行的管理操作记录</li>
+<li><b>请求日志：</b>每个请求一行（方法、不含请求内容的接口地址、响应状态、处理时间、账号 ID），14天后删除。</li>
+<li><b>IP 地址：</b>游戏服务器仅在内存中使用请求的 IP 地址，用于限制每个地址每分钟可发送的请求数，不会将 IP 地址写入日志或数据库。传输连接的 Cloudflare 会按照其自身政策处理 IP 地址。</li></ul>
+<p>我们将这些信息用于为你匹配对手、通过重放着法核对结果、计算等级分、显示排行榜、执行<a href="terms.html">服务条款</a>中的名称规则和公平竞技规则、处理举报和申诉、防止滥用服务以及解决问题。部分检查是自动进行的：含有违禁词的昵称会在排行榜上隐藏并须修改，对局结果通过重放着法判定。如果你认为某项自动判定有误，请联系我们，将由人工重新审核。为在故障后能够恢复，数据库每15秒复制一次到非公开的 Cloudflare R2 存储桶。</p>
+
+<h2>4. 存档同步</h2>
+<p>游戏登录你的 EOS 账号期间，会将存档文件上传到该账号下的 EOS Player Data Storage，并与同一账号其他设备上的副本合并：收集的内容取并集，次数按设备分别计数后相加，卡组和谜题等级分等当前状态以最近使用的设备为准。设备设置（声音、画面、语言）、广告计数和移除广告不会同步。该文件由 Epic Games 为游戏保存，我们的游戏服务器不会收到它。在 Steam 上，首次登录时会合并你现有的存档，Steam 云也会另外保存一份副本（第6条）。</p>
+
+<h2>5. 其他玩家可以看到的信息</h2>
+<ul><li><b>对手</b>可以看到你的昵称和 #标签、角色、国旗（未隐藏时）、“一句话”和着法，排位赛中还能看到你的等级分。对手的游戏还会收到你的账号 ID、应用版本和隐藏匹配分，但不会显示。</li>
+<li><b>排行榜</b>对所有玩家可见，显示昵称#标签、国旗（未隐藏时）、角色、等级分、段位、排位赛对局数和名次。只有完成定级对局且在最近30天内进行过排位赛的玩家才会上榜；被停用的玩家和被隐藏的昵称不会上榜。</li>
+<li><b>练习对手：</b>如果未能及时找到对手，你可能会与练习对手（AI）匹配。练习对手使用虚构的名称、标签和国旗，并非真实玩家。</li>
+<li><b>Steam 好友</b>可以看到你在 Steam 上的状态显示（例如正在与哪位客人对局）。</li></ul>
+
+<h2>6. Steam（PC）</h2>
+<p>Steam 版使用 Valve 的 Steamworks：包括你的 Steam ID 和 Steam 名称（首次时建议作为昵称）、Steam 根据 IP 地址判断的国家、成就、好友列表中的状态显示、Steam 云中的存档副本，以及游戏用 Steam 账号登录 EOS 时使用的 Steam 登录票据。游戏的购买由 Steam 处理。Valve 依据 Steam 隐私政策处理这些信息。Steam 版没有广告，也不使用 Firebase。</p>
+
+<h2>7. 应用内购买（手机）</h2>
+<p>移除广告是通过 Google Play 结算或 Apple App Store 进行的一次性购买，游戏通过 Unity In-App Purchasing 库与商店通信。商店直接收集你的支付信息，开发者不会收到。商店发送到设备的购买信息（商品 ID、订单或交易 ID、购买令牌或收据、购买时间和状态）在设备上核验，用于关闭广告和恢复购买；你拥有移除广告这一事实会与游戏数据一起保存。这些信息不会发送到我们的服务器，也不会在设备之间同步。付款、退款和交易记录遵循商店的政策。Unity In-App Purchasing 库可能会依据 Unity 的隐私政策向 Unity 发送有关购买流程的技术诊断信息。</p>
+
+<h2>8. 广告（手机）</h2>
+<p>手机版使用 Google AdMob（Google Mobile Ads SDK）在对局之间展示全屏广告，例如离开已结束的对局或看完一章故事时。对局过程中不会出现广告，购买移除广告后广告将关闭。在法律要求征得同意的地区（例如欧洲经济区、英国和瑞士），游戏会在请求广告前通过 Google 的用户消息平台（UMP）收集你的广告选择，你之后可以在设置中更改。在 iOS 上，游戏会在首次请求广告前请求跟踪许可（App Tracking Transparency）；如果你拒绝，将不会使用广告标识符。</p>
+<p>广告 SDK 可能会处理设备的广告 ID、IP 地址及由此推断的大致位置、设备、操作系统和应用信息、广告展示和点击，以及错误和性能诊断信息，用于投放广告、限制展示频率、效果衡量、防止欺诈，以及在允许的情况下展示个性化广告。详情、保留期限和处理地点请参阅 Google 的政策。如需限制个性化广告，请在设备设置中重置或删除广告 ID。</p>
+
+<h2>9. 分析、崩溃报告和远程配置（Google Firebase，仅限手机）</h2>
+<ul><li><b>Google Analytics for Firebase</b> 会收集应用实例 ID、在可用且获允许时的广告 ID、设备型号、操作系统、语言、根据 IP 地址推断的大致国家和地区、应用版本，以及会话和互动信息。我们还会记录游戏事件，例如首次启动问题的回答和新手教程进度、对 iOS 跟踪许可的回答、快速对战搜索（队列和隐藏匹配分）和练习对手对局、全屏广告展示、移除广告推荐的展示/点击/关闭、包含价格和币种的购买结果、已完成的对局数和安装后的天数。我们将其用于改进游戏、调整广告频率和解决问题。其中不包含你的姓名、电子邮件地址、昵称或联机账号 ID。在第8条所列地区，分析和广告衡量将遵循你在同意消息中的选择。</li>
+<li><b>Firebase Crashlytics</b> 会收集崩溃和错误报告，包括堆栈跟踪、设备型号、操作系统、应用版本、崩溃时的设备状态和 Crashlytics 安装 ID，以便我们修复问题。</li>
+<li><b>Firebase Remote Config</b> 使用 Firebase 安装 ID 下载游戏设置，例如全屏广告的出现频率。</li></ul>
+<p>Firebase 在 Google 的服务器上处理这些数据，这些服务器可能位于你所在国家/地区之外。Steam 版不使用 Firebase。</p>
+
+<h2>10. 网站与客服</h2>
+<p>这些政策页面由 GitHub Pages 托管；访问时你的 IP 地址和请求信息可能会被托管方获取。你发给我们的电子邮件（咨询、举报、申诉和删除请求）包含你的电子邮件地址、内容以及你自行附加的文件；我们会在解决请求所需的期间内保存（法律要求更长保存期限的除外），并可应你的要求删除。请勿发送密码或完整的支付信息。Unity 游戏引擎的诊断和分析功能已关闭。</p>
+
+<h2>11. 处理的法律依据</h2>
+<p>在法律（例如 GDPR）要求具备法律依据时，我们依据以下理由处理信息：</p>
+<ul><li><b>与你订立的合同</b>（<a href="terms.html">服务条款</a>）：提供游戏和你所使用的联机功能（联机账号与账号关联、匹配、结果与等级分、排行榜、存档同步以及账号删除）；</li>
+<li><b>我们的正当利益：</b>公平、安全、稳定的联机对战（名称检查、结果核验、公平竞技记录、举报与处罚、请求日志、请求频率限制和备份）；显示玩家所在国家（你可以通过隐藏国旗关闭）；以及运营、改进免费手机游戏并获得收入（包括在无需同意时的广告和分析）；</li>
+<li><b>你的同意</b>（如需）：例如个性化广告和跟踪（UMP、App Tracking Transparency），你可以随时在游戏设置或设备设置中撤回；</li>
+<li><b>法律义务：</b>例如消费者保护法或税法要求保存的记录。</li></ul>
+
+<h2>12. 保留期限与删除</h2>
+<ul><li><b>设备上：</b>直至你清除应用数据或卸载游戏。</li>
+<li><b>Epic Games</b>（设备凭据、账号关联和云存档）：直至你在游戏中删除联机账号。Epic 可能会依据其自身政策保留部分记录。</li>
+<li><b>游戏服务器上：</b>只要你的联机账号存在即予保留。我们不会自动删除长期未使用的账号。</li>
+<li><b>删除账号时，</b>你的个人资料、等级分、公平竞技和处罚记录、你提交的举报以及你自己的结果报告会被立即删除。为使其他玩家的等级分保持正确，对局记录会被保留，但其中你的账号 ID 会被替换为随机的匿名 ID。其他玩家对你的举报记录也会以同样方式保留，管理日志中只记录有一个账号被删除。</li>
+<li><b>请求日志</b>在14天后删除。<b>备份</b>会滚动更替，已删除的数据会在约8天内从备份中消失。电子记录以无法恢复的方式删除。</li>
+<li><b>其他提供方：</b>Epic Games、Cloudflare、Google（包括 Firebase）、Apple、Valve 和 Unity 持有的数据依据各自的政策保存。Firebase 崩溃报告保留90天，分析数据按我们 Google Analytics 媒体资源中设置的期限保留。</li></ul>
+<p>删除账号的方法请参阅<a href="delete-data.html">删除你的数据</a>。</p>
+
+<h2>13. 服务提供方与跨境传输</h2>
+<p>我们不出售或出租个人信息，其他玩家只能看到第5条所述的信息。我们使用以下服务来运营游戏。部分服务代表我们处理数据，另一些（例如就其自身账号而言的 Epic Games，以及 Google、Apple 和 Valve）也会依据其自身政策作为独立的控制者处理数据。</p>
+<div class="scroll"><table><tr><th>接收方（国家/地区）</th><th>数据</th><th>目的</th></tr>
+<tr><td>我们的游戏服务器（大韩民国）</td><td>第3条所述信息</td><td>匹配、排位赛、排行榜、运营管理</td></tr>
+<tr><td>Epic Games, Inc. — Epic Online Services（美国）</td><td>设备凭据和设备型号、EOS 账号 ID、所关联账号的 ID、大厅信息、对局通信和 IP 地址、存档文件</td><td>登录与账号关联、大厅与对局连接、存档同步</td></tr>
+<tr><td>Cloudflare, Inc.（美国；全球网络）</td><td>IP 地址以及游戏与游戏服务器之间的加密通信、数据库备份</td><td>安全连接与攻击防护、备份</td></tr>
+<tr><td>Google LLC（美国）</td><td>Google 登录（经由 EOS）、第7–9条所述数据</td><td>登录、广告、分析、崩溃报告、远程配置、Google Play 购买</td></tr>
+<tr><td>Apple Inc.（美国）</td><td>通过 Apple 登录（经由 EOS）、App Store 购买、跟踪许可</td><td>登录、购买</td></tr>
+<tr><td>Valve Corporation（美国）</td><td>第6条所述数据</td><td>PC 上的 Steam 功能与登录</td></tr>
+<tr><td>Unity Technologies（美国）</td><td>购买流程诊断信息</td><td>应用内购买</td></tr>
+<tr><td>GitHub, Inc.（美国）</td><td>访问这些页面时的 IP 地址和请求信息</td><td>托管这些页面</td></tr></table></div>
+<p>数据会在你使用相应功能时通过互联网发送，并可能在你所在国家/地区之外处理。保留期限见第12条。游戏服务器位于大韩民国，欧盟委员会和英国已认定其提供充分的数据保护；其他传输适用各提供方所说明的保障措施，例如欧盟标准合同条款。联机对战为可选功能：如果你不希望为此发送数据，请不要使用联机功能（游戏的其他部分仍可正常使用）。</p>
+
+<h2>14. 安全措施</h2>
+<p>与游戏服务器的连接经过加密（经由 Cloudflare 的 HTTPS），EOS 的连接也经过加密。游戏服务器只接受由 Epic 签名的登录令牌，以没有管理员权限的专用账号运行，备份保存在非公开的存储桶中。运营管理页面通过 Cloudflare Access 仅供运营人员使用，运营人员的操作会被记录。没有绝对安全的系统，因此我们只保存联机对战所需的信息。</p>
+
+<h2>15. 你的权利</h2>
+<p>根据你所在地的法律，你可能有权查阅、更正、删除、限制或反对处理你的个人信息，有权获得数据可携带性、撤回同意，并向数据保护机构投诉。撤回同意不影响此前进行的处理。在游戏中，你可以修改昵称、隐藏国旗、更改广告选择以及删除联机账号；你也可以重置广告 ID、清除应用数据或联系我们。如需获取你的数据副本或提出其他请求，请发送电子邮件并注明你的昵称和 #标签（例如 名称#1234）以及平台。我们不持有你的姓名或电子邮件地址，因此可能会请你确认该账号属于你本人。我们会在10天内回复。</p>
+
+<h2>16. 儿童</h2>
+<p>TOUHOU CHESS 并非面向13岁以下儿童，我们也不会在知情的情况下收集其个人信息。联机功能面向13岁及以上的玩家（在韩国为14岁及以上）。如监护人认为儿童提供了个人信息，可与我们联系，我们将予以删除。</p>
+
+<h2>17. 变更</h2>
+<p>在改变游戏收集的信息之前，我们会先更新本页面和商店中的隐私信息。重大变更将在本页面和游戏内连同新的日期一起公布。</p>
+
+<h2>联系方式与各提供方政策</h2>
+<p>隐私负责人：FIVE DUCK GAMES，<a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
+<p><a href="https://www.epicgames.com/site/privacypolicy">Epic Games</a> · <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用来自应用的信息（AdMob）</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://store.steampowered.com/privacy_agreement/">Valve（Steam）</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></p>
+</section>
+<hr>
+
+<section id="ru" lang="ru"><h1>Политика конфиденциальности TOUHOU CHESS (Шахматы Тохо)</h1>
+<p class="note">FIVE DUCK GAMES предоставляет TOUHOU CHESS (Шахматы Тохо) в Steam (ПК), а также в Google Play и App Store (пакет Android и идентификатор приложения iOS com.fiveduckgames.touhouchess). Контакт: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. Последнее обновление: 20 ноября 2026 г.</p>
+<p>TOUHOU CHESS — неофициальная фанатская игра по Touhou Project. Играть можно без учётной записи, прогресс сохраняется на вашем устройстве. Онлайн-игра необязательна. Для подбора соперников, рейтинговых игр и таблиц лидеров она использует Epic Online Services (EOS) и игровой сервер, который мы обслуживаем сами. На телефонах игра показывает рекламу Google AdMob, продаёт одну необязательную покупку («Убрать рекламу») через Google Play или App Store и использует Google Firebase для аналитики, отчётов о сбоях и удалённых настроек. Мы никогда не запрашиваем ваше настоящее имя, адрес электронной почты или номер телефона и не продаём ваши персональные данные.</p>
+
+<h2>1. Данные игры на вашем устройстве</h2>
+<p>Прогресс в истории и задачах, рейтинг в задачах, результаты против каждого гостя, карты заклинаний и колоды, последние партии для разбора, онлайн-настройки и результаты (никнейм, скрыт ли флаг, скрытые рейтинги подбора, онлайн-победы и поражения), прочие настройки (язык, звук, экран), число просмотренных полноэкранных объявлений и время последнего из них, а также наличие покупки «Убрать рекламу» хранятся в хранилище приложения на вашем устройстве. Они удаляются, когда вы очищаете данные приложения или удаляете игру. Если включено резервное копирование, операционная система может сохранять данные приложения в ваш аккаунт Google или iCloud в соответствии с настройками и правилами платформы; у нас нет доступа к этим копиям. Пока вы вошли в онлайн-игру, копия прогресса хранится и в вашей онлайн-учётной записи (раздел 4).</p>
+
+<h2>2. Онлайн-учётная запись (Epic Online Services)</h2>
+<ul><li><b>Вход с устройства:</b> при первом открытии онлайн-экрана игра входит в EOS (сервис Epic Games) с анонимными учётными данными устройства (Device ID), которые EOS создаёт на вашем устройстве. При их создании игра передаёт в EOS название модели устройства. Учётная запись Epic не нужна. EOS выдаёт игре идентификатор учётной записи (product user ID), который наш игровой сервер использует как ваш идентификатор пользователя.</li>
+<li><b>Привязка учётной записи (необязательно, нужна для рейтинговых игр):</b> в Steam ваша учётная запись Steam привязывается автоматически. На телефонах можно привязать Google (на Android — через системный вход Google, на iOS — через страницу входа Google) или «Вход с Apple» (iOS). На ПК тоже можно привязать Google через браузер, чтобы объединить прогресс на ПК и телефоне. Игра запрашивает у Google только базовую область входа (<code>openid</code>) и не запрашивает у Apple имя или адрес электронной почты, поэтому мы не получаем ваше имя, адрес электронной почты и фото профиля. EOS хранит связь между вашей учётной записью EOS и идентификатором привязанной учётной записи, чтобы вы могли пользоваться той же учётной записью на других устройствах. Наш игровой сервер получает этот идентификатор в токене входа, который выдаёт EOS, но сохраняет только тип привязанной учётной записи (Steam, Google или Apple).</li>
+<li><b>Новые устройства:</b> если вы входите с привязанной учётной записью на новом устройстве или после переустановки, учётные данные нового устройства присоединяются к вашей существующей учётной записи.</li>
+<li><b>Лобби и соединение во время партии:</b> партии идут между двумя устройствами через лобби EOS и прямые (peer-to-peer) соединения. Лобби содержит версию игры, правила и контроль времени, код комнаты для игры с другом, очередь и ваш скрытый рейтинг подбора для быстрой игры, а также идентификатор партии, подобранной нашим сервером; игры других игроков могут читать эти данные при поиске соперника. Во время партии устройства обмениваются вашим никнеймом и #тегом, персонажем, страной (если она не скрыта), версией приложения, скрытым рейтингом подбора, колодой карт заклинаний, ходами партии и репликами (готовыми фразами). При прямом соединении устройство соперника видит ваш IP-адрес. EOS видит ваш IP-адрес в любом случае и может передавать соединение через свои серверы.</li></ul>
+
+<h2>3. Наш игровой сервер</h2>
+<p>Игровой сервер работает на компьютере, который мы обслуживаем в Республике Корея, и доступен через Cloudflare по адресу touhouchess-api.fiveduckgames.com. Он отвечает за подбор соперников в быстрой и рейтинговой игре, назначение тренировочного бота (ИИ), проверку результатов, рейтинги, таблицы лидеров, проверку имён, жалобы, санкции и удаление учётных записей. Игры с другом по коду комнаты через него не проходят. Сервер хранит:</p>
+<ul><li><b>Учётная запись:</b> идентификатор учётной записи EOS, тип привязанной учётной записи, время создания учётной записи, последнего изменения и последнего использования онлайн-функций.</li>
+<li><b>Профиль:</b> никнейм (текущий и тот, что показан в таблицах лидеров, с временем изменения), #тег (четырёхзначное число, вычисленное из идентификатора учётной записи и никогда не меняющееся), страну и признак скрытия флага, выбранного персонажа.</li>
+<li><b>Страна:</b> на ПК — страна, которую Steam определяет по IP-адресу, на iOS — страна App Store, на Android — страна SIM-карты или мобильной сети; язык устройства и GPS не используются. Если страну определить нельзя, флаг не показывается. Если вы скроете флаг, страна останется на сервере, но не будет показана никому, а вы не попадёте в таблицы лидеров по странам.</li>
+<li><b>Рейтинги:</b> рейтинг в рейтинговых играх, отклонение рейтинга, число партий, побед, поражений и ничьих, квалификация и ранг, а также скрытый рейтинг для каждой очереди быстрой игры, который используется только для подбора соперников близкой силы.</li>
+<li><b>Записи партий,</b> подобранных сервером: идентификаторы учётных записей и персонажи обоих игроков, очередь, случайное зерно, все ходы и сыгранные карты заклинаний, результат и причина окончания, оставшееся время на часах, о котором сообщил каждый игрок, и отметки времени; для партий с тренировочным ботом — профиль ИИ.</li>
+<li><b>Данные, которые игра передаёт при постановке в очередь:</b> число сыгранных партий с картами заклинаний, ответили ли вы, что впервые играете в шахматы (используется один раз для начального скрытого рейтинга), версия приложения и онлайн-протокол (используются только для подбора и не сохраняются).</li>
+<li><b>Записи о честной игре:</b> выходы и обрывы связи в рейтинговых играх (для времени ожидания перед следующим подбором), сообщения о результате, которые не удалось проверить или которые не совпали с партией, результаты, которые не удалось определить, и партии с тренировочным ботом, не прошедшие проверку.</li>
+<li><b>Жалобы и санкции:</b> поданные вами жалобы (игрок, партия, причина и необязательный комментарий до 500 символов) и жалобы на вас, их статус и итог; санкции, такие как принудительная смена никнейма, временная блокировка и бан, с причиной и сроком; журнал действий модераторов.</li>
+<li><b>Журнал запросов:</b> по одной строке на запрос: метод, адрес (без содержимого запроса), код ответа, время обработки и идентификатор учётной записи. Удаляется через 14 дней.</li>
+<li><b>IP-адрес:</b> сервер использует IP-адрес запроса только в памяти, чтобы ограничить число запросов с одного адреса в минуту. Он не записывает IP-адреса в журналы или базу данных. Cloudflare, через который проходит соединение, обрабатывает IP-адреса по своим правилам.</li></ul>
+<p>Мы используем эти данные, чтобы подбирать соперников, проверять результаты повторным проигрыванием ходов, рассчитывать рейтинги, показывать таблицы лидеров, применять правила об именах и честной игре из <a href="terms.html">Условий использования</a>, рассматривать жалобы и апелляции, защищать сервис от злоупотреблений и исправлять ошибки. Некоторые проверки выполняются автоматически: никнеймы с запрещёнными словами скрываются из таблиц лидеров и подлежат смене, а результаты определяются повторным проигрыванием ходов. Если вы считаете, что автоматическое решение ошибочно, свяжитесь с нами, и его пересмотрит человек. База данных каждые 15 секунд копируется в закрытое хранилище Cloudflare R2, чтобы её можно было восстановить после сбоя.</p>
+
+<h2>4. Синхронизация сохранений</h2>
+<p>Пока игра вошла в вашу учётную запись EOS, она загружает файл сохранения в EOS Player Data Storage этой учётной записи и объединяет его с копиями с других ваших устройств на той же учётной записи: собранное объединяется, счётчики складываются по устройствам, а текущее состояние (например, колоды и рейтинг в задачах) берётся с последнего устройства. Настройки устройства (звук, экран, язык), счётчики рекламы и покупка «Убрать рекламу» не синхронизируются. Файл хранит Epic Games для игры; наш игровой сервер его не получает. В Steam ваше существующее сохранение добавляется при первом входе, а Steam Cloud хранит собственную копию (раздел 6).</p>
+
+<h2>5. Что видят другие игроки</h2>
+<ul><li><b>Соперники</b> видят ваш никнейм и #тег, персонажа, флаг страны (если он не скрыт), реплики и ходы, а в рейтинговых играх — ваш рейтинг. Их игра также получает ваш идентификатор учётной записи, версию приложения и скрытый рейтинг подбора, которые не показываются.</li>
+<li><b>Таблицы лидеров</b> видны всем игрокам и показывают никнейм#тег, флаг страны (если он не скрыт), персонажа, рейтинг, ранг, число рейтинговых партий и место. В них попадают только игроки, завершившие квалификационные партии и игравшие в рейтинговые игры за последние 30 дней; заблокированные игроки и скрытые никнеймы не показываются.</li>
+<li><b>Тренировочный бот:</b> если соперник не найден вовремя, вас могут соединить с тренировочным ботом (ИИ). Он использует вымышленные имя, тег и флаг и не является реальным игроком.</li>
+<li><b>Друзья в Steam</b> видят ваш статус в Steam, например, с каким гостем вы играете.</li></ul>
+
+<h2>6. Steam (ПК)</h2>
+<p>Версия для Steam использует Steamworks от Valve: ваш Steam ID и имя в Steam (при первом входе предлагается как никнейм), страну, которую Steam определяет по IP-адресу, достижения, статус для списка друзей, копии файла сохранения в Steam Cloud, а также билет входа Steam, с помощью которого игра входит в EOS с вашей учётной записью Steam. Покупку игры обрабатывает Steam. Valve обрабатывает эти данные согласно политике конфиденциальности Steam. В версии для Steam нет рекламы, и она не использует Firebase.</p>
+
+<h2>7. Покупка в приложении (телефоны)</h2>
+<p>«Убрать рекламу» — разовая покупка через Google Play или Apple App Store; игра связывается с магазином через библиотеку Unity In-App Purchasing. Платёжные данные получает непосредственно магазин, мы их никогда не получаем. Сведения о покупке, которые магазин передаёт на устройство (идентификатор товара, номер заказа или транзакции, токен покупки или чек, время и состояние покупки), проверяются на устройстве, чтобы отключить рекламу и восстановить покупку, а факт владения покупкой «Убрать рекламу» хранится вместе с данными игры. Мы не передаём эти сведения на свои серверы, и они не синхронизируются между устройствами. Платежи, возвраты и записи о транзакциях регулируются правилами магазина. Библиотека Unity In-App Purchasing может передавать в Unity техническую диагностику процесса покупки согласно политике конфиденциальности Unity.</p>
+
+<h2>8. Реклама (телефоны)</h2>
+<p>Мобильная версия использует Google AdMob (Google Mobile Ads SDK) для показа полноэкранной рекламы между партиями, например, когда вы выходите из завершённой партии или заканчиваете главу истории. Во время партии реклама не показывается. Покупка «Убрать рекламу» отключает её. Там, где закон требует согласия (например, в ЕЭЗ, Великобритании и Швейцарии), ваш выбор в отношении рекламы запрашивается через платформу пользовательских сообщений Google (UMP) до запроса рекламы, и позже его можно изменить в настройках. На iOS игра перед первым запросом рекламы спрашивает разрешение на отслеживание (App Tracking Transparency); если вы откажете, рекламный идентификатор не используется.</p>
+<p>Рекламный SDK может обрабатывать рекламный идентификатор устройства, IP-адрес и определённое по нему приблизительное местоположение, сведения об устройстве, операционной системе и приложении, показы и нажатия рекламы, а также диагностику ошибок и производительности — для показа рекламы, ограничения частоты, измерения, защиты от мошенничества и, где это разрешено, персонализированной рекламы. Подробности, сроки хранения и места обработки см. в правилах Google. Чтобы ограничить персонализированную рекламу, сбросьте или удалите рекламный идентификатор в настройках устройства.</p>
+
+<h2>9. Аналитика, отчёты о сбоях и удалённые настройки (Google Firebase, только телефоны)</h2>
+<ul><li><b>Google Analytics for Firebase</b> собирает идентификатор экземпляра приложения, рекламный идентификатор (если он доступен и разрешён), модель устройства, операционную систему, язык, приблизительные страну и регион, определённые по IP-адресу, версию приложения, а также сведения о сеансах и вовлечённости. Мы также записываем игровые события: ваш ответ на вопрос при первом запуске и прохождение обучения, ответ на запрос отслеживания в iOS, поиск быстрой игры (очередь и скрытый рейтинг подбора) и партии с тренировочным ботом, показы полноэкранной рекламы, показы, нажатия и закрытия предложения «Убрать рекламу», результаты покупок с ценой и валютой, число завершённых партий и дни с момента установки. Мы используем это, чтобы улучшать игру, настраивать частоту рекламы и исправлять ошибки. Эти данные не включают ваше имя, адрес электронной почты, никнейм или идентификатор онлайн-учётной записи. В регионах из раздела 8 аналитика и измерение рекламы следуют выбору, сделанному вами в окне согласия.</li>
+<li><b>Firebase Crashlytics</b> собирает отчёты о сбоях и ошибках, включая трассировку стека, модель устройства, операционную систему, версию приложения, состояние устройства в момент сбоя и идентификатор установки Crashlytics, чтобы мы могли исправлять ошибки.</li>
+<li><b>Firebase Remote Config</b> использует идентификатор установки Firebase, чтобы загружать игровые настройки, например, как часто может показываться полноэкранная реклама.</li></ul>
+<p>Firebase обрабатывает эти данные на серверах Google, которые могут находиться за пределами вашей страны. Версия для Steam не использует Firebase.</p>
+
+<h2>10. Сайты и поддержка</h2>
+<p>Эти страницы размещены на GitHub Pages; при их посещении хостингу могут стать известны ваш IP-адрес и сведения о запросе. Письма нам (обращения в поддержку, жалобы, апелляции и запросы на удаление) содержат ваш адрес электронной почты, текст и вложения, которые вы решили отправить; мы храним их столько, сколько нужно для решения вопроса (или дольше, если этого требует закон), и удаляем по запросу. Не присылайте пароли и полные платёжные данные. Диагностика и аналитика игрового движка Unity отключены.</p>
+
+<h2>11. Правовые основания</h2>
+<p>Там, где закон (например, GDPR) требует правового основания, мы опираемся на:</p>
+<ul><li><b>договор с вами</b> (<a href="terms.html">Условия использования</a>) — для предоставления игры и используемых вами онлайн-функций: онлайн-учётной записи и привязки, подбора соперников, результатов и рейтингов, таблиц лидеров, синхронизации сохранений и удаления учётной записи;</li>
+<li><b>наши законные интересы</b> — в честной, безопасной и надёжной онлайн-игре (проверка имён, проверка результатов, записи о честной игре, жалобы и санкции, журналы запросов, ограничение частоты запросов, резервные копии), в показе страны игроков (вы можете отключить его, скрыв флаг), а также в работе, улучшении и финансировании бесплатной мобильной игры, включая рекламу и аналитику там, где согласие не требуется;</li>
+<li><b>ваше согласие</b>, где оно требуется, например для персонализированной рекламы и отслеживания (UMP, App Tracking Transparency); вы можете отозвать его в любое время в настройках игры или устройства;</li>
+<li><b>требования закона</b>, например хранение записей, которые предписывают законы о защите прав потребителей или налогах.</li></ul>
+
+<h2>12. Сроки хранения и удаление</h2>
+<ul><li><b>На устройстве:</b> пока вы не очистите данные приложения или не удалите игру.</li>
+<li><b>В Epic Games</b> (учётные данные устройства, привязки и облачное сохранение): пока вы не удалите онлайн-учётную запись в игре. Epic может хранить часть записей по своим правилам.</li>
+<li><b>На нашем игровом сервере:</b> пока существует ваша онлайн-учётная запись. Неактивные учётные записи автоматически не удаляются.</li>
+<li><b>При удалении учётной записи</b> ваш профиль, рейтинги, записи о честной игре и санкциях, поданные вами жалобы и ваши сообщения о результатах удаляются сразу. Записи партий сохраняются, чтобы рейтинги других игроков оставались верными, но ваш идентификатор в них заменяется случайным анонимным идентификатором. Жалобы других игроков на вас сохраняются так же, а в журнале модерации остаётся лишь отметка, что учётная запись удалена.</li>
+<li><b>Журналы запросов</b> удаляются через 14 дней. <b>Резервные копии</b> постепенно заменяются, поэтому удалённые данные исчезают из них примерно за 8 дней. Удалённые электронные записи восстановить нельзя.</li>
+<li><b>Другие поставщики:</b> данные у Epic Games, Cloudflare, Google (включая Firebase), Apple, Valve и Unity хранятся по их правилам. Отчёты о сбоях Firebase хранятся 90 дней, данные аналитики — в течение срока, заданного в нашем ресурсе Google Analytics.</li></ul>
+<p>Как удалить учётную запись, см. на странице <a href="delete-data.html">«Удаление данных»</a>.</p>
+
+<h2>13. Поставщики услуг и международная передача данных</h2>
+<p>Мы не продаём и не сдаём в аренду персональные данные, а другие игроки видят только то, что описано в разделе 5. Для работы игры мы пользуемся перечисленными ниже сервисами. Одни обрабатывают данные по нашему поручению, другие (например, Epic Games в отношении своих учётных записей, Google, Apple и Valve) также действуют как самостоятельные операторы по своим правилам.</p>
+<div class="scroll"><table><tr><th>Получатель (страна)</th><th>Данные</th><th>Цель</th></tr>
+<tr><td>Наш игровой сервер (Республика Корея)</td><td>Раздел 3</td><td>Подбор соперников, рейтинговые игры, таблицы лидеров, модерация</td></tr>
+<tr><td>Epic Games, Inc. — Epic Online Services (США)</td><td>Учётные данные и модель устройства, идентификатор учётной записи EOS, идентификаторы привязанных учётных записей, данные лобби, трафик партии и IP-адрес, файл сохранения</td><td>Вход и привязка учётных записей, лобби и соединение во время партии, синхронизация сохранений</td></tr>
+<tr><td>Cloudflare, Inc. (США; глобальная сеть)</td><td>IP-адрес и зашифрованный трафик между игрой и нашим сервером, резервные копии базы данных</td><td>Защищённое соединение и защита от атак, резервное копирование</td></tr>
+<tr><td>Google LLC (США)</td><td>Вход через Google (через EOS), данные из разделов 7–9</td><td>Вход, реклама, аналитика, отчёты о сбоях, удалённые настройки, покупки в Google Play</td></tr>
+<tr><td>Apple Inc. (США)</td><td>«Вход с Apple» (через EOS), покупки в App Store, разрешение на отслеживание</td><td>Вход, покупки</td></tr>
+<tr><td>Valve Corporation (США)</td><td>Данные из раздела 6</td><td>Функции Steam и вход на ПК</td></tr>
+<tr><td>Unity Technologies (США)</td><td>Диагностика процесса покупки</td><td>Покупка в приложении</td></tr>
+<tr><td>GitHub, Inc. (США)</td><td>IP-адрес и сведения о запросе при посещении этих страниц</td><td>Размещение этих страниц</td></tr></table></div>
+<p>Данные передаются через интернет, когда вы пользуетесь соответствующей функцией, и могут обрабатываться за пределами вашей страны. Сроки хранения указаны в разделе 12. Наш игровой сервер находится в Республике Корея, за которой Европейская комиссия и Великобритания признали достаточный уровень защиты данных; к прочим передачам применяются меры защиты, указанные каждым поставщиком, например стандартные договорные условия ЕС. Онлайн-игра необязательна: если вы не хотите передавать данные для неё, не пользуйтесь онлайн-функциями (остальная часть игры продолжит работать).</p>
+
+<h2>14. Безопасность</h2>
+<p>Соединения с нашим игровым сервером шифруются (HTTPS через Cloudflare), EOS также шифрует свои соединения. Сервер принимает только токены входа, подписанные Epic, работает под отдельной учётной записью без прав администратора и хранит резервные копии в закрытом хранилище. Страницы модерации доступны только нашим сотрудникам через Cloudflare Access, а их действия записываются в журнал. Абсолютно защищённых систем не бывает, поэтому мы храним только то, что нужно для онлайн-игры.</p>
+
+<h2>15. Ваши права</h2>
+<p>В зависимости от места вашего проживания у вас может быть право на доступ к своим персональным данным, их исправление и удаление, ограничение обработки, возражение против неё и переносимость данных, а также право отозвать согласие и подать жалобу в орган по защите данных. Отзыв согласия не влияет на обработку, проведённую ранее. В игре вы можете сменить никнейм, скрыть флаг, изменить выбор в отношении рекламы и удалить онлайн-учётную запись; также можно сбросить рекламный идентификатор, очистить данные приложения или написать нам. Чтобы получить копию своих данных или отправить другой запрос, напишите нам, указав никнейм и #тег (например, Имя#1234) и платформу. У нас нет вашего имени и адреса электронной почты, поэтому мы можем попросить подтвердить, что учётная запись принадлежит вам. Мы отвечаем в течение 10 дней.</p>
+
+<h2>16. Дети</h2>
+<p>TOUHOU CHESS не предназначена для детей младше 13 лет, и мы сознательно не собираем их персональные данные. Онлайн-функции предназначены для игроков от 13 лет (в Корее — от 14 лет). Если родитель или опекун считает, что ребёнок передал персональные данные, он может связаться с нами, и мы их удалим.</p>
+
+<h2>17. Изменения</h2>
+<p>Прежде чем изменить состав собираемых игрой данных, мы обновим эту страницу и сведения о конфиденциальности в магазинах. О существенных изменениях мы сообщим на этой странице и в игре, указав новую дату.</p>
+
+<h2>Контакты и правила поставщиков</h2>
+<p>Ответственный за защиту персональных данных: FIVE DUCK GAMES, <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
+<p><a href="https://www.epicgames.com/site/privacypolicy">Epic Games</a> · <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://policies.google.com/technologies/partner-sites">Как Google использует данные приложений (AdMob)</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://store.steampowered.com/privacy_agreement/">Valve (Steam)</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></p>
+</section>
+<hr>
+
+<section id="nb" lang="nb"><h1>Personvernerklæring for TOUHOU CHESS</h1>
+<p class="note">FIVE DUCK GAMES tilbyr TOUHOU CHESS på Steam (PC) og på Google Play og App Store (Android-pakke og iOS-pakke-ID com.fiveduckgames.touhouchess). Kontakt: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. Sist oppdatert: 20. november 2026.</p>
+<p>TOUHOU CHESS er et uoffisielt fanspill basert på Touhou Project. Du kan spille uten konto, og fremgangen din lagres på enheten. Nettspill er valgfritt. Det bruker Epic Online Services (EOS) og en spillserver vi drifter selv, til matchmaking, rangerte kamper og topplister. På telefon viser spillet reklame fra Google AdMob, selger ett valgfritt kjøp (Fjern reklame) gjennom Google Play eller App Store, og bruker Google Firebase til analyse, krasjrapporter og fjerninnstillinger. Vi ber aldri om ditt virkelige navn, e-postadresse eller telefonnummer, og vi selger ikke personopplysningene dine.</p>
+
+<h2>1. Spilldata på enheten</h2>
+<p>Fremgang i historien og oppgavene, oppgaverating, resultater mot hver gjest, spellkort og kortstokker, nylige partier til gjennomgang, nettinnstillinger og -resultater (kallenavn, om flagget er skjult, skjulte matchmakingratinger, seire og tap på nett), andre innstillinger (språk, lyd, skjerm), hvor mange fullskjermannonser du har sett og når den siste ble vist, og om du eier Fjern reklame, lagres i appens lagring på enheten. De slettes når du tømmer appdataene eller avinstallerer spillet. Hvis sikkerhetskopiering er slått på, kan operativsystemet ta sikkerhetskopi av appdata til Google-kontoen eller iCloud etter plattformens innstillinger og retningslinjer; vi har ikke tilgang til disse kopiene. Mens du er logget på nettspill, lagres også en kopi av fremgangen sammen med nettkontoen din (punkt 4).</p>
+
+<h2>2. Nettkontoen din (Epic Online Services)</h2>
+<ul><li><b>Pålogging med enheten:</b> første gang du åpner nettspillskjermen, logger spillet på EOS, som leveres av Epic Games, med en anonym enhetslegitimasjon (Device ID) som EOS oppretter på enheten. Når den opprettes, sender spillet enhetens modellnavn til EOS. Du trenger ingen Epic-konto. EOS gir spillet en konto-ID (product user ID), som spillserveren vår bruker som bruker-ID-en din.</li>
+<li><b>Kobling av konto (valgfritt, kreves for rangerte kamper):</b> på Steam kobles Steam-kontoen din automatisk. På telefon kan du koble til Google (på Android via systemets Google-pålogging, på iOS via Googles påloggingsside) eller Logg på med Apple (iOS). På PC kan du også koble til Google i nettleseren for å slå sammen fremgangen på PC og telefon. Spillet ber Google bare om det grunnleggende påloggingsomfanget (<code>openid</code>) og ber ikke Apple om navn eller e-post, så vi får ikke navnet, e-postadressen eller profilbildet ditt. EOS lagrer koblingen mellom EOS-kontoen din og ID-en til den koblede kontoen, slik at du kan bruke samme konto på andre enheter. Spillserveren vår mottar denne ID-en i påloggingstokenet fra EOS, men lagrer bare hvilken type konto som er koblet (Steam, Google eller Apple).</li>
+<li><b>Nye enheter:</b> logger du på med en koblet konto på en ny enhet eller etter ny installasjon, knyttes den nye enhetens legitimasjon til den eksisterende kontoen din.</li>
+<li><b>Lobbyer og tilkobling under partiet:</b> partier spilles mellom de to enhetene via EOS-lobbyer og direkte tilkoblinger (peer-to-peer). En lobby inneholder spillversjon, regler og tidskontroll, romkoden for en vennekamp, køen og den skjulte matchmakingratingen din for rask kamp, og kamp-ID-en for partier spillserveren har satt opp; andre spilleres spill kan lese dette mens de leter etter motstander. Under partiet utveksler de to enhetene kallenavnet og #taggen din, karakter, land (med mindre det er skjult), appversjon, skjult matchmakingrating, spellkortstokk, trekkene i partiet og hurtigmeldinger (faste fraser). Ved direkte tilkobling kan motstanderens enhet se IP-adressen din. EOS ser IP-adressen din uansett og kan sende tilkoblingen via sine egne servere.</li></ul>
+
+<h2>3. Spillserveren vår</h2>
+<p>Spillserveren kjører på en datamaskin vi drifter i Republikken Korea, og nås via Cloudflare på touhouchess-api.fiveduckgames.com. Den håndterer matchmaking for rask kamp og rangert kamp, treningsbot (KI), kontroll av resultater, ratinger, topplister, navnekontroll, rapporter, sanksjoner og sletting av kontoer. Vennekamper med romkode går ikke via serveren. Serveren lagrer:</p>
+<ul><li><b>Konto:</b> EOS-konto-ID-en din, typen koblet konto, og når kontoen ble opprettet, sist endret og sist brukt på nett.</li>
+<li><b>Profil:</b> kallenavnet ditt (det du bruker nå og det som vises på topplister, med tidspunktet det ble endret), #taggen din (et firesifret tall beregnet fra konto-ID-en som aldri endres), landet ditt og om du har skjult flagget, og karakteren du spiller som.</li>
+<li><b>Land:</b> hentes fra landet Steam fastslår ut fra IP-adressen din på PC, App Store-landet på iOS eller landet til SIM-kortet eller mobilnettet på Android – aldri fra enhetens språk eller GPS. Finnes ingen av delene, vises ikke noe flagg. Skjuler du flagget, blir landet liggende på serveren, men vises ikke for noen, og du utelates fra landtopplistene.</li>
+<li><b>Ratinger:</b> ratingen din i rangert kamp, ratingavvik, antall partier, seire, tap og remis, plassering og nivå, og en skjult rating for hver kø i rask kamp som bare brukes til å finne motstandere på samme nivå.</li>
+<li><b>Partiregistreringer</b> for partier serveren har satt opp: begge spillernes konto-ID-er og karakterer, køen, det tilfeldige frøet, alle trekk og spellkort, resultatet og hvordan partiet endte, gjenværende tid hver spiller rapporterte, og tidsstempler; for partier mot treningsboten også botens profil.</li>
+<li><b>Opplysninger spillet sender når du stiller deg i kø:</b> hvor mange partier med spellkort du har spilt, om du svarte at du er ny i sjakk (brukes én gang til startverdien for den skjulte ratingen), og appversjon og nettprotokoll (brukes bare til matchmaking og lagres ikke).</li>
+<li><b>Registreringer om fair play:</b> når du forlater eller mister forbindelsen i rangerte kamper (brukes til ventetiden før neste kamp), resultatrapporter som ikke kunne bekreftes eller ikke stemte med partiet, resultater som ikke kunne avgjøres, og partier mot treningsboten som ikke besto kontrollen.</li>
+<li><b>Rapporter og sanksjoner:</b> rapporter du sender (spilleren, partiet, grunnen og en valgfri merknad på opptil 500 tegn) og rapporter om deg, med status og utfall; sanksjoner som tvunget navnebytte, utestengelse for en periode og permanent utestengelse, med grunn og sluttidspunkt; og en logg over moderatorhandlinger.</li>
+<li><b>Forespørselslogger:</b> én linje per forespørsel med metode, endepunkt (uten innholdet i forespørselen), svarstatus, behandlingstid og konto-ID-en din. De slettes etter 14 dager.</li>
+<li><b>IP-adresse:</b> serveren bruker IP-adressen til en forespørsel bare i minnet, for å begrense hvor mange forespørsler én adresse kan sende per minutt. Den skriver ikke IP-adresser til logger eller database. Cloudflare, som formidler tilkoblingen, behandler IP-adresser etter egne retningslinjer.</li></ul>
+<p>Vi bruker disse opplysningene til å finne motstandere til deg, kontrollere resultater ved å spille av trekkene på nytt, beregne ratinger, vise topplister, håndheve navne- og fair play-reglene i <a href="terms.html">vilkårene for bruk</a>, behandle rapporter og klager, beskytte tjenesten mot misbruk og rette feil. Noen kontroller er automatiske: kallenavn med forbudte ord skjules fra topplistene og må endres, og resultater avgjøres ved å spille av trekkene. Mener du at en automatisk avgjørelse er feil, kan du kontakte oss, så vurderer et menneske saken på nytt. Databasen kopieres hvert 15. sekund til en privat lagringsbøtte i Cloudflare R2, slik at den kan gjenopprettes etter en feil.</p>
+
+<h2>4. Synkronisering av lagring</h2>
+<p>Mens spillet er logget på EOS-kontoen din, laster det opp lagringsfilen til EOS Player Data Storage under denne kontoen og slår den sammen med kopiene fra de andre enhetene dine på samme konto: innsamlede ting slås sammen, tellere legges sammen per enhet, og nåværende tilstand, som kortstokker og oppgaverating, følger den sist brukte enheten. Enhetsinnstillinger (lyd, skjerm, språk), reklametellere og Fjern reklame synkroniseres ikke. Filen lagres av Epic Games for spillet; spillserveren vår mottar den ikke. På Steam legges den eksisterende lagringen til første gang du logger på, og Steam Cloud har sin egen kopi (punkt 6).</p>
+
+<h2>5. Hva andre spillere kan se</h2>
+<ul><li><b>Motstandere</b> ser kallenavnet og #taggen din, karakter, flagg (med mindre det er skjult), hurtigmeldinger og trekk, og i rangerte kamper ratingen din. Spillet deres mottar også konto-ID-en din, appversjonen og den skjulte matchmakingratingen, som ikke vises.</li>
+<li><b>Topplister</b> er synlige for alle spillere og viser kallenavn#tagg, flagg (med mindre det er skjult), karakter, rating, nivå, antall rangerte partier og plassering. Bare spillere som har fullført plasseringspartiene og spilt rangert kamp de siste 30 dagene, vises; utestengte spillere og skjulte navn vises ikke.</li>
+<li><b>Treningsbot:</b> finnes ingen motstander i tide, kan du bli satt opp mot en treningsbot (KI). Den bruker oppdiktet navn, tagg og flagg og er ikke en ekte spiller.</li>
+<li><b>Steam-venner</b> kan se statusen din på Steam, for eksempel hvilken gjest du spiller mot.</li></ul>
+
+<h2>6. Steam (PC)</h2>
+<p>Steam-versjonen bruker Steamworks fra Valve: Steam-ID-en og Steam-navnet ditt (foreslås som kallenavn første gang), landet Steam fastslår ut fra IP-adressen din, prestasjoner, status i vennelisten, kopier av lagringsfilen i Steam Cloud og en Steam-påloggingsbillett som spillet bruker til å logge på EOS med Steam-kontoen din. Kjøp av spillet håndteres av Steam. Valve behandler disse opplysningene etter Steams personvernerklæring. Steam-versjonen viser ikke reklame og bruker ikke Firebase.</p>
+
+<h2>7. Kjøp i appen (telefon)</h2>
+<p>Fjern reklame er et engangskjøp gjennom Google Play-fakturering eller Apple App Store; spillet kommuniserer med butikken via biblioteket Unity In-App Purchasing. Butikken samler inn betalingsopplysningene dine direkte, og vi mottar dem aldri. Kjøpsopplysningene butikken sender til enheten (produkt-ID, ordre- eller transaksjons-ID, kjøpstoken eller kvittering, kjøpstidspunkt og status), kontrolleres på enheten for å slå av reklame og gjenopprette kjøpet, og at du eier Fjern reklame, lagres sammen med spilldataene. Vi sender ikke dette til serverne våre, og det synkroniseres ikke mellom enheter. Betaling, refusjon og transaksjonsregistreringer følger butikkens retningslinjer. Biblioteket Unity In-App Purchasing kan sende teknisk diagnostikk om kjøpsflyten til Unity etter Unitys personvernerklæring.</p>
+
+<h2>8. Reklame (telefon)</h2>
+<p>Mobilversjonen bruker Google AdMob (Google Mobile Ads SDK) til å vise fullskjermannonser mellom partier, for eksempel når du forlater et ferdig parti eller fullfører et kapittel i historien. Det vises aldri reklame under et parti. Kjøper du Fjern reklame, slås reklamen av. Der loven krever samtykke (for eksempel i EØS, Storbritannia og Sveits), innhentes reklamevalgene dine med Googles brukermeldingsplattform (UMP) før det bes om annonser, og du kan endre dem senere i innstillingene. På iOS ber spillet om tillatelse til sporing (App Tracking Transparency) før første annonseforespørsel; avslår du, brukes ikke reklameidentifikatoren.</p>
+<p>Annonse-SDK-en kan behandle enhetens reklame-ID, IP-adresse og omtrentlig posisjon utledet av den, opplysninger om enhet, operativsystem og app, annonsevisninger og -klikk, og diagnostikk om feil og ytelse, til levering av annonser, frekvensbegrensning, måling, svindelforebygging og, der det er tillatt, tilpasset reklame. Se Googles retningslinjer for detaljer, lagringstid og behandlingssteder. For å begrense tilpasset reklame kan du tilbakestille eller slette reklame-ID-en i enhetens innstillinger.</p>
+
+<h2>9. Analyse, krasjrapporter og fjerninnstillinger (Google Firebase, bare telefon)</h2>
+<ul><li><b>Google Analytics for Firebase</b> samler inn en appforekomst-ID, reklame-ID-en din der den er tilgjengelig og tillatt, enhetsmodell, operativsystem, språk, omtrentlig land og region utledet av IP-adressen, appversjon og opplysninger om økter og engasjement. Vi registrerer også spillhendelser, som svaret ditt på spørsmålet ved første oppstart og fremgang i opplæringen, svaret ditt på sporingsforespørselen i iOS, søk etter rask kamp (køen og den skjulte matchmakingratingen) og partier mot treningsboten, viste fullskjermannonser, når tilbud om Fjern reklame vises, trykkes på eller lukkes, kjøpsresultater med pris og valuta, antall fullførte partier og dager siden installasjon. Vi bruker dette til å forbedre spillet, justere reklamefrekvensen og rette feil. Det inkluderer ikke navnet, e-postadressen, kallenavnet eller nettkonto-ID-en din. I områdene nevnt i punkt 8 følger analyse og annonsemåling valgene du tok i samtykkemeldingen.</li>
+<li><b>Firebase Crashlytics</b> samler inn krasj- og feilrapporter, blant annet stakksporing, enhetsmodell, operativsystem, appversjon, enhetens tilstand ved krasjet og en Crashlytics-installasjons-ID, slik at vi kan rette feil.</li>
+<li><b>Firebase Remote Config</b> bruker en Firebase-installasjons-ID til å laste ned spillinnstillinger, for eksempel hvor ofte fullskjermannonser kan vises.</li></ul>
+<p>Firebase behandler disse dataene på Googles servere, som kan ligge utenfor landet ditt. Steam-versjonen bruker ikke Firebase.</p>
+
+<h2>10. Nettsider og kundestøtte</h2>
+<p>GitHub Pages er vert for disse sidene; når du besøker dem, kan IP-adressen og opplysninger om forespørselen bli kjent for verten. E-poster til oss (kundestøtte, rapporter, klager og slettingsforespørsler) inneholder e-postadressen din, meldingen og vedlegg du velger å sende; vi oppbevarer dem så lenge det trengs for å løse saken, med mindre loven krever lengre oppbevaring, og sletter dem på forespørsel. Ikke send passord eller fullstendige betalingsopplysninger. Diagnostikk og analyse i spillmotoren Unity er slått av.</p>
+
+<h2>11. Behandlingsgrunnlag</h2>
+<p>Der loven (for eksempel GDPR) krever et behandlingsgrunnlag, bygger vi på:</p>
+<ul><li><b>avtalen med deg</b> (<a href="terms.html">vilkårene for bruk</a>) for å levere spillet og nettfunksjonene du bruker: nettkonto og kontokobling, matchmaking, resultater og ratinger, topplister, synkronisering av lagring og sletting av konto;</li>
+<li><b>våre berettigede interesser</b> i rettferdig, trygt og stabilt nettspill (navnekontroll, resultatkontroll, registreringer om fair play, rapporter og sanksjoner, forespørselslogger, begrensning av forespørsler og sikkerhetskopier), i å vise hvilket land spillere kommer fra, noe du kan slå av ved å skjule flagget, og i å drifte, forbedre og finansiere et gratis spill på telefon, inkludert reklame og analyse der samtykke ikke kreves;</li>
+<li><b>samtykket ditt</b> der det kreves, for eksempel for tilpasset reklame og sporing (UMP, App Tracking Transparency); du kan trekke det tilbake når som helst i spillets eller enhetens innstillinger;</li>
+<li><b>rettslige forpliktelser</b>, for eksempel registreringer forbruker- eller skattelovgivningen krever at vi oppbevarer.</li></ul>
+
+<h2>12. Lagringstid og sletting</h2>
+<ul><li><b>På enheten:</b> til du tømmer appdataene eller avinstallerer spillet.</li>
+<li><b>Hos Epic Games</b> (enhetslegitimasjon, kontokoblinger og skylagring): til du sletter nettkontoen din i spillet. Epic kan beholde enkelte registreringer etter egne retningslinjer.</li>
+<li><b>På spillserveren vår:</b> så lenge nettkontoen din finnes. Vi sletter ikke inaktive kontoer automatisk.</li>
+<li><b>Når du sletter kontoen,</b> slettes profilen, ratingene, registreringene om fair play og sanksjoner, rapportene du har sendt og dine egne resultatrapporter med en gang. Partiregistreringer beholdes slik at andre spilleres ratinger forblir riktige, men konto-ID-en din i dem erstattes med en tilfeldig anonym ID. Rapporter andre spillere har sendt om deg, beholdes på samme måte, og moderatorloggen viser bare at en konto ble slettet.</li>
+<li><b>Forespørselslogger</b> slettes etter 14 dager. <b>Sikkerhetskopier</b> erstattes fortløpende, så slettede data forsvinner fra dem innen omtrent 8 dager. Slettede elektroniske registreringer kan ikke gjenopprettes.</li>
+<li><b>Andre leverandører:</b> data hos Epic Games, Cloudflare, Google (inkludert Firebase), Apple, Valve og Unity lagres etter deres retningslinjer. Krasjrapporter i Firebase lagres i 90 dager, og analysedata så lenge som angitt i vår Google Analytics-egenskap.</li></ul>
+<p>Se <a href="delete-data.html">Slett dataene dine</a> for hvordan du sletter kontoen.</p>
+
+<h2>13. Tjenesteleverandører og overføring til andre land</h2>
+<p>Vi selger eller leier ikke ut personopplysninger, og andre spillere ser bare det som er beskrevet i punkt 5. Vi bruker tjenestene nedenfor til å drifte spillet. Noen behandler data på våre vegne; andre (som Epic Games for sine kontoer, Google, Apple og Valve) er også selvstendig behandlingsansvarlige etter egne retningslinjer.</p>
+<div class="scroll"><table><tr><th>Mottaker (land)</th><th>Data</th><th>Formål</th></tr>
+<tr><td>Spillserveren vår (Republikken Korea)</td><td>Punkt 3</td><td>Matchmaking, rangerte kamper, topplister, moderering</td></tr>
+<tr><td>Epic Games, Inc. – Epic Online Services (USA)</td><td>Enhetslegitimasjon og enhetsmodell, EOS-konto-ID, ID-er til koblede kontoer, lobbydata, trafikk under partiet og IP-adresse, lagringsfil</td><td>Pålogging og kontokobling, lobbyer og tilkobling under partiet, synkronisering av lagring</td></tr>
+<tr><td>Cloudflare, Inc. (USA; verdensomspennende nettverk)</td><td>IP-adresse og kryptert trafikk mellom spillet og serveren vår, sikkerhetskopier av databasen</td><td>Sikker tilkobling og beskyttelse mot angrep, sikkerhetskopiering</td></tr>
+<tr><td>Google LLC (USA)</td><td>Pålogging med Google (via EOS), data i punkt 7–9</td><td>Pålogging, reklame, analyse, krasjrapporter, fjerninnstillinger, kjøp i Google Play</td></tr>
+<tr><td>Apple Inc. (USA)</td><td>Logg på med Apple (via EOS), kjøp i App Store, sporingstillatelse</td><td>Pålogging, kjøp</td></tr>
+<tr><td>Valve Corporation (USA)</td><td>Data i punkt 6</td><td>Steam-funksjoner og pålogging på PC</td></tr>
+<tr><td>Unity Technologies (USA)</td><td>Diagnostikk for kjøpsflyten</td><td>Kjøp i appen</td></tr>
+<tr><td>GitHub, Inc. (USA)</td><td>IP-adresse og opplysninger om forespørselen når du besøker disse sidene</td><td>Vertskap for disse sidene</td></tr></table></div>
+<p>Data sendes over internett når du bruker den aktuelle funksjonen, og kan behandles utenfor landet ditt. Lagringstiden står i punkt 12. Spillserveren vår står i Republikken Korea, som EU-kommisjonen og Storbritannia har anerkjent som et land med tilstrekkelig beskyttelsesnivå; andre overføringer bygger på garantiene hver leverandør beskriver, for eksempel EUs standard personvernbestemmelser. Nettspill er valgfritt: vil du ikke at data sendes for dette, kan du la være å bruke nettfunksjonene (resten av spillet fungerer som før).</p>
+
+<h2>14. Sikkerhet</h2>
+<p>Tilkoblinger til spillserveren vår er kryptert (HTTPS via Cloudflare), og EOS krypterer sine tilkoblinger. Serveren godtar bare påloggingstokener signert av Epic, kjører under en egen konto uten administratorrettigheter og oppbevarer sikkerhetskopiene i en privat lagringsbøtte. Modereringssidene er bare tilgjengelige for våre ansatte via Cloudflare Access, og handlingene deres logges. Ingen systemer er helt sikre, så vi lagrer bare det nettspillet trenger.</p>
+
+<h2>15. Rettighetene dine</h2>
+<p>Avhengig av hvor du bor, kan du ha rett til innsyn, retting, sletting, begrensning av og innsigelse mot behandling av personopplysningene dine, til dataportabilitet, til å trekke tilbake samtykke og til å klage til datatilsynet (i Norge Datatilsynet). Å trekke tilbake samtykke påvirker ikke behandling som har skjedd tidligere. I spillet kan du endre kallenavn, skjule flagget, endre reklamevalg og slette nettkontoen din; du kan også tilbakestille reklame-ID-en, tømme appdataene eller kontakte oss. For en kopi av dataene dine eller andre forespørsler kan du sende oss en e-post med kallenavn og #tagg (for eksempel Navn#1234) og plattform. Vi har ikke navnet eller e-postadressen din, så vi kan be deg bekrefte at kontoen er din. Vi svarer innen 10 dager.</p>
+
+<h2>16. Barn</h2>
+<p>TOUHOU CHESS er ikke rettet mot barn under 13 år, og vi samler ikke bevisst inn personopplysninger om dem. Nettfunksjonene er beregnet på spillere fra 13 år (fra 14 år i Korea). Foresatte som mener at et barn har gitt fra seg personopplysninger, kan kontakte oss, så sletter vi dem.</p>
+
+<h2>17. Endringer</h2>
+<p>Vi oppdaterer denne siden og personvernopplysningene i butikkene før vi endrer hva spillet samler inn. Vesentlige endringer kunngjøres på denne siden og i spillet, med ny dato.</p>
+
+<h2>Kontakt og leverandørenes retningslinjer</h2>
+<p>Ansvarlig for personvern: FIVE DUCK GAMES, <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
+<p><a href="https://www.epicgames.com/site/privacypolicy">Epic Games</a> · <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://policies.google.com/technologies/partner-sites">Hvordan Google bruker opplysninger fra apper (AdMob)</a> · <a href="https://firebase.google.com/support/privacy">Firebase</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://store.steampowered.com/privacy_agreement/">Valve (Steam)</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></p>
+</section></body></html>
