@@ -15,7 +15,7 @@
 <li><b>Lobbies and match connections:</b> games are played between the two devices through EOS lobbies and peer-to-peer connections. A lobby holds the game version, rules and time control, the room code of a friend match, the queue and your hidden matchmaking rating for Quick match, and the match ID of games arranged by our server; other players’ games can read it while searching for opponents. During a game, the two devices exchange your nickname and #tag, character, country (unless hidden), app version, hidden matchmaking rating, spell deck, the moves of the game and quick-chat messages (fixed phrases). A direct connection lets your opponent’s device see your IP address. EOS sees your IP address in any case and may relay the connection through its servers.</li></ul>
 
 <h2>3. Our game server</h2>
-<p>Our game server runs on a computer we operate in the Republic of Korea and is reached through Cloudflare at touhouchess-api.fiveduckgames.com. It handles Quick match and Ranked matchmaking, practice AI opponents, result checks, ratings, leaderboards, name checks, reports, sanctions and account deletion. Friend matches with a room code do not go through it. It stores:</p>
+<p>Our game server runs on a computer we operate in the Republic of Korea and is reached through Cloudflare at touhouchess-api.fiveduckgames.com. It handles Quick match and Ranked matchmaking, practice AI opponents, result checks, ratings, leaderboards, name checks, reports, sanctions and account deletion. When an account that used Sign in with Apple is deleted, the server asks Apple to revoke TOUHOU CHESS’s permission with a one-time code from the sign-in that confirms the deletion; the code is not stored. Friend matches with a room code do not go through it. It stores:</p>
 <ul><li><b>Account:</b> your EOS account ID, the type of linked account, and when your account was created, last changed and last used online.</li>
 <li><b>Profile:</b> your nickname (the one you use now and the one shown on leaderboards, with the time it changed), your #tag (a four-digit number calculated from your account ID that never changes), your country and whether you hid your flag, and the character you play as.</li>
 <li><b>Country:</b> taken from the country Steam determines from your IP address on PC, the App Store country on iOS, or the SIM or mobile network country on Android; never from your device language or GPS. If none is available, no flag is shown. If you hide your flag, the country stays on the server but is shown to no one, and you are left out of country leaderboards.</li>
@@ -79,7 +79,7 @@
 <tr><td>Epic Games, Inc. — Epic Online Services (United States)</td><td>Device credential and device model, EOS account ID, IDs of linked accounts, lobby data, match traffic and IP address, save file</td><td>Sign-in and account linking, lobbies and match connections, save sync</td></tr>
 <tr><td>Cloudflare, Inc. (United States; worldwide network)</td><td>IP address and the encrypted traffic between your game and our server; database backups</td><td>Secure connection and attack protection, backups</td></tr>
 <tr><td>Google LLC (United States)</td><td>Google sign-in (through EOS); data in sections 7–9</td><td>Sign-in, ads, analytics, crash reports, remote settings, Google Play purchases</td></tr>
-<tr><td>Apple Inc. (United States)</td><td>Sign in with Apple (through EOS), App Store purchases, tracking permission</td><td>Sign-in, purchases</td></tr>
+<tr><td>Apple Inc. (United States)</td><td>Sign in with Apple (through EOS) and its revocation when you delete your account, App Store purchases, tracking permission</td><td>Sign-in, account deletion, purchases</td></tr>
 <tr><td>Valve Corporation (United States)</td><td>Data in section 6</td><td>Steam features and sign-in on PC</td></tr>
 <tr><td>Unity Technologies (United States)</td><td>Purchase-flow diagnostics</td><td>In-app purchase</td></tr>
 <tr><td>GitHub, Inc. (United States)</td><td>IP address and request data when you visit these pages</td><td>Hosting these pages</td></tr></table></div>
@@ -117,7 +117,7 @@
 <li><b>로비와 대국 연결:</b> 대국은 EOS 로비와 P2P 연결로 두 기기 사이에서 진행됩니다. 로비에는 게임 버전, 규칙과 시간, 친구 대전의 방 코드, 빠른 대전의 큐와 숨은 매칭 레이팅, 게임 서버가 짝지은 대국의 대국 ID가 담기며, 상대를 찾는 다른 이용자의 게임이 이를 읽을 수 있습니다. 대국 중에는 두 기기가 닉네임과 #태그, 캐릭터, 국가(숨기지 않은 경우), 앱 버전, 숨은 매칭 레이팅, 스펠 카드 덱, 대국의 수, 한마디(정해진 문장)를 주고받습니다. 직접 연결되면 상대 기기가 이용자의 IP 주소를 알 수 있습니다. EOS는 어느 경우에나 IP 주소를 보며 연결을 자체 서버로 중계할 수 있습니다.</li></ul>
 
 <h2>3. 게임 서버</h2>
-<p>게임 서버는 개발자가 대한민국에서 운영하는 컴퓨터에서 돌아가며 Cloudflare를 거쳐 touhouchess-api.fiveduckgames.com으로 연결됩니다. 빠른 대전·랭크전 매칭, 연습 상대(AI) 배정, 결과 확인, 레이팅, 순위표, 이름 검사, 신고, 제재, 계정 삭제를 맡습니다. 방 코드로 하는 친구 대전은 게임 서버를 거치지 않습니다. 게임 서버가 저장하는 정보는 다음과 같습니다.</p>
+<p>게임 서버는 개발자가 대한민국에서 운영하는 컴퓨터에서 돌아가며 Cloudflare를 거쳐 touhouchess-api.fiveduckgames.com으로 연결됩니다. 빠른 대전·랭크전 매칭, 연습 상대(AI) 배정, 결과 확인, 레이팅, 순위표, 이름 검사, 신고, 제재, 계정 삭제를 맡습니다. Apple로 로그인을 쓴 계정을 삭제할 때는, 삭제를 확인하는 로그인에서 받은 일회용 코드로 Apple에 TOUHOU CHESS의 권한 철회를 요청하며, 이 코드는 저장하지 않습니다. 방 코드로 하는 친구 대전은 게임 서버를 거치지 않습니다. 게임 서버가 저장하는 정보는 다음과 같습니다.</p>
 <ul><li><b>계정:</b> EOS 계정 ID, 연결한 계정의 종류, 계정을 만든 시각·마지막으로 바뀐 시각·마지막으로 온라인을 쓴 시각</li>
 <li><b>프로필:</b> 닉네임(지금 쓰는 이름과 순위표에 보이는 이름, 바꾼 시각), #태그(계정 ID로 계산한 네 자리 숫자로 바뀌지 않음), 국가와 국기 숨김 여부, 고른 캐릭터</li>
 <li><b>국가:</b> PC는 Steam이 IP 주소로 판단한 국가, iOS는 App Store 국가, Android는 SIM 또는 이동통신망의 국가에서 가져오며, 기기 언어나 GPS는 쓰지 않습니다. 알 수 없으면 국기를 보이지 않습니다. 국기를 숨기면 국가는 서버에 남지만 누구에게도 보이지 않고, 국가별 순위표에서 빠집니다.</li>
@@ -181,7 +181,7 @@
 <tr><td>Epic Games, Inc. — Epic Online Services(미국)</td><td>기기 인증 정보와 기기 모델, EOS 계정 ID, 연결한 계정의 ID, 로비 정보, 대국 통신과 IP 주소, 세이브 파일</td><td>로그인과 계정 연결, 로비와 대국 연결, 세이브 동기화</td></tr>
 <tr><td>Cloudflare, Inc.(미국, 전 세계 네트워크)</td><td>IP 주소와 게임·게임 서버 사이의 암호화된 통신, 데이터베이스 백업</td><td>보안 연결과 공격 방어, 백업</td></tr>
 <tr><td>Google LLC(미국)</td><td>Google 로그인(EOS를 거침), 7~9항의 정보</td><td>로그인, 광고, 분석, 비정상 종료 보고, 원격 설정, Google Play 결제</td></tr>
-<tr><td>Apple Inc.(미국)</td><td>Apple로 로그인(EOS를 거침), App Store 구매, 추적 허용 여부</td><td>로그인, 결제</td></tr>
+<tr><td>Apple Inc.(미국)</td><td>Apple로 로그인(EOS를 거침)과 계정 삭제 시 권한 철회, App Store 구매, 추적 허용 여부</td><td>로그인, 계정 삭제, 결제</td></tr>
 <tr><td>Valve Corporation(미국)</td><td>6항의 정보</td><td>PC의 Steam 기능과 로그인</td></tr>
 <tr><td>Unity Technologies(미국)</td><td>구매 과정 진단 정보</td><td>인앱 구매</td></tr>
 <tr><td>GitHub, Inc.(미국)</td><td>이 페이지에 접속할 때의 IP 주소와 요청 정보</td><td>이 페이지 호스팅</td></tr></table></div>
@@ -221,7 +221,7 @@
 <li><b>ロビーと対局の接続:</b> 対局は EOS のロビーと P2P 接続により、2台の端末の間で行われます。ロビーにはゲームのバージョン、ルールと持ち時間、フレンド対戦のルームコード、クイック対戦のキューと隠れマッチングレーティング、ゲームサーバーが組んだ対局の対局 ID が含まれ、対戦相手を探しているほかの利用者のゲームがこれを読み取れます。対局中、2台の端末はニックネームと #タグ、キャラクター、国（隠していない場合）、アプリのバージョン、隠れマッチングレーティング、スペルカードのデッキ、対局の指し手、ひとこと（定型文）をやり取りします。直接接続の場合、相手の端末からあなたの IP アドレスが分かります。EOS はいずれの場合も IP アドレスを把握し、接続を自社サーバーで中継することがあります。</li></ul>
 
 <h2>3. ゲームサーバー</h2>
-<p>ゲームサーバーは開発者が大韓民国で運用するコンピューターで動作し、Cloudflare を経由して touhouchess-api.fiveduckgames.com で接続されます。クイック対戦とランク戦のマッチング、練習相手（AI）の割り当て、結果の確認、レーティング、ランキング、名前の確認、通報、制裁、アカウント削除を担当します。ルームコードによるフレンド対戦はゲームサーバーを経由しません。ゲームサーバーが保存する情報は次のとおりです。</p>
+<p>ゲームサーバーは開発者が大韓民国で運用するコンピューターで動作し、Cloudflare を経由して touhouchess-api.fiveduckgames.com で接続されます。クイック対戦とランク戦のマッチング、練習相手（AI）の割り当て、結果の確認、レーティング、ランキング、名前の確認、通報、制裁、アカウント削除を担当します。Apple でサインインを使ったアカウントを削除するときは、削除を確認するサインインで得た使い捨てのコードで、TOUHOU CHESS への許可の取り消しを Apple に依頼します。このコードは保存しません。ルームコードによるフレンド対戦はゲームサーバーを経由しません。ゲームサーバーが保存する情報は次のとおりです。</p>
 <ul><li><b>アカウント:</b> EOS アカウント ID、連携したアカウントの種類、アカウントの作成日時・最終変更日時・最後にオンラインを利用した日時</li>
 <li><b>プロフィール:</b> ニックネーム（現在の名前とランキングに表示される名前、変更日時）、#タグ（アカウント ID から計算する4桁の数字で、変わりません）、国と国旗を隠すかどうか、選んだキャラクター</li>
 <li><b>国:</b> PC は Steam が IP アドレスから判断した国、iOS は App Store の国、Android は SIM またはモバイルネットワークの国から取得し、端末の言語や GPS は使いません。分からない場合は国旗を表示しません。国旗を隠すと、国はサーバーに残りますが誰にも表示されず、国別ランキングから外れます。</li>
@@ -285,7 +285,7 @@
 <tr><td>Epic Games, Inc. — Epic Online Services（米国）</td><td>端末認証情報と端末のモデル、EOS アカウント ID、連携したアカウントの ID、ロビーの情報、対局の通信と IP アドレス、セーブファイル</td><td>ログインとアカウント連携、ロビーと対局の接続、セーブデータの同期</td></tr>
 <tr><td>Cloudflare, Inc.（米国、世界規模のネットワーク）</td><td>IP アドレスとゲーム・ゲームサーバー間の暗号化された通信、データベースのバックアップ</td><td>安全な接続と攻撃からの防御、バックアップ</td></tr>
 <tr><td>Google LLC（米国）</td><td>Google ログイン（EOS を経由）、第7〜9項の情報</td><td>ログイン、広告、分析、クラッシュレポート、リモート設定、Google Play の決済</td></tr>
-<tr><td>Apple Inc.（米国）</td><td>Apple でサインイン（EOS を経由）、App Store での購入、トラッキング許可の有無</td><td>ログイン、決済</td></tr>
+<tr><td>Apple Inc.（米国）</td><td>Apple でサインイン（EOS を経由）とアカウント削除時の許可の取り消し、App Store での購入、トラッキング許可の有無</td><td>ログイン、アカウント削除、決済</td></tr>
 <tr><td>Valve Corporation（米国）</td><td>第6項の情報</td><td>PC での Steam の機能とログイン</td></tr>
 <tr><td>Unity Technologies（米国）</td><td>購入処理の診断情報</td><td>アプリ内課金</td></tr>
 <tr><td>GitHub, Inc.（米国）</td><td>このページにアクセスしたときの IP アドレスとリクエスト情報</td><td>このページのホスティング</td></tr></table></div>
@@ -323,7 +323,7 @@
 <li><b>大厅与对局连接：</b>对局通过 EOS 大厅和点对点连接在两台设备之间进行。大厅包含游戏版本、规则和时间、好友对战的房间码、快速对战的队列和你的隐藏匹配分，以及由游戏服务器安排的对局 ID；正在寻找对手的其他玩家的游戏可以读取这些信息。对局期间，两台设备会交换你的昵称和 #标签、角色、国家（未隐藏时）、应用版本、隐藏匹配分、符卡卡组、对局着法以及“一句话”（固定短语）。如果直接连接，对手的设备可以看到你的 IP 地址。无论哪种情况，EOS 都能看到你的 IP 地址，并可能通过其服务器中继连接。</li></ul>
 
 <h2>3. 我们的游戏服务器</h2>
-<p>游戏服务器运行在开发者于大韩民国运营的计算机上，通过 Cloudflare 以 touhouchess-api.fiveduckgames.com 访问。它负责快速对战与排位赛的匹配、分配练习对手（AI）、结果核对、等级分、排行榜、名称检查、举报、处罚和账号删除。使用房间码的好友对战不经过游戏服务器。游戏服务器保存以下信息：</p>
+<p>游戏服务器运行在开发者于大韩民国运营的计算机上，通过 Cloudflare 以 touhouchess-api.fiveduckgames.com 访问。它负责快速对战与排位赛的匹配、分配练习对手（AI）、结果核对、等级分、排行榜、名称检查、举报、处罚和账号删除。删除使用过“通过 Apple 登录”的账号时，服务器会用确认删除时登录得到的一次性代码请求 Apple 撤销 TOUHOU CHESS 的授权，且不保存该代码。使用房间码的好友对战不经过游戏服务器。游戏服务器保存以下信息：</p>
 <ul><li><b>账号：</b>EOS 账号 ID、所关联账号的类型，以及账号的创建时间、最后修改时间和最后一次使用联机的时间</li>
 <li><b>个人资料：</b>昵称（当前使用的名称和排行榜显示的名称，以及修改时间）、#标签（根据账号 ID 计算出的四位数字，不会改变）、国家及是否隐藏国旗、所选角色</li>
 <li><b>国家：</b>PC 取自 Steam 根据 IP 地址判断的国家，iOS 取自 App Store 所在国家，Android 取自 SIM 卡或移动网络的国家；不使用设备语言或 GPS。无法确定时不显示国旗。隐藏国旗后，国家仍保存在服务器上，但不会向任何人显示，你也不会出现在国家排行榜中。</li>
@@ -387,7 +387,7 @@
 <tr><td>Epic Games, Inc. — Epic Online Services（美国）</td><td>设备凭据和设备型号、EOS 账号 ID、所关联账号的 ID、大厅信息、对局通信和 IP 地址、存档文件</td><td>登录与账号关联、大厅与对局连接、存档同步</td></tr>
 <tr><td>Cloudflare, Inc.（美国；全球网络）</td><td>IP 地址以及游戏与游戏服务器之间的加密通信、数据库备份</td><td>安全连接与攻击防护、备份</td></tr>
 <tr><td>Google LLC（美国）</td><td>Google 登录（经由 EOS）、第7–9条所述数据</td><td>登录、广告、分析、崩溃报告、远程配置、Google Play 购买</td></tr>
-<tr><td>Apple Inc.（美国）</td><td>通过 Apple 登录（经由 EOS）、App Store 购买、跟踪许可</td><td>登录、购买</td></tr>
+<tr><td>Apple Inc.（美国）</td><td>通过 Apple 登录（经由 EOS）及删除账号时撤销授权、App Store 购买、跟踪许可</td><td>登录、账号删除、购买</td></tr>
 <tr><td>Valve Corporation（美国）</td><td>第6条所述数据</td><td>PC 上的 Steam 功能与登录</td></tr>
 <tr><td>Unity Technologies（美国）</td><td>购买流程诊断信息</td><td>应用内购买</td></tr>
 <tr><td>GitHub, Inc.（美国）</td><td>访问这些页面时的 IP 地址和请求信息</td><td>托管这些页面</td></tr></table></div>
@@ -425,7 +425,7 @@
 <li><b>Лобби и соединение во время партии:</b> партии идут между двумя устройствами через лобби EOS и прямые (peer-to-peer) соединения. Лобби содержит версию игры, правила и контроль времени, код комнаты для игры с другом, очередь и ваш скрытый рейтинг подбора для быстрой игры, а также идентификатор партии, подобранной нашим сервером; игры других игроков могут читать эти данные при поиске соперника. Во время партии устройства обмениваются вашим никнеймом и #тегом, персонажем, страной (если она не скрыта), версией приложения, скрытым рейтингом подбора, колодой карт заклинаний, ходами партии и репликами (готовыми фразами). При прямом соединении устройство соперника видит ваш IP-адрес. EOS видит ваш IP-адрес в любом случае и может передавать соединение через свои серверы.</li></ul>
 
 <h2>3. Наш игровой сервер</h2>
-<p>Игровой сервер работает на компьютере, который мы обслуживаем в Республике Корея, и доступен через Cloudflare по адресу touhouchess-api.fiveduckgames.com. Он отвечает за подбор соперников в быстрой и рейтинговой игре, назначение тренировочного бота (ИИ), проверку результатов, рейтинги, таблицы лидеров, проверку имён, жалобы, санкции и удаление учётных записей. Игры с другом по коду комнаты через него не проходят. Сервер хранит:</p>
+<p>Игровой сервер работает на компьютере, который мы обслуживаем в Республике Корея, и доступен через Cloudflare по адресу touhouchess-api.fiveduckgames.com. Он отвечает за подбор соперников в быстрой и рейтинговой игре, назначение тренировочного бота (ИИ), проверку результатов, рейтинги, таблицы лидеров, проверку имён, жалобы, санкции и удаление учётных записей. При удалении аккаунта, в котором использовался «Вход с Apple», сервер с помощью одноразового кода из входа, подтверждающего удаление, просит Apple отозвать разрешение TOUHOU CHESS; этот код не сохраняется. Игры с другом по коду комнаты через него не проходят. Сервер хранит:</p>
 <ul><li><b>Учётная запись:</b> идентификатор учётной записи EOS, тип привязанной учётной записи, время создания учётной записи, последнего изменения и последнего использования онлайн-функций.</li>
 <li><b>Профиль:</b> никнейм (текущий и тот, что показан в таблицах лидеров, с временем изменения), #тег (четырёхзначное число, вычисленное из идентификатора учётной записи и никогда не меняющееся), страну и признак скрытия флага, выбранного персонажа.</li>
 <li><b>Страна:</b> на ПК — страна, которую Steam определяет по IP-адресу, на iOS — страна App Store, на Android — страна SIM-карты или мобильной сети; язык устройства и GPS не используются. Если страну определить нельзя, флаг не показывается. Если вы скроете флаг, страна останется на сервере, но не будет показана никому, а вы не попадёте в таблицы лидеров по странам.</li>
@@ -489,7 +489,7 @@
 <tr><td>Epic Games, Inc. — Epic Online Services (США)</td><td>Учётные данные и модель устройства, идентификатор учётной записи EOS, идентификаторы привязанных учётных записей, данные лобби, трафик партии и IP-адрес, файл сохранения</td><td>Вход и привязка учётных записей, лобби и соединение во время партии, синхронизация сохранений</td></tr>
 <tr><td>Cloudflare, Inc. (США; глобальная сеть)</td><td>IP-адрес и зашифрованный трафик между игрой и нашим сервером, резервные копии базы данных</td><td>Защищённое соединение и защита от атак, резервное копирование</td></tr>
 <tr><td>Google LLC (США)</td><td>Вход через Google (через EOS), данные из разделов 7–9</td><td>Вход, реклама, аналитика, отчёты о сбоях, удалённые настройки, покупки в Google Play</td></tr>
-<tr><td>Apple Inc. (США)</td><td>«Вход с Apple» (через EOS), покупки в App Store, разрешение на отслеживание</td><td>Вход, покупки</td></tr>
+<tr><td>Apple Inc. (США)</td><td>«Вход с Apple» (через EOS) и отзыв разрешения при удалении аккаунта, покупки в App Store, разрешение на отслеживание</td><td>Вход, удаление аккаунта, покупки</td></tr>
 <tr><td>Valve Corporation (США)</td><td>Данные из раздела 6</td><td>Функции Steam и вход на ПК</td></tr>
 <tr><td>Unity Technologies (США)</td><td>Диагностика процесса покупки</td><td>Покупка в приложении</td></tr>
 <tr><td>GitHub, Inc. (США)</td><td>IP-адрес и сведения о запросе при посещении этих страниц</td><td>Размещение этих страниц</td></tr></table></div>
@@ -527,7 +527,7 @@
 <li><b>Lobbyer og tilkobling under partiet:</b> partier spilles mellom de to enhetene via EOS-lobbyer og direkte tilkoblinger (peer-to-peer). En lobby inneholder spillversjon, regler og tidskontroll, romkoden for en vennekamp, køen og den skjulte matchmakingratingen din for rask kamp, og kamp-ID-en for partier spillserveren har satt opp; andre spilleres spill kan lese dette mens de leter etter motstander. Under partiet utveksler de to enhetene kallenavnet og #taggen din, karakter, land (med mindre det er skjult), appversjon, skjult matchmakingrating, spellkortstokk, trekkene i partiet og hurtigmeldinger (faste fraser). Ved direkte tilkobling kan motstanderens enhet se IP-adressen din. EOS ser IP-adressen din uansett og kan sende tilkoblingen via sine egne servere.</li></ul>
 
 <h2>3. Spillserveren vår</h2>
-<p>Spillserveren kjører på en datamaskin vi drifter i Republikken Korea, og nås via Cloudflare på touhouchess-api.fiveduckgames.com. Den håndterer matchmaking for rask kamp og rangert kamp, treningsbot (KI), kontroll av resultater, ratinger, topplister, navnekontroll, rapporter, sanksjoner og sletting av kontoer. Vennekamper med romkode går ikke via serveren. Serveren lagrer:</p>
+<p>Spillserveren kjører på en datamaskin vi drifter i Republikken Korea, og nås via Cloudflare på touhouchess-api.fiveduckgames.com. Den håndterer matchmaking for rask kamp og rangert kamp, treningsbot (KI), kontroll av resultater, ratinger, topplister, navnekontroll, rapporter, sanksjoner og sletting av kontoer. Når en konto som har brukt Logg på med Apple slettes, ber serveren Apple om å trekke tilbake tillatelsen til TOUHOU CHESS med en engangskode fra påloggingen som bekrefter slettingen; koden lagres ikke. Vennekamper med romkode går ikke via serveren. Serveren lagrer:</p>
 <ul><li><b>Konto:</b> EOS-konto-ID-en din, typen koblet konto, og når kontoen ble opprettet, sist endret og sist brukt på nett.</li>
 <li><b>Profil:</b> kallenavnet ditt (det du bruker nå og det som vises på topplister, med tidspunktet det ble endret), #taggen din (et firesifret tall beregnet fra konto-ID-en som aldri endres), landet ditt og om du har skjult flagget, og karakteren du spiller som.</li>
 <li><b>Land:</b> hentes fra landet Steam fastslår ut fra IP-adressen din på PC, App Store-landet på iOS eller landet til SIM-kortet eller mobilnettet på Android – aldri fra enhetens språk eller GPS. Finnes ingen av delene, vises ikke noe flagg. Skjuler du flagget, blir landet liggende på serveren, men vises ikke for noen, og du utelates fra landtopplistene.</li>
@@ -591,7 +591,7 @@
 <tr><td>Epic Games, Inc. – Epic Online Services (USA)</td><td>Enhetslegitimasjon og enhetsmodell, EOS-konto-ID, ID-er til koblede kontoer, lobbydata, trafikk under partiet og IP-adresse, lagringsfil</td><td>Pålogging og kontokobling, lobbyer og tilkobling under partiet, synkronisering av lagring</td></tr>
 <tr><td>Cloudflare, Inc. (USA; verdensomspennende nettverk)</td><td>IP-adresse og kryptert trafikk mellom spillet og serveren vår, sikkerhetskopier av databasen</td><td>Sikker tilkobling og beskyttelse mot angrep, sikkerhetskopiering</td></tr>
 <tr><td>Google LLC (USA)</td><td>Pålogging med Google (via EOS), data i punkt 7–9</td><td>Pålogging, reklame, analyse, krasjrapporter, fjerninnstillinger, kjøp i Google Play</td></tr>
-<tr><td>Apple Inc. (USA)</td><td>Logg på med Apple (via EOS), kjøp i App Store, sporingstillatelse</td><td>Pålogging, kjøp</td></tr>
+<tr><td>Apple Inc. (USA)</td><td>Logg på med Apple (via EOS) og tilbaketrekking ved sletting av kontoen, kjøp i App Store, sporingstillatelse</td><td>Pålogging, sletting av konto, kjøp</td></tr>
 <tr><td>Valve Corporation (USA)</td><td>Data i punkt 6</td><td>Steam-funksjoner og pålogging på PC</td></tr>
 <tr><td>Unity Technologies (USA)</td><td>Diagnostikk for kjøpsflyten</td><td>Kjøp i appen</td></tr>
 <tr><td>GitHub, Inc. (USA)</td><td>IP-adresse og opplysninger om forespørselen når du besøker disse sidene</td><td>Vertskap for disse sidene</td></tr></table></div>
