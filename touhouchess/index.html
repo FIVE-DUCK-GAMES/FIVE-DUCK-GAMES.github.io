@@ -1,5 +1,288 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TOUHOU CHESS · FIVE DUCK GAMES</title><style>body{max-width:800px;margin:auto;padding:32px 20px 64px;font:16px/1.8 system-ui,sans-serif;color:#24282c}h1{line-height:1.3}a{color:#075bb5}nav{margin-bottom:24px}li{margin:.5em 0}.note{background:#f2f5f7;padding:16px}</style><body><nav><a href="../index.html">FIVE DUCK GAMES</a></nav><h1>TOUHOU CHESS / 동방 체스</h1>
-<p>Chess with the guests of Gensokyo at Kourindou. An unofficial fan game of Touhou Project (original work: Team Shanghai Alice / ZUN).</p>
-<p>환상향 손님들과 향림당에서 두는 체스. 동방 Project의 2차 창작 팬 게임입니다(원작: 상하이 앨리스 환악단 / ZUN).</p>
-<ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="delete-data.html">Delete your data</a></li></ul>
-<p class="note">Support: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a>. Please include your platform (Android, iOS or Steam), the game version shown on the title screen (for example v0.1.0 · Online 4) and what happened.</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TOUHOU CHESS · 동방 체스</title>
+<meta name="description" content="Chess with the guests of Gensokyo. An unofficial Touhou Project fan game for PC (Steam), iPhone and Android. 환상향 손님들과 두는 체스.">
+<meta name="theme-color" content="#2B2233">
+<meta name="apple-itunes-app" content="app-id=6836765991">
+<link rel="canonical" href="https://five-duck-games.github.io/touhouchess/">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FIVE DUCK GAMES">
+<meta property="og:title" content="TOUHOU CHESS · 동방 체스">
+<meta property="og:description" content="Chess with the guests of Gensokyo. PC (Steam), iPhone and Android play together online. 환상향 손님들과 두는 체스.">
+<meta property="og:url" content="https://five-duck-games.github.io/touhouchess/">
+<meta property="og:image" content="https://five-duck-games.github.io/touhouchess/img/og.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#2B2233;--ink-soft:#6A5E70;--paper:#FBF4E6;--shade:#EFE2CA;--deep:#DCC8A6;--indigo:#2F3A6B;--indigo-dark:#1D2447;--verm:#D9483B;--verm-dark:#A8322A;--gold:#E8B44A;--gold-light:#F7DC92;--jade:#4E9E6A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Yu Gothic UI","PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--indigo)}
+img{display:block;max-width:100%}
+.top{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px max(18px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left));z-index:3}
+.top a.home{color:var(--paper);text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:13px;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.lang{appearance:none;-webkit-appearance:none;background:rgba(43,34,51,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23FBF4E6'/%3E%3C/svg%3E") no-repeat right 12px center;color:var(--paper);border:1px solid rgba(251,244,230,.35);border-radius:999px;padding:6px 32px 6px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.lang:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{position:relative;height:min(62vh,640px);min-height:380px;background:#3a2a22 url(img/hero.jpg) center 38%/cover no-repeat;display:flex;align-items:flex-end;justify-content:center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,34,51,.35) 0,rgba(43,34,51,0) 22%,rgba(43,34,51,0) 55%,rgba(43,34,51,.92) 100%)}
+.hero h1{position:relative;z-index:2;margin:0 0 70px;height:min(30vh,280px);display:flex;justify-content:center}
+.hero h1 img{height:100%;width:auto;max-width:86vw;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.45))}
+main{position:relative;z-index:2;max-width:1040px;margin:-54px auto 0;padding:0 16px 40px}
+.card{background:var(--paper);border-radius:24px;box-shadow:0 18px 40px rgba(0,0,0,.35);padding:30px 32px}
+.tag{margin:0;text-align:center;font-size:clamp(22px,3.2vw,30px);font-weight:900;line-height:1.35}
+.fan{margin:6px 0 0;text-align:center;color:var(--ink-soft);font-size:14px}
+.cross{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px auto 22px;padding:10px 18px;border-radius:999px;background:var(--shade);width:fit-content;max-width:100%;font-weight:800;font-size:15px;text-align:center}
+.cross svg{flex:none}
+.stores{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.btn{position:relative;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--indigo);color:var(--paper);text-decoration:none;box-shadow:inset 0 -5px 0 rgba(0,0,0,.22);transition:transform .12s ease,filter .12s ease;min-height:78px}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:translateY(2px)}
+.btn.main{background:var(--verm)}
+.btn svg{flex:none;width:34px;height:34px}
+.btn b{display:block;font-size:17px;line-height:1.25}
+.btn small{display:block;font-size:13px;opacity:.85;font-weight:600}
+.btn .for{position:absolute;top:-10px;right:12px;background:var(--gold);color:var(--ink);font-size:12px;font-weight:900;padding:2px 10px;border-radius:999px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.qr{display:none;align-items:center;gap:22px;margin-top:22px;padding:18px 22px;border-radius:18px;background:#fff;border:2px dashed var(--deep)}
+.qr img{width:132px;height:132px;flex:none;image-rendering:pixelated}
+.qr h2{margin:0 0 4px;font-size:18px}
+.qr p{margin:0;color:var(--ink-soft);font-size:15px}
+body.pc .qr{display:flex}
+section{margin-top:36px}
+section h2.sec{color:var(--paper);font-size:22px;margin:0 0 14px;text-align:center}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.shots img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:18px;box-shadow:0 10px 26px rgba(0,0,0,.4);background:#3a2a22}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feat{background:var(--paper);border-radius:20px;padding:22px 22px 20px;border-top:8px solid var(--verm)}
+.feat:nth-child(2){border-top-color:var(--indigo)}
+.feat:nth-child(3){border-top-color:var(--jade)}
+.feat h3{margin:0 0 6px;font-size:18px}
+.feat p{margin:0;color:var(--ink-soft);font-size:15px}
+footer{max-width:1040px;margin:0 auto;padding:10px 20px calc(40px + env(safe-area-inset-bottom));color:rgba(251,244,230,.78);font-size:14px;text-align:center}
+footer a{color:var(--gold-light)}
+footer ul{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px}
+footer p{margin:6px 0}
+@media (max-width:760px){
+ .hero{height:46vh;min-height:300px}
+ .hero h1{margin-bottom:58px;height:min(22vh,190px)}
+ main{margin-top:-46px;padding:0 12px 32px}
+ .card{padding:24px 18px;border-radius:20px}
+ .stores{grid-template-columns:1fr;gap:16px}
+ .shots{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:62%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+ .shots img{scroll-snap-align:center}
+ .feats{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body class="pc">
+<div class="top">
+  <a class="home" href="../index.html">FIVE DUCK GAMES</a>
+  <select class="lang" id="lang" aria-label="Language">
+    <option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option>
+    <option value="zh">简体中文</option><option value="ru">Русский</option><option value="nb">Norsk</option>
+  </select>
+</div>
+<header class="hero">
+  <h1><img id="logo" src="img/logo-en.webp" alt="TOUHOU CHESS"></h1>
+</header>
+<main>
+  <div class="card">
+    <p class="tag" data-i="tag">Chess with the guests of Gensokyo</p>
+    <p class="fan" data-i="fan">An unofficial Touhou Project fan game (original work: Team Shanghai Alice / ZUN).</p>
+    <div class="cross">
+      <svg width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="2" width="20" height="13" rx="1.5" fill="none" stroke="#2F3A6B" stroke-width="2"/><path d="M7 20h8M11 15v5" fill="none" stroke="#2F3A6B" stroke-width="2" stroke-linecap="round"/><rect x="23" y="4" width="10" height="17" rx="2" fill="#FBF4E6" stroke="#D9483B" stroke-width="2"/><circle cx="28" cy="17.5" r="1" fill="#D9483B"/></svg>
+      <span data-i="cross">Phones and PC (Steam) play together online.</span>
+    </div>
+    <div class="stores" id="stores">
+      <a class="btn" id="btn-steam" data-store="pc" href="https://store.steampowered.com/app/5482350/" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 16.5V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span><b data-i="steam">View on Steam</b><small>Windows · Steam Deck</small></span>
+      </a>
+      <a class="btn" id="btn-ios" data-store="ios" href="https://apps.apple.com/app/id6836765991" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="1.5" width="12" height="21" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18.3" r="1.3" fill="currentColor"/></svg>
+        <span><b data-i="ios">Download on the App Store</b><small>iPhone</small></span>
+      </a>
+      <a class="btn" id="btn-android" data-store="android" href="https://play.google.com/store/apps/details?id=com.fiveduckgames.touhouchess" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="1.5" width="12" height="21" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18.3" r="1.3" fill="currentColor"/></svg>
+        <span><b data-i="android">Get it on Google Play</b><small>Android</small></span>
+      </a>
+    </div>
+    <div class="qr" id="qr">
+      <img src="img/qr.svg" width="132" height="132" alt="QR code: five-duck-games.github.io/touhouchess">
+      <div><h2 data-i="qrTitle">Get it on your phone</h2><p data-i="qrText">Scan this code with your phone camera. This page opens with the store for your phone at the top.</p></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="shots" id="shots">
+      <img loading="lazy" width="480" height="853" src="img/shots/en-1.webp" alt="">
+      <img loading="lazy" width="480" height="853" src="img/shots/en-2.webp" alt="">
+      <img loading="lazy" width="480" height="853" src="img/shots/en-3.webp" alt="">
+    </div>
+  </section>
+
+  <section>
+    <div class="feats">
+      <div class="feat"><h3 data-i="f1t">Chess with your guests</h3><p data-i="f1">Nine guests from Gensokyo, from Cirno to Yukari, each with their own strength and style. They think like people and blunder like people.</p></div>
+      <div class="feat"><h3 data-i="f2t">Spell card matches</h3><p data-i="f2">Your guests bring 50 spell cards from the original games to the board. You still win by checkmate.</p></div>
+      <div class="feat"><h3 data-i="f3t">Story, puzzles and lessons</h3><p data-i="f3">Learn the rules in a 9-chapter story, then sharpen your play with about 1,000 puzzles and lessons.</p></div>
+    </div>
+  </section>
+</main>
+<footer>
+  <ul>
+    <li><a href="privacy.html" data-i="privacy">Privacy Policy</a></li>
+    <li><a href="terms.html" data-i="terms">Terms of Service</a></li>
+    <li><a href="delete-data.html" data-i="delete">Delete your data</a></li>
+  </ul>
+  <p><span data-i="support">Support</span>: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
+  <p data-i="supportNote">Please include your platform (Android, iOS or Steam) and the version shown on the title screen.</p>
+  <p>© 2026 FIVE DUCK GAMES</p>
+</footer>
+<script>
+(function () {
+  var T = {
+    ko: {tag:"환상향 손님들과 두는 체스", fan:"동방 Project 2차 창작 팬 게임입니다(원작: 상하이 앨리스 환악단 / ZUN).",
+      cross:"PC(Steam)와 휴대폰이 온라인 대전에서 함께 둡니다.", forThis:"이 기기용",
+      steam:"Steam에서 보기", ios:"App Store에서 받기", android:"Google Play에서 받기",
+      qrTitle:"휴대폰으로 받기", qrText:"휴대폰 카메라로 이 코드를 찍으면 이 페이지가 열리고, 휴대폰에 맞는 스토어가 맨 위에 나옵니다.",
+      f1t:"손님과 두는 체스", f1:"치르노부터 유카리까지 환상향 손님 9명이 저마다의 기력과 성향으로 둡니다. 사람처럼 생각하고 사람처럼 실수합니다.",
+      f2t:"스펠 카드 대국", f2:"손님들이 원작의 스펠 카드 50장을 들고 체스판 앞에 앉습니다. 체크메이트로 이기는 것은 보통 체스와 같습니다.",
+      f3t:"이야기·퍼즐·공부방", f3:"9화짜리 이야기로 규칙을 배우고, 퍼즐 1,000여 문제와 공부방에서 실력을 쌓습니다.",
+      privacy:"개인정보처리방침", terms:"이용약관", "delete":"데이터 삭제", support:"문의",
+      supportNote:"플랫폼(Android, iOS, Steam)과 타이틀 화면에 보이는 버전을 함께 적어 주세요.",
+      shots:["스펠 카드 선언 컷인","손님과 두는 대국","손님 고르기"]},
+    en: {tag:"Chess with the guests of Gensokyo", fan:"An unofficial Touhou Project fan game (original work: Team Shanghai Alice / ZUN).",
+      cross:"Phones and PC (Steam) play together online.", forThis:"For this device",
+      steam:"View on Steam", ios:"Download on the App Store", android:"Get it on Google Play",
+      qrTitle:"Get it on your phone", qrText:"Scan this code with your phone camera. This page opens with the store for your phone at the top.",
+      f1t:"Chess with your guests", f1:"Nine guests from Gensokyo, from Cirno to Yukari, each with their own strength and style. They think like people and blunder like people.",
+      f2t:"Spell card matches", f2:"Your guests bring 50 spell cards from the original games to the board. You still win by checkmate.",
+      f3t:"Story, puzzles and lessons", f3:"Learn the rules in a 9-chapter story, then sharpen your play with about 1,000 puzzles and lessons.",
+      privacy:"Privacy Policy", terms:"Terms of Service", "delete":"Delete your data", support:"Support",
+      supportNote:"Please include your platform (Android, iOS or Steam) and the version shown on the title screen.",
+      shots:["A spell card declaration","A match with a guest","Choosing a guest"]},
+    ja: {tag:"幻想郷のお客たちと指すチェス", fan:"東方Projectの二次創作ファンゲームです（原作：上海アリス幻樂団 / ZUN）。",
+      cross:"オンライン対戦はスマホとPC（Steam）で一緒に遊べます。", forThis:"このデバイス向け",
+      steam:"Steamで見る", ios:"App Storeからダウンロード", android:"Google Playで手に入れよう",
+      qrTitle:"スマホで入手", qrText:"スマホのカメラでこのコードを読み取ると、このページが開き、お使いのスマホ向けのストアが一番上に表示されます。",
+      f1t:"お客と指すチェス", f1:"チルノから紫まで、幻想郷のお客9人がそれぞれの棋力と棋風で指します。人間のように考え、人間のように間違えます。",
+      f2t:"スペルカード対局", f2:"お客たちが原作のスペルカード50枚を手に盤の前に座ります。チェックメイトで勝つのは普通のチェスと同じです。",
+      f3t:"ストーリー・パズル・勉強部屋", f3:"全9話のストーリーでルールを学び、約1,000問のパズルと勉強部屋で腕を磨きます。",
+      privacy:"プライバシーポリシー", terms:"利用規約", "delete":"データの削除", support:"お問い合わせ",
+      supportNote:"プラットフォーム（Android、iOS、Steam）とタイトル画面に表示されるバージョンを添えてください。",
+      shots:["スペルカード宣言","お客との対局","お客選び"]},
+    zh: {tag:"与幻想乡的客人们下国际象棋", fan:"东方Project二次创作同人游戏（原作：上海爱丽丝幻乐团 / ZUN）。",
+      cross:"手机与PC（Steam）可以一起联机对战。", forThis:"适用于此设备",
+      steam:"在 Steam 查看", ios:"在 App Store 下载", android:"在 Google Play 下载",
+      qrTitle:"在手机上下载", qrText:"用手机相机扫描此码即可打开本页，适用于您手机的商店会显示在最上方。",
+      f1t:"与客人对弈", f1:"从琪露诺到八云紫，9位幻想乡的客人各有不同的棋力和棋风。她们像人一样思考，也像人一样失误。",
+      f2t:"符卡对局", f2:"客人们带着原作中的50张符卡坐到棋盘前。将死对方获胜与普通国际象棋相同。",
+      f3t:"故事·谜题·学习室", f3:"通过全9话的故事学习规则，再用约1,000道谜题和学习室提升棋力。",
+      privacy:"隐私政策", terms:"使用条款", "delete":"删除数据", support:"联系我们",
+      supportNote:"请注明平台（Android、iOS 或 Steam）以及标题画面上显示的版本。",
+      shots:["符卡宣言","与客人对局","选择客人"]},
+    ru: {tag:"Шахматы с гостями Генсокё", fan:"Неофициальная фанатская игра по Touhou Project (оригинал: Team Shanghai Alice / ZUN).",
+      cross:"Телефоны и ПК (Steam) играют вместе по сети.", forThis:"Для этого устройства",
+      steam:"Открыть в Steam", ios:"Загрузить в App Store", android:"Доступно в Google Play",
+      qrTitle:"Скачать на телефон", qrText:"Наведите камеру телефона на этот код: откроется эта страница, и магазин для вашего телефона будет первым.",
+      f1t:"Шахматы с гостями", f1:"Девять гостей из Генсокё, от Сырно до Юкари, со своей силой и своим стилем. Они думают и ошибаются, как люди.",
+      f2t:"Партии с картами заклинаний", f2:"Гости садятся за доску с 50 картами заклинаний из оригинальных игр. Побеждает, как и прежде, мат.",
+      f3t:"История, задачи и уроки", f3:"Изучите правила в истории из 9 глав, а затем оттачивайте игру на 1000 задачах и уроках.",
+      privacy:"Политика конфиденциальности", terms:"Условия использования", "delete":"Удаление данных", support:"Поддержка",
+      supportNote:"Укажите платформу (Android, iOS или Steam) и версию с титульного экрана.",
+      shots:["Объявление карты заклинания","Партия с гостем","Выбор гостя"]},
+    nb: {tag:"Sjakk med Gensokyos gjester", fan:"Et uoffisielt fanspill basert på Touhou Project (originalverk: Team Shanghai Alice / ZUN).",
+      cross:"Mobil og PC (Steam) spiller sammen på nett.", forThis:"For denne enheten",
+      steam:"Se på Steam", ios:"Last ned fra App Store", android:"Last ned fra Google Play",
+      qrTitle:"Last ned på mobilen", qrText:"Skann koden med mobilkameraet. Denne siden åpnes med butikken for mobilen din øverst.",
+      f1t:"Sjakk med gjestene", f1:"Ni gjester fra Gensokyo, fra Cirno til Yukari, med hver sin styrke og stil. De tenker og gjør feil som mennesker.",
+      f2t:"Spellkortpartier", f2:"Gjestene setter seg ved brettet med 50 spellkort fra originalspillene. Du vinner fortsatt med sjakkmatt.",
+      f3t:"Historie, oppgaver og leksjoner", f3:"Lær reglene i en historie på 9 kapitler, og skjerp spillet med rundt 1000 oppgaver og leksjoner.",
+      privacy:"Personvernerklæring", terms:"Vilkår for bruk", "delete":"Slett dataene dine", support:"Kundestøtte",
+      supportNote:"Oppgi plattform (Android, iOS eller Steam) og versjonen som vises på tittelskjermen.",
+      shots:["En spellkorterklæring","Et parti med en gjest","Velg en gjest"]}
+  };
+  var HTML_LANG = {ko:"ko", en:"en", ja:"ja", zh:"zh-Hans", ru:"ru", nb:"nb"};
+  var LOGO = {ko:"ko", ja:"ja", zh:"zh"};
+  var q = new URLSearchParams(location.search);
+
+  function pick() {
+    var want = (q.get("lang") || "").toLowerCase();
+    if (T[want]) return want;
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase();
+      if (l.indexOf("ko") === 0) return "ko";
+      if (l.indexOf("ja") === 0) return "ja";
+      if (l.indexOf("zh") === 0) return "zh";
+      if (l.indexOf("ru") === 0) return "ru";
+      if (l.indexOf("nb") === 0 || l.indexOf("nn") === 0 || l.indexOf("no") === 0) return "nb";
+      if (l.indexOf("en") === 0) return "en";
+    }
+    return "en";
+  }
+
+  // Where the visitor came from (the game passes ?src=...): carried into the stores' own campaign reports.
+  var src = (q.get("src") || "web").toLowerCase().replace(/[^a-z0-9_]/g, "").slice(0, 24) || "web";
+  var ua = navigator.userAgent || "";
+  var device = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) ? "ios"
+    : /Android/.test(ua) ? "android" : "pc";
+
+  var steam = document.getElementById("btn-steam"), ios = document.getElementById("btn-ios"), android = document.getElementById("btn-android");
+  var utm = "utm_source=" + src + "&utm_medium=web&utm_campaign=crosspromo";
+  steam.href = "https://store.steampowered.com/app/5482350/?" + utm;
+  android.href = "https://play.google.com/store/apps/details?id=com.fiveduckgames.touhouchess&" + utm;
+
+  // The store for this device comes first and stands out. Nothing redirects on its own.
+  var byDevice = {pc: steam, ios: ios, android: android};
+  var first = byDevice[device];
+  var stores = document.getElementById("stores");
+  stores.insertBefore(first, stores.firstChild);
+  first.classList.add("main");
+  var badge = document.createElement("span");
+  badge.className = "for";
+  first.appendChild(badge);
+  document.body.className = device;
+
+  function apply(lang) {
+    var t = T[lang];
+    document.documentElement.lang = HTML_LANG[lang];
+    var nodes = document.querySelectorAll("[data-i]");
+    for (var i = 0; i < nodes.length; i++) {
+      var k = nodes[i].getAttribute("data-i");
+      if (t[k] != null) nodes[i].textContent = t[k];
+    }
+    badge.textContent = t.forThis;
+    var logo = document.getElementById("logo");
+    logo.src = "img/logo-" + (LOGO[lang] || "en") + ".webp";
+    var shotLang = lang === "zh" ? "zh" : lang;
+    var imgs = document.querySelectorAll("#shots img");
+    for (var j = 0; j < imgs.length; j++) {
+      imgs[j].src = "img/shots/" + shotLang + "-" + (j + 1) + ".webp";
+      imgs[j].alt = t.shots[j];
+    }
+    var hl = {ko:"ko", en:"en", ja:"ja", zh:"zh-CN", ru:"ru", nb:"no"}[lang];
+    android.href = "https://play.google.com/store/apps/details?id=com.fiveduckgames.touhouchess&hl=" + hl + "&" + utm;
+    document.getElementById("lang").value = lang;
+  }
+
+  var current = pick();
+  apply(current);
+  document.getElementById("lang").addEventListener("change", function (e) {
+    var lang = e.target.value;
+    if (!T[lang]) return;
+    apply(lang);
+    try { var u = new URL(location.href); u.searchParams.set("lang", lang); history.replaceState(null, "", u); } catch (_) {}
+  });
+})();
+</script>
+</body>
+</html>
