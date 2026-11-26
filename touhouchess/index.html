@@ -24,6 +24,7 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--ink);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Hiragino Sans","Yu Gothic UI","PingFang SC","Microsoft YaHei","Noto Sans",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+html:lang(ja) body,html:lang(zh-Hans) body{word-break:normal;line-break:strict}
 a{color:var(--indigo)}
 img{display:block;max-width:100%}
 .top{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px max(18px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left));z-index:3}
@@ -141,6 +142,7 @@ footer p{margin:6px 0}
     <li><a href="privacy.html" data-i="privacy">Privacy Policy</a></li>
     <li><a href="terms.html" data-i="terms">Terms of Service</a></li>
     <li><a href="delete-data.html" data-i="delete">Delete your data</a></li>
+    <li><a id="press" href="presskit.html" data-i="press">Press kit · Streaming</a></li>
   </ul>
   <p><span data-i="support">Support</span>: <a href="mailto:fiveduckgames@gmail.com">fiveduckgames@gmail.com</a></p>
   <p data-i="supportNote">Please include your platform (Android, iOS or Steam) and the version shown on the title screen.</p>
@@ -156,7 +158,7 @@ footer p{margin:6px 0}
       f1t:"손님과 두는 체스", f1:"치르노부터 유카리까지 환상향 손님 9명이 저마다의 기력과 성향으로 둡니다. 사람처럼 생각하고 사람처럼 실수합니다.",
       f2t:"스펠 카드 대국", f2:"손님들이 원작의 스펠 카드 50장을 들고 체스판 앞에 앉습니다. 체크메이트로 이기는 것은 보통 체스와 같습니다.",
       f3t:"이야기·퍼즐·공부방", f3:"9화짜리 이야기로 규칙을 배우고, 퍼즐 1,000여 문제와 공부방에서 실력을 쌓습니다.",
-      privacy:"개인정보처리방침", terms:"이용약관", "delete":"데이터 삭제", support:"문의",
+      privacy:"개인정보처리방침", terms:"이용약관", "delete":"데이터 삭제", support:"문의", press:"프레스 키트 · 방송 안내",
       supportNote:"플랫폼(Android, iOS, Steam)과 타이틀 화면에 보이는 버전을 함께 적어 주세요.",
       shots:["스펠 카드 선언 컷인","손님과 두는 대국","손님 고르기"]},
     en: {tag:"Chess with the guests of Gensokyo", fan:"An unofficial Touhou Project fan game (original work: Team Shanghai Alice / ZUN).",
@@ -166,7 +168,7 @@ footer p{margin:6px 0}
       f1t:"Chess with your guests", f1:"Nine guests from Gensokyo, from Cirno to Yukari, each with their own strength and style. They think like people and blunder like people.",
       f2t:"Spell card matches", f2:"Your guests bring 50 spell cards from the original games to the board. You still win by checkmate.",
       f3t:"Story, puzzles and lessons", f3:"Learn the rules in a 9-chapter story, then sharpen your play with about 1,000 puzzles and lessons.",
-      privacy:"Privacy Policy", terms:"Terms of Service", "delete":"Delete your data", support:"Support",
+      privacy:"Privacy Policy", terms:"Terms of Service", "delete":"Delete your data", support:"Support", press:"Press kit · Streaming",
       supportNote:"Please include your platform (Android, iOS or Steam) and the version shown on the title screen.",
       shots:["A spell card declaration","A match with a guest","Choosing a guest"]},
     ja: {tag:"幻想郷のお客たちと指すチェス", fan:"東方Projectの二次創作ファンゲームです（原作：上海アリス幻樂団 / ZUN）。",
@@ -176,7 +178,7 @@ footer p{margin:6px 0}
       f1t:"お客と指すチェス", f1:"チルノから紫まで、幻想郷のお客9人がそれぞれの棋力と棋風で指します。人間のように考え、人間のように間違えます。",
       f2t:"スペルカード対局", f2:"お客たちが原作のスペルカード50枚を手に盤の前に座ります。チェックメイトで勝つのは普通のチェスと同じです。",
       f3t:"ストーリー・パズル・勉強部屋", f3:"全9話のストーリーでルールを学び、約1,000問のパズルと勉強部屋で腕を磨きます。",
-      privacy:"プライバシーポリシー", terms:"利用規約", "delete":"データの削除", support:"お問い合わせ",
+      privacy:"プライバシーポリシー", terms:"利用規約", "delete":"データの削除", support:"お問い合わせ", press:"プレスキット・配信について",
       supportNote:"プラットフォーム（Android、iOS、Steam）とタイトル画面に表示されるバージョンを添えてください。",
       shots:["スペルカード宣言","お客との対局","お客選び"]},
     zh: {tag:"与幻想乡的客人们下国际象棋", fan:"东方Project二次创作同人游戏（原作：上海爱丽丝幻乐团 / ZUN）。",
@@ -186,7 +188,7 @@ footer p{margin:6px 0}
       f1t:"与客人对弈", f1:"从琪露诺到八云紫，9位幻想乡的客人各有不同的棋力和棋风。她们像人一样思考，也像人一样失误。",
       f2t:"符卡对局", f2:"客人们带着原作中的50张符卡坐到棋盘前。将死对方获胜与普通国际象棋相同。",
       f3t:"故事·谜题·学习室", f3:"通过全9话的故事学习规则，再用约1,000道谜题和学习室提升棋力。",
-      privacy:"隐私政策", terms:"使用条款", "delete":"删除数据", support:"联系我们",
+      privacy:"隐私政策", terms:"使用条款", "delete":"删除数据", support:"联系我们", press:"媒体资料包 · 直播与视频",
       supportNote:"请注明平台（Android、iOS 或 Steam）以及标题画面上显示的版本。",
       shots:["符卡宣言","与客人对局","选择客人"]},
     ru: {tag:"Шахматы с гостями Генсокё", fan:"Неофициальная фанатская игра по Touhou Project (оригинал: Team Shanghai Alice / ZUN).",
@@ -196,7 +198,7 @@ footer p{margin:6px 0}
       f1t:"Шахматы с гостями", f1:"Девять гостей из Генсокё, от Сырно до Юкари, со своей силой и своим стилем. Они думают и ошибаются, как люди.",
       f2t:"Партии с картами заклинаний", f2:"Гости садятся за доску с 50 картами заклинаний из оригинальных игр. Побеждает, как и прежде, мат.",
       f3t:"История, задачи и уроки", f3:"Изучите правила в истории из 9 глав, а затем оттачивайте игру на 1000 задачах и уроках.",
-      privacy:"Политика конфиденциальности", terms:"Условия использования", "delete":"Удаление данных", support:"Поддержка",
+      privacy:"Политика конфиденциальности", terms:"Условия использования", "delete":"Удаление данных", support:"Поддержка", press:"Пресс-кит · Стримы",
       supportNote:"Укажите платформу (Android, iOS или Steam) и версию с титульного экрана.",
       shots:["Объявление карты заклинания","Партия с гостем","Выбор гостя"]},
     nb: {tag:"Sjakk med Gensokyos gjester", fan:"Et uoffisielt fanspill basert på Touhou Project (originalverk: Team Shanghai Alice / ZUN).",
@@ -206,7 +208,7 @@ footer p{margin:6px 0}
       f1t:"Sjakk med gjestene", f1:"Ni gjester fra Gensokyo, fra Cirno til Yukari, med hver sin styrke og stil. De tenker og gjør feil som mennesker.",
       f2t:"Spellkortpartier", f2:"Gjestene setter seg ved brettet med 50 spellkort fra originalspillene. Du vinner fortsatt med sjakkmatt.",
       f3t:"Historie, oppgaver og leksjoner", f3:"Lær reglene i en historie på 9 kapitler, og skjerp spillet med rundt 1000 oppgaver og leksjoner.",
-      privacy:"Personvernerklæring", terms:"Vilkår for bruk", "delete":"Slett dataene dine", support:"Kundestøtte",
+      privacy:"Personvernerklæring", terms:"Vilkår for bruk", "delete":"Slett dataene dine", support:"Kundestøtte", press:"Pressesett · Strømming",
       supportNote:"Oppgi plattform (Android, iOS eller Steam) og versjonen som vises på tittelskjermen.",
       shots:["En spellkorterklæring","Et parti med en gjest","Velg en gjest"]}
   };
@@ -271,6 +273,7 @@ footer p{margin:6px 0}
     }
     var hl = {ko:"ko", en:"en", ja:"ja", zh:"zh-CN", ru:"ru", nb:"no"}[lang];
     android.href = "https://play.google.com/store/apps/details?id=com.fiveduckgames.touhouchess&hl=" + hl + "&" + utm;
+    document.getElementById("press").href = "presskit.html?lang=" + lang;
     document.getElementById("lang").value = lang;
   }
 
