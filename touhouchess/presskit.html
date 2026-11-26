@@ -52,7 +52,7 @@ video{width:100%;aspect-ratio:16/9;border-radius:14px;background:#1d1520}
 .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .shots a{display:block;border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,.18)}
 .shots img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#3a2a22}
-.art{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.art{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .art a{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);font-weight:700;font-size:14px}
 .art .thumb{height:110px;border-radius:12px;background:#3a2a22 center/cover no-repeat;display:flex;align-items:center;justify-content:center;padding:10px}
 .art .thumb img{max-height:100%;width:auto;object-fit:contain}
@@ -143,6 +143,8 @@ footer p{margin:6px 0}
       <a id="a-logo" href="press/logo-en.png" download><span class="thumb check"><img id="a-logo-img" src="press/logo-en.png" alt=""></span><span data-i="logoL">Logo (transparent PNG)</span></a>
       <a href="press/keyart.jpg" download><span class="thumb" style="background-image:url(img/hero.jpg)"></span><span data-i="heroL">Key art (no text)</span></a>
       <a id="a-cap" href="press/header-en.png" download><span class="thumb" id="a-cap-img" style="background-image:url(press/header-en.png)"></span><span data-i="capL">Header capsule</span></a>
+      <a id="a-capsule" href="press/capsule-en.jpg" download><span class="thumb" id="a-capsule-img" style="background-image:url(press/capsule-en.jpg)"></span><span data-i="capsuleL">Title art</span></a>
+      <a href="press/final_spark.gif" download><span class="thumb" style="background-image:url(press/final_spark.gif)"></span><span data-i="gifL">GIF: Final Spark</span></a>
       <a href="press/icon-512.png" download><span class="thumb check"><img src="press/icon-512.png" alt=""></span><span data-i="iconL">Icon</span></a>
     </div>
   </div>
@@ -172,7 +174,7 @@ footer p{margin:6px 0}
       k4t:"온라인 대전", k4:"PC와 휴대폰 플레이어가 같은 대기열에서 만납니다. 빠른 대전과, 방 코드로 여는 친구 대전이 있습니다.",
       trT:"트레일러", trNote:"MP4 내려받기 (1920×1080, 76초, 24MB)",
       shT:"스크린샷", shNote:"그림을 누르면 원본(1920×1080 JPG)이 열립니다.",
-      artT:"로고·아트", logoL:"로고(투명 PNG)", heroL:"키 아트(글자 없음)", capL:"헤더 이미지", iconL:"아이콘",
+      artT:"로고·아트", logoL:"로고(투명 PNG)", heroL:"키 아트(글자 없음)", capL:"헤더 이미지", iconL:"아이콘", capsuleL:"타이틀 이미지", gifL:"움짤(GIF): 파이널 스파크",
       shots:["마리사와 두는 대국","치르노와 두는 대국","이야기","스펠 카드 선언 컷인","마스터 스파크","온라인 대전"]},
     en: {home:"← Homepage", kit:"PRESS KIT", aboutT:"About",
       about:"Become Rinnosuke, owner of the Kourindou curio shop, and play chess with the Gensokyo regulars who drop by. Your guests laugh, panic and grumble as the game turns. Learn in a 9-chapter story, sharpen your play with puzzles, and battle with spell cards or play friends online.",
@@ -192,7 +194,7 @@ footer p{margin:6px 0}
       k4t:"Online play", k4:"PC and phone players meet in the same queue. Play quick matches, or open a room code for a friend.",
       trT:"Trailer", trNote:"Download MP4 (1920×1080, 76 s, 24 MB)",
       shT:"Screenshots", shNote:"Click an image to open the full-size 1920×1080 JPG.",
-      artT:"Logo and art", logoL:"Logo (transparent PNG)", heroL:"Key art (no text)", capL:"Header capsule", iconL:"Icon",
+      artT:"Logo and art", logoL:"Logo (transparent PNG)", heroL:"Key art (no text)", capL:"Header capsule", iconL:"Icon", capsuleL:"Title art", gifL:"GIF: Final Spark",
       shots:["A match with Marisa","A match with Cirno","Story","A spell card declaration","Master Spark","Online match"]},
     ja: {home:"← 公式サイト", kit:"プレスキット", aboutT:"概要",
       about:"香霖堂の店主・霖之助になって、店に遊びに来た幻想郷のお客たちとチェスを指そう。お客は盤面に合わせて笑い、慌て、ぼやく。全9話のストーリーでルールを学び、パズルで腕を磨いたら、スペルカード対局やオンライン対戦も楽しもう。",
@@ -212,7 +214,7 @@ footer p{margin:6px 0}
       k4t:"オンライン対戦", k4:"PCとスマホのプレイヤーが一緒にマッチングします。クイック対戦と、ルームコードで遊ぶフレンド対戦があります。",
       trT:"トレーラー", trNote:"MP4をダウンロード（1920×1080、76秒、24MB）",
       shT:"スクリーンショット", shNote:"画像をクリックすると原寸（1920×1080 JPG）が開きます。",
-      artT:"ロゴ・アート", logoL:"ロゴ（透過PNG）", heroL:"キーアート（文字なし）", capL:"ヘッダー画像", iconL:"アイコン",
+      artT:"ロゴ・アート", logoL:"ロゴ（透過PNG）", heroL:"キーアート（文字なし）", capL:"ヘッダー画像", iconL:"アイコン", capsuleL:"タイトル画像", gifL:"GIF：ファイナルスパーク",
       shots:["魔理沙との対局","チルノとの対局","ストーリー","スペルカード宣言","マスタースパーク","オンライン対戦"]},
     zh: {home:"← 官网", kit:"媒体资料包", aboutT:"简介",
       about:"化身香霖堂店主霖之助，与来店里玩的幻想乡客人们下国际象棋。客人们会随着棋局变化而欢笑、慌张、抱怨。通过全9话的故事学习规则，用谜题提升棋力，还能体验符卡对局与联机对战。",
@@ -232,7 +234,7 @@ footer p{margin:6px 0}
       k4t:"联机对战", k4:"PC与手机玩家在同一队列中匹配。可进行快速对战，也可用房间码与好友对战。",
       trT:"预告片", trNote:"下载 MP4（1920×1080，76秒，24MB）",
       shT:"截图", shNote:"点击图片可打开原尺寸（1920×1080 JPG）。",
-      artT:"标志与美术", logoL:"标志（透明PNG）", heroL:"主视觉（无文字）", capL:"头图", iconL:"图标",
+      artT:"标志与美术", logoL:"标志（透明PNG）", heroL:"主视觉（无文字）", capL:"头图", iconL:"图标", capsuleL:"标题图", gifL:"GIF：终极火花",
       shots:["与魔理沙对局","与琪露诺对局","故事","符卡宣言","极限火花","联机对战"]},
     ru: {home:"← Сайт игры", kit:"ПРЕСС-КИТ", aboutT:"Об игре",
       about:"Станьте Ринноскэ, хозяином лавки диковин Кориндо, и сыграйте в шахматы с завсегдатаями из Генсокё. Гости смеются, паникуют и ворчат вместе с поворотами партии. Учитесь в истории из 9 глав, оттачивайте игру на задачах, сражайтесь картами заклинаний и играйте с друзьями онлайн.",
@@ -252,7 +254,7 @@ footer p{margin:6px 0}
       k4t:"Игра по сети", k4:"Игроки на ПК и телефонах попадают в одну очередь. Есть быстрые матчи и игра с другом по коду комнаты.",
       trT:"Трейлер", trNote:"Скачать MP4 (1920×1080, 76 с, 24 МБ)",
       shT:"Скриншоты", shNote:"Нажмите на изображение, чтобы открыть оригинал (1920×1080 JPG).",
-      artT:"Логотип и арт", logoL:"Логотип (прозрачный PNG)", heroL:"Ключевой арт (без текста)", capL:"Шапка", iconL:"Иконка",
+      artT:"Логотип и арт", logoL:"Логотип (прозрачный PNG)", heroL:"Ключевой арт (без текста)", capL:"Шапка", iconL:"Иконка", capsuleL:"Титульный арт", gifL:"GIF: Финальная искра",
       shots:["Партия с Марисой","Партия с Сырно","История","Объявление карты заклинания","Мастер Спарк","Онлайн-партия"]},
     nb: {home:"← Nettsiden", kit:"PRESSESETT", aboutT:"Om spillet",
       about:"Bli Rinnosuke, innehaveren av kuriositetsbutikken Kourindou, og spill sjakk med stamgjestene fra Gensokyo som stikker innom. Gjestene ler, får panikk og murrer når partiet snur. Lær i en historie på 9 kapitler, skjerp spillet med oppgaver, og kjemp med spellkort eller mot venner på nett.",
@@ -272,7 +274,7 @@ footer p{margin:6px 0}
       k4t:"Nettspill", k4:"PC- og mobilspillere møtes i samme kø. Spill hurtigpartier, eller lag en romkode for en venn.",
       trT:"Trailer", trNote:"Last ned MP4 (1920×1080, 76 s, 24 MB)",
       shT:"Skjermbilder", shNote:"Klikk på et bilde for å åpne full størrelse (1920×1080 JPG).",
-      artT:"Logo og grafikk", logoL:"Logo (gjennomsiktig PNG)", heroL:"Hovedillustrasjon (uten tekst)", capL:"Toppbilde", iconL:"Ikon",
+      artT:"Logo og grafikk", logoL:"Logo (gjennomsiktig PNG)", heroL:"Hovedillustrasjon (uten tekst)", capL:"Toppbilde", iconL:"Ikon", capsuleL:"Tittelbilde", gifL:"GIF: Final Spark",
       shots:["Et parti med Marisa","Et parti med Cirno","Historie","En spellkorterklæring","Master Spark","Nettparti"]}
   };
   var HTML_LANG = {ko:"ko", en:"en", ja:"ja", zh:"zh-Hans", ru:"ru", nb:"nb"};
@@ -328,6 +330,8 @@ footer p{margin:6px 0}
     document.getElementById("a-logo-img").src = "press/logo-" + art + ".png";
     document.getElementById("a-cap").href = "press/header-" + art + ".png";
     document.getElementById("a-cap-img").style.backgroundImage = "url(press/header-" + art + ".png)";
+    document.getElementById("a-capsule").href = "press/capsule-" + art + ".jpg";
+    document.getElementById("a-capsule-img").style.backgroundImage = "url(press/capsule-" + art + ".jpg)";
     var links = shots.querySelectorAll("a");
     for (var j = 0; j < links.length; j++) {
       links[j].href = "press/shot-" + art + "-" + (j + 1) + ".jpg";
